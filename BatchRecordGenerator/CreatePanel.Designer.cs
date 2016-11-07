@@ -211,49 +211,49 @@
             this.label46 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
+            this.darknessCombo = new System.Windows.Forms.ComboBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
+            this.visionCombo = new System.Windows.Forms.ComboBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.comboBox34 = new System.Windows.Forms.ComboBox();
+            this.randomFieldCombo = new System.Windows.Forms.ComboBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.labelStockCombo = new System.Windows.Forms.ComboBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.udiMeasure3 = new System.Windows.Forms.ComboBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
+            this.udiMeasure1 = new System.Windows.Forms.ComboBox();
+            this.udiMeasure2 = new System.Windows.Forms.ComboBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.bwsMeasure3 = new System.Windows.Forms.ComboBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.bwsMeasure1 = new System.Windows.Forms.ComboBox();
+            this.bwsMeasure2 = new System.Windows.Forms.ComboBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
+            this.barMeasure3 = new System.Windows.Forms.ComboBox();
             this.label53 = new System.Windows.Forms.Label();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
-            this.comboBox39 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.barMeasure1 = new System.Windows.Forms.ComboBox();
+            this.barMeasure2 = new System.Windows.Forms.ComboBox();
+            this.collectSalDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label54 = new System.Windows.Forms.Label();
-            this.comboBox40 = new System.Windows.Forms.ComboBox();
+            this.hrbCombo = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
-            this.comboBox41 = new System.Windows.Forms.ComboBox();
+            this.lotNumCombo = new System.Windows.Forms.ComboBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.comboBox42 = new System.Windows.Forms.ComboBox();
+            this.fillToLowerCombo = new System.Windows.Forms.ComboBox();
             this.label58 = new System.Windows.Forms.Label();
-            this.comboBox43 = new System.Windows.Forms.ComboBox();
+            this.labelIDCombo = new System.Windows.Forms.ComboBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.comboBox44 = new System.Windows.Forms.ComboBox();
-            this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.comboBox46 = new System.Windows.Forms.ComboBox();
+            this.gtinCombo = new System.Windows.Forms.ComboBox();
+            this.udiVerCombo = new System.Windows.Forms.ComboBox();
+            this.udiReqCombo = new System.Windows.Forms.ComboBox();
             this.label60 = new System.Windows.Forms.Label();
-            this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.fillToUpperCombo = new System.Windows.Forms.ComboBox();
             this.label71 = new System.Windows.Forms.Label();
-            this.comboBox48 = new System.Windows.Forms.ComboBox();
-            this.comboBox49 = new System.Windows.Forms.ComboBox();
-            this.comboBox50 = new System.Windows.Forms.ComboBox();
-            this.comboBox51 = new System.Windows.Forms.ComboBox();
+            this.fillToTextCombo = new System.Windows.Forms.ComboBox();
+            this.manuIDCombo = new System.Windows.Forms.ComboBox();
+            this.barcodeIDCombo = new System.Windows.Forms.ComboBox();
+            this.phvCombo = new System.Windows.Forms.ComboBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -262,9 +262,9 @@
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.comboBox52 = new System.Windows.Forms.ComboBox();
-            this.comboBox53 = new System.Windows.Forms.ComboBox();
-            this.comboBox54 = new System.Windows.Forms.ComboBox();
+            this.stabSolCombo = new System.Windows.Forms.ComboBox();
+            this.tubeDecodeCombo = new System.Windows.Forms.ComboBox();
+            this.tubeSymCombo = new System.Windows.Forms.ComboBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.extraField3 = new System.Windows.Forms.ComboBox();
             this.extraField2 = new System.Windows.Forms.ComboBox();
@@ -277,14 +277,14 @@
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.comboBox55 = new System.Windows.Forms.ComboBox();
-            this.comboBox56 = new System.Windows.Forms.ComboBox();
-            this.comboBox57 = new System.Windows.Forms.ComboBox();
-            this.comboBox58 = new System.Windows.Forms.ComboBox();
-            this.comboBox59 = new System.Windows.Forms.ComboBox();
-            this.comboBox60 = new System.Windows.Forms.ComboBox();
-            this.comboBox61 = new System.Windows.Forms.ComboBox();
-            this.comboBox62 = new System.Windows.Forms.ComboBox();
+            this.fillToCombo = new System.Windows.Forms.ComboBox();
+            this.airPressureCombo = new System.Windows.Forms.ComboBox();
+            this.sealingDwellCombo = new System.Windows.Forms.ComboBox();
+            this.sealingTempCombo = new System.Windows.Forms.ComboBox();
+            this.orageneCombo = new System.Windows.Forms.ComboBox();
+            this.hibarPumpCombo = new System.Windows.Forms.ComboBox();
+            this.barcodeScanCombo = new System.Windows.Forms.ComboBox();
+            this.modelSelectCombo = new System.Windows.Forms.ComboBox();
             this.label87 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -312,11 +312,11 @@
             this.label127 = new System.Windows.Forms.Label();
             this.label129 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.tubeInspec1 = new System.Windows.Forms.ComboBox();
+            this.tubeInspec2 = new System.Windows.Forms.ComboBox();
+            this.tubeInspec5 = new System.Windows.Forms.ComboBox();
+            this.tubeInspec3 = new System.Windows.Forms.ComboBox();
+            this.tubeInspec4 = new System.Windows.Forms.ComboBox();
             this.label96 = new System.Windows.Forms.Label();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
             this.label95 = new System.Windows.Forms.Label();
@@ -346,31 +346,31 @@
             this.label99 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox63 = new System.Windows.Forms.ComboBox();
-            this.comboBox64 = new System.Windows.Forms.ComboBox();
-            this.comboBox65 = new System.Windows.Forms.ComboBox();
-            this.comboBox66 = new System.Windows.Forms.ComboBox();
-            this.comboBox67 = new System.Windows.Forms.ComboBox();
-            this.comboBox68 = new System.Windows.Forms.ComboBox();
-            this.comboBox77 = new System.Windows.Forms.ComboBox();
-            this.comboBox78 = new System.Windows.Forms.ComboBox();
-            this.comboBox69 = new System.Windows.Forms.ComboBox();
-            this.comboBox70 = new System.Windows.Forms.ComboBox();
-            this.comboBox71 = new System.Windows.Forms.ComboBox();
-            this.comboBox72 = new System.Windows.Forms.ComboBox();
-            this.comboBox73 = new System.Windows.Forms.ComboBox();
-            this.comboBox74 = new System.Windows.Forms.ComboBox();
-            this.comboBox75 = new System.Windows.Forms.ComboBox();
-            this.comboBox76 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo25 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo24 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo23 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo20 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo22 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo19 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo18 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo21 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo17 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo16 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo15 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo14 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo13 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo12 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo11 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo10 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo9 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo8 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo7 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo6 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo5 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo4 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo3 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo2 = new System.Windows.Forms.ComboBox();
+            this.visInspecCombo1 = new System.Windows.Forms.ComboBox();
             this.nextButton5 = new System.Windows.Forms.Button();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -459,9 +459,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
             this.prettyBoxCheckBox = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.mailerBoxText = new System.Windows.Forms.TextBox();
             this.label176 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.shipIDText = new System.Windows.Forms.TextBox();
             this.label175 = new System.Windows.Forms.Label();
             this.label173 = new System.Windows.Forms.Label();
             this.label174 = new System.Windows.Forms.Label();
@@ -2434,37 +2434,37 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label47);
-            this.groupBox9.Controls.Add(this.comboBox36);
+            this.groupBox9.Controls.Add(this.darknessCombo);
             this.groupBox9.Controls.Add(this.label48);
-            this.groupBox9.Controls.Add(this.comboBox35);
+            this.groupBox9.Controls.Add(this.visionCombo);
             this.groupBox9.Controls.Add(this.label49);
-            this.groupBox9.Controls.Add(this.comboBox34);
+            this.groupBox9.Controls.Add(this.randomFieldCombo);
             this.groupBox9.Controls.Add(this.label50);
-            this.groupBox9.Controls.Add(this.comboBox33);
+            this.groupBox9.Controls.Add(this.labelStockCombo);
             this.groupBox9.Controls.Add(this.groupBox10);
             this.groupBox9.Controls.Add(this.groupBox11);
             this.groupBox9.Controls.Add(this.groupBox12);
-            this.groupBox9.Controls.Add(this.dateTimePicker2);
+            this.groupBox9.Controls.Add(this.collectSalDatePicker);
             this.groupBox9.Controls.Add(this.label54);
-            this.groupBox9.Controls.Add(this.comboBox40);
+            this.groupBox9.Controls.Add(this.hrbCombo);
             this.groupBox9.Controls.Add(this.label55);
-            this.groupBox9.Controls.Add(this.comboBox41);
+            this.groupBox9.Controls.Add(this.lotNumCombo);
             this.groupBox9.Controls.Add(this.label56);
             this.groupBox9.Controls.Add(this.label57);
-            this.groupBox9.Controls.Add(this.comboBox42);
+            this.groupBox9.Controls.Add(this.fillToLowerCombo);
             this.groupBox9.Controls.Add(this.label58);
-            this.groupBox9.Controls.Add(this.comboBox43);
+            this.groupBox9.Controls.Add(this.labelIDCombo);
             this.groupBox9.Controls.Add(this.label59);
-            this.groupBox9.Controls.Add(this.comboBox44);
-            this.groupBox9.Controls.Add(this.comboBox45);
-            this.groupBox9.Controls.Add(this.comboBox46);
+            this.groupBox9.Controls.Add(this.gtinCombo);
+            this.groupBox9.Controls.Add(this.udiVerCombo);
+            this.groupBox9.Controls.Add(this.udiReqCombo);
             this.groupBox9.Controls.Add(this.label60);
-            this.groupBox9.Controls.Add(this.comboBox47);
+            this.groupBox9.Controls.Add(this.fillToUpperCombo);
             this.groupBox9.Controls.Add(this.label71);
-            this.groupBox9.Controls.Add(this.comboBox48);
-            this.groupBox9.Controls.Add(this.comboBox49);
-            this.groupBox9.Controls.Add(this.comboBox50);
-            this.groupBox9.Controls.Add(this.comboBox51);
+            this.groupBox9.Controls.Add(this.fillToTextCombo);
+            this.groupBox9.Controls.Add(this.manuIDCombo);
+            this.groupBox9.Controls.Add(this.barcodeIDCombo);
+            this.groupBox9.Controls.Add(this.phvCombo);
             this.groupBox9.Controls.Add(this.label72);
             this.groupBox9.Controls.Add(this.label73);
             this.groupBox9.Controls.Add(this.label76);
@@ -2486,14 +2486,14 @@
             this.label47.TabIndex = 83;
             this.label47.Text = "Darkness Setting:";
             // 
-            // comboBox36
+            // darknessCombo
             // 
-            this.comboBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Location = new System.Drawing.Point(360, 679);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(408, 26);
-            this.comboBox36.TabIndex = 82;
+            this.darknessCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darknessCombo.FormattingEnabled = true;
+            this.darknessCombo.Location = new System.Drawing.Point(360, 679);
+            this.darknessCombo.Name = "darknessCombo";
+            this.darknessCombo.Size = new System.Drawing.Size(408, 26);
+            this.darknessCombo.TabIndex = 82;
             // 
             // label48
             // 
@@ -2505,14 +2505,14 @@
             this.label48.TabIndex = 81;
             this.label48.Text = "VIsion Camera:";
             // 
-            // comboBox35
+            // visionCombo
             // 
-            this.comboBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Location = new System.Drawing.Point(360, 721);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(408, 26);
-            this.comboBox35.TabIndex = 80;
+            this.visionCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visionCombo.FormattingEnabled = true;
+            this.visionCombo.Location = new System.Drawing.Point(360, 721);
+            this.visionCombo.Name = "visionCombo";
+            this.visionCombo.Size = new System.Drawing.Size(408, 26);
+            this.visionCombo.TabIndex = 80;
             // 
             // label49
             // 
@@ -2524,14 +2524,14 @@
             this.label49.TabIndex = 79;
             this.label49.Text = "Random Field:";
             // 
-            // comboBox34
+            // randomFieldCombo
             // 
-            this.comboBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.Location = new System.Drawing.Point(360, 635);
-            this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(408, 26);
-            this.comboBox34.TabIndex = 78;
+            this.randomFieldCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.randomFieldCombo.FormattingEnabled = true;
+            this.randomFieldCombo.Location = new System.Drawing.Point(360, 635);
+            this.randomFieldCombo.Name = "randomFieldCombo";
+            this.randomFieldCombo.Size = new System.Drawing.Size(408, 26);
+            this.randomFieldCombo.TabIndex = 78;
             // 
             // label50
             // 
@@ -2543,35 +2543,35 @@
             this.label50.TabIndex = 77;
             this.label50.Text = "Label Stock Design:";
             // 
-            // comboBox33
+            // labelStockCombo
             // 
-            this.comboBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Location = new System.Drawing.Point(360, 591);
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(408, 26);
-            this.comboBox33.TabIndex = 76;
+            this.labelStockCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStockCombo.FormattingEnabled = true;
+            this.labelStockCombo.Location = new System.Drawing.Point(360, 591);
+            this.labelStockCombo.Name = "labelStockCombo";
+            this.labelStockCombo.Size = new System.Drawing.Size(408, 26);
+            this.labelStockCombo.TabIndex = 76;
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.comboBox30);
+            this.groupBox10.Controls.Add(this.udiMeasure3);
             this.groupBox10.Controls.Add(this.label51);
-            this.groupBox10.Controls.Add(this.comboBox31);
-            this.groupBox10.Controls.Add(this.comboBox32);
+            this.groupBox10.Controls.Add(this.udiMeasure1);
+            this.groupBox10.Controls.Add(this.udiMeasure2);
             this.groupBox10.Location = new System.Drawing.Point(20, 1024);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(747, 113);
             this.groupBox10.TabIndex = 75;
             this.groupBox10.TabStop = false;
             // 
-            // comboBox30
+            // udiMeasure3
             // 
-            this.comboBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Location = new System.Drawing.Point(495, 56);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(232, 26);
-            this.comboBox30.TabIndex = 73;
+            this.udiMeasure3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udiMeasure3.FormattingEnabled = true;
+            this.udiMeasure3.Location = new System.Drawing.Point(495, 56);
+            this.udiMeasure3.Name = "udiMeasure3";
+            this.udiMeasure3.Size = new System.Drawing.Size(232, 26);
+            this.udiMeasure3.TabIndex = 73;
             // 
             // label51
             // 
@@ -2583,44 +2583,44 @@
             this.label51.TabIndex = 45;
             this.label51.Text = "UDI Barcode White Space Measurements:";
             // 
-            // comboBox31
+            // udiMeasure1
             // 
-            this.comboBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Location = new System.Drawing.Point(19, 56);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(232, 26);
-            this.comboBox31.TabIndex = 71;
+            this.udiMeasure1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udiMeasure1.FormattingEnabled = true;
+            this.udiMeasure1.Location = new System.Drawing.Point(19, 56);
+            this.udiMeasure1.Name = "udiMeasure1";
+            this.udiMeasure1.Size = new System.Drawing.Size(232, 26);
+            this.udiMeasure1.TabIndex = 71;
             // 
-            // comboBox32
+            // udiMeasure2
             // 
-            this.comboBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Location = new System.Drawing.Point(257, 56);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(232, 26);
-            this.comboBox32.TabIndex = 72;
+            this.udiMeasure2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udiMeasure2.FormattingEnabled = true;
+            this.udiMeasure2.Location = new System.Drawing.Point(257, 56);
+            this.udiMeasure2.Name = "udiMeasure2";
+            this.udiMeasure2.Size = new System.Drawing.Size(232, 26);
+            this.udiMeasure2.TabIndex = 72;
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.comboBox27);
+            this.groupBox11.Controls.Add(this.bwsMeasure3);
             this.groupBox11.Controls.Add(this.label52);
-            this.groupBox11.Controls.Add(this.comboBox28);
-            this.groupBox11.Controls.Add(this.comboBox29);
+            this.groupBox11.Controls.Add(this.bwsMeasure1);
+            this.groupBox11.Controls.Add(this.bwsMeasure2);
             this.groupBox11.Location = new System.Drawing.Point(20, 894);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(747, 113);
             this.groupBox11.TabIndex = 74;
             this.groupBox11.TabStop = false;
             // 
-            // comboBox27
+            // bwsMeasure3
             // 
-            this.comboBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(495, 56);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(232, 26);
-            this.comboBox27.TabIndex = 73;
+            this.bwsMeasure3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bwsMeasure3.FormattingEnabled = true;
+            this.bwsMeasure3.Location = new System.Drawing.Point(495, 56);
+            this.bwsMeasure3.Name = "bwsMeasure3";
+            this.bwsMeasure3.Size = new System.Drawing.Size(232, 26);
+            this.bwsMeasure3.TabIndex = 73;
             // 
             // label52
             // 
@@ -2632,44 +2632,44 @@
             this.label52.TabIndex = 45;
             this.label52.Text = "Barcode White Space Measurements:";
             // 
-            // comboBox28
+            // bwsMeasure1
             // 
-            this.comboBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(19, 56);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(232, 26);
-            this.comboBox28.TabIndex = 71;
+            this.bwsMeasure1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bwsMeasure1.FormattingEnabled = true;
+            this.bwsMeasure1.Location = new System.Drawing.Point(19, 56);
+            this.bwsMeasure1.Name = "bwsMeasure1";
+            this.bwsMeasure1.Size = new System.Drawing.Size(232, 26);
+            this.bwsMeasure1.TabIndex = 71;
             // 
-            // comboBox29
+            // bwsMeasure2
             // 
-            this.comboBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(257, 56);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(232, 26);
-            this.comboBox29.TabIndex = 72;
+            this.bwsMeasure2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bwsMeasure2.FormattingEnabled = true;
+            this.bwsMeasure2.Location = new System.Drawing.Point(257, 56);
+            this.bwsMeasure2.Name = "bwsMeasure2";
+            this.bwsMeasure2.Size = new System.Drawing.Size(232, 26);
+            this.bwsMeasure2.TabIndex = 72;
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.comboBox37);
+            this.groupBox12.Controls.Add(this.barMeasure3);
             this.groupBox12.Controls.Add(this.label53);
-            this.groupBox12.Controls.Add(this.comboBox38);
-            this.groupBox12.Controls.Add(this.comboBox39);
+            this.groupBox12.Controls.Add(this.barMeasure1);
+            this.groupBox12.Controls.Add(this.barMeasure2);
             this.groupBox12.Location = new System.Drawing.Point(21, 763);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(747, 113);
             this.groupBox12.TabIndex = 72;
             this.groupBox12.TabStop = false;
             // 
-            // comboBox37
+            // barMeasure3
             // 
-            this.comboBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Location = new System.Drawing.Point(495, 56);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(232, 26);
-            this.comboBox37.TabIndex = 73;
+            this.barMeasure3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barMeasure3.FormattingEnabled = true;
+            this.barMeasure3.Location = new System.Drawing.Point(495, 56);
+            this.barMeasure3.Name = "barMeasure3";
+            this.barMeasure3.Size = new System.Drawing.Size(232, 26);
+            this.barMeasure3.TabIndex = 73;
             // 
             // label53
             // 
@@ -2681,33 +2681,33 @@
             this.label53.TabIndex = 45;
             this.label53.Text = "Barcode Measurements:";
             // 
-            // comboBox38
+            // barMeasure1
             // 
-            this.comboBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Location = new System.Drawing.Point(19, 56);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(232, 26);
-            this.comboBox38.TabIndex = 71;
+            this.barMeasure1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barMeasure1.FormattingEnabled = true;
+            this.barMeasure1.Location = new System.Drawing.Point(19, 56);
+            this.barMeasure1.Name = "barMeasure1";
+            this.barMeasure1.Size = new System.Drawing.Size(232, 26);
+            this.barMeasure1.TabIndex = 71;
             // 
-            // comboBox39
+            // barMeasure2
             // 
-            this.comboBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.Location = new System.Drawing.Point(256, 56);
-            this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(232, 26);
-            this.comboBox39.TabIndex = 72;
+            this.barMeasure2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barMeasure2.FormattingEnabled = true;
+            this.barMeasure2.Location = new System.Drawing.Point(256, 56);
+            this.barMeasure2.Name = "barMeasure2";
+            this.barMeasure2.Size = new System.Drawing.Size(232, 26);
+            this.barMeasure2.TabIndex = 72;
             // 
-            // dateTimePicker2
+            // collectSalDatePicker
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(360, 509);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(408, 24);
-            this.dateTimePicker2.TabIndex = 70;
+            this.collectSalDatePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.collectSalDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.collectSalDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.collectSalDatePicker.Location = new System.Drawing.Point(360, 509);
+            this.collectSalDatePicker.Name = "collectSalDatePicker";
+            this.collectSalDatePicker.Size = new System.Drawing.Size(408, 24);
+            this.collectSalDatePicker.TabIndex = 70;
             // 
             // label54
             // 
@@ -2719,14 +2719,14 @@
             this.label54.TabIndex = 69;
             this.label54.Text = "Human Readable Barcode:";
             // 
-            // comboBox40
+            // hrbCombo
             // 
-            this.comboBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.Location = new System.Drawing.Point(360, 548);
-            this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(408, 26);
-            this.comboBox40.TabIndex = 68;
+            this.hrbCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hrbCombo.FormattingEnabled = true;
+            this.hrbCombo.Location = new System.Drawing.Point(360, 548);
+            this.hrbCombo.Name = "hrbCombo";
+            this.hrbCombo.Size = new System.Drawing.Size(408, 26);
+            this.hrbCombo.TabIndex = 68;
             // 
             // label55
             // 
@@ -2738,14 +2738,14 @@
             this.label55.TabIndex = 67;
             this.label55.Text = "\"Collect Saliva By\" Date:";
             // 
-            // comboBox41
+            // lotNumCombo
             // 
-            this.comboBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.Location = new System.Drawing.Point(360, 461);
-            this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(408, 26);
-            this.comboBox41.TabIndex = 65;
+            this.lotNumCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lotNumCombo.FormattingEnabled = true;
+            this.lotNumCombo.Location = new System.Drawing.Point(360, 461);
+            this.lotNumCombo.Name = "lotNumCombo";
+            this.lotNumCombo.Size = new System.Drawing.Size(408, 26);
+            this.lotNumCombo.TabIndex = 65;
             // 
             // label56
             // 
@@ -2767,14 +2767,14 @@
             this.label57.TabIndex = 64;
             this.label57.Text = "Fill-to Line Lower:";
             // 
-            // comboBox42
+            // fillToLowerCombo
             // 
-            this.comboBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.Location = new System.Drawing.Point(360, 420);
-            this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(408, 26);
-            this.comboBox42.TabIndex = 63;
+            this.fillToLowerCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fillToLowerCombo.FormattingEnabled = true;
+            this.fillToLowerCombo.Location = new System.Drawing.Point(360, 420);
+            this.fillToLowerCombo.Name = "fillToLowerCombo";
+            this.fillToLowerCombo.Size = new System.Drawing.Size(408, 26);
+            this.fillToLowerCombo.TabIndex = 63;
             // 
             // label58
             // 
@@ -2786,14 +2786,14 @@
             this.label58.TabIndex = 62;
             this.label58.Text = "Label Identification Number:";
             // 
-            // comboBox43
+            // labelIDCombo
             // 
-            this.comboBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.Location = new System.Drawing.Point(360, 376);
-            this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(408, 26);
-            this.comboBox43.TabIndex = 61;
+            this.labelIDCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDCombo.FormattingEnabled = true;
+            this.labelIDCombo.Location = new System.Drawing.Point(360, 376);
+            this.labelIDCombo.Name = "labelIDCombo";
+            this.labelIDCombo.Size = new System.Drawing.Size(408, 26);
+            this.labelIDCombo.TabIndex = 61;
             // 
             // label59
             // 
@@ -2805,32 +2805,32 @@
             this.label59.TabIndex = 60;
             this.label59.Text = "UDI Human Readable GTIN:";
             // 
-            // comboBox44
+            // gtinCombo
             // 
-            this.comboBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.Location = new System.Drawing.Point(360, 334);
-            this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(408, 26);
-            this.comboBox44.TabIndex = 59;
+            this.gtinCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtinCombo.FormattingEnabled = true;
+            this.gtinCombo.Location = new System.Drawing.Point(360, 334);
+            this.gtinCombo.Name = "gtinCombo";
+            this.gtinCombo.Size = new System.Drawing.Size(408, 26);
+            this.gtinCombo.TabIndex = 59;
             // 
-            // comboBox45
+            // udiVerCombo
             // 
-            this.comboBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.Location = new System.Drawing.Point(360, 293);
-            this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(408, 26);
-            this.comboBox45.TabIndex = 58;
+            this.udiVerCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udiVerCombo.FormattingEnabled = true;
+            this.udiVerCombo.Location = new System.Drawing.Point(360, 293);
+            this.udiVerCombo.Name = "udiVerCombo";
+            this.udiVerCombo.Size = new System.Drawing.Size(408, 26);
+            this.udiVerCombo.TabIndex = 58;
             // 
-            // comboBox46
+            // udiReqCombo
             // 
-            this.comboBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox46.FormattingEnabled = true;
-            this.comboBox46.Location = new System.Drawing.Point(360, 251);
-            this.comboBox46.Name = "comboBox46";
-            this.comboBox46.Size = new System.Drawing.Size(408, 26);
-            this.comboBox46.TabIndex = 57;
+            this.udiReqCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udiReqCombo.FormattingEnabled = true;
+            this.udiReqCombo.Location = new System.Drawing.Point(360, 251);
+            this.udiReqCombo.Name = "udiReqCombo";
+            this.udiReqCombo.Size = new System.Drawing.Size(408, 26);
+            this.udiReqCombo.TabIndex = 57;
             // 
             // label60
             // 
@@ -2842,14 +2842,14 @@
             this.label60.TabIndex = 56;
             this.label60.Text = "Fill-to Line Upper:";
             // 
-            // comboBox47
+            // fillToUpperCombo
             // 
-            this.comboBox47.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox47.FormattingEnabled = true;
-            this.comboBox47.Location = new System.Drawing.Point(360, 209);
-            this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(408, 26);
-            this.comboBox47.TabIndex = 55;
+            this.fillToUpperCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fillToUpperCombo.FormattingEnabled = true;
+            this.fillToUpperCombo.Location = new System.Drawing.Point(360, 209);
+            this.fillToUpperCombo.Name = "fillToUpperCombo";
+            this.fillToUpperCombo.Size = new System.Drawing.Size(408, 26);
+            this.fillToUpperCombo.TabIndex = 55;
             // 
             // label71
             // 
@@ -2861,41 +2861,41 @@
             this.label71.TabIndex = 54;
             this.label71.Text = "Fill-to Line Text:";
             // 
-            // comboBox48
+            // fillToTextCombo
             // 
-            this.comboBox48.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox48.FormattingEnabled = true;
-            this.comboBox48.Location = new System.Drawing.Point(360, 168);
-            this.comboBox48.Name = "comboBox48";
-            this.comboBox48.Size = new System.Drawing.Size(408, 26);
-            this.comboBox48.TabIndex = 53;
+            this.fillToTextCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fillToTextCombo.FormattingEnabled = true;
+            this.fillToTextCombo.Location = new System.Drawing.Point(360, 168);
+            this.fillToTextCombo.Name = "fillToTextCombo";
+            this.fillToTextCombo.Size = new System.Drawing.Size(408, 26);
+            this.fillToTextCombo.TabIndex = 53;
             // 
-            // comboBox49
+            // manuIDCombo
             // 
-            this.comboBox49.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox49.FormattingEnabled = true;
-            this.comboBox49.Location = new System.Drawing.Point(360, 126);
-            this.comboBox49.Name = "comboBox49";
-            this.comboBox49.Size = new System.Drawing.Size(408, 26);
-            this.comboBox49.TabIndex = 52;
+            this.manuIDCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manuIDCombo.FormattingEnabled = true;
+            this.manuIDCombo.Location = new System.Drawing.Point(360, 126);
+            this.manuIDCombo.Name = "manuIDCombo";
+            this.manuIDCombo.Size = new System.Drawing.Size(408, 26);
+            this.manuIDCombo.TabIndex = 52;
             // 
-            // comboBox50
+            // barcodeIDCombo
             // 
-            this.comboBox50.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox50.FormattingEnabled = true;
-            this.comboBox50.Location = new System.Drawing.Point(360, 85);
-            this.comboBox50.Name = "comboBox50";
-            this.comboBox50.Size = new System.Drawing.Size(408, 26);
-            this.comboBox50.TabIndex = 51;
+            this.barcodeIDCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barcodeIDCombo.FormattingEnabled = true;
+            this.barcodeIDCombo.Location = new System.Drawing.Point(360, 85);
+            this.barcodeIDCombo.Name = "barcodeIDCombo";
+            this.barcodeIDCombo.Size = new System.Drawing.Size(408, 26);
+            this.barcodeIDCombo.TabIndex = 51;
             // 
-            // comboBox51
+            // phvCombo
             // 
-            this.comboBox51.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox51.FormattingEnabled = true;
-            this.comboBox51.Location = new System.Drawing.Point(360, 44);
-            this.comboBox51.Name = "comboBox51";
-            this.comboBox51.Size = new System.Drawing.Size(408, 26);
-            this.comboBox51.TabIndex = 43;
+            this.phvCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phvCombo.FormattingEnabled = true;
+            this.phvCombo.Location = new System.Drawing.Point(360, 44);
+            this.phvCombo.Name = "phvCombo";
+            this.phvCombo.Size = new System.Drawing.Size(408, 26);
+            this.phvCombo.TabIndex = 43;
             // 
             // label72
             // 
@@ -2903,9 +2903,9 @@
             this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label72.Location = new System.Drawing.Point(15, 47);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(302, 18);
+            this.label72.Size = new System.Drawing.Size(263, 18);
             this.label72.TabIndex = 43;
-            this.label72.Text = "Print-head Verification Label Label L024223A:";
+            this.label72.Text = "Print-head Verification Label L024223A:";
             this.label72.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label73
@@ -2970,9 +2970,9 @@
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.comboBox52);
-            this.groupBox13.Controls.Add(this.comboBox53);
-            this.groupBox13.Controls.Add(this.comboBox54);
+            this.groupBox13.Controls.Add(this.stabSolCombo);
+            this.groupBox13.Controls.Add(this.tubeDecodeCombo);
+            this.groupBox13.Controls.Add(this.tubeSymCombo);
             this.groupBox13.Controls.Add(this.groupBox14);
             this.groupBox13.Controls.Add(this.label84);
             this.groupBox13.Controls.Add(this.label85);
@@ -2983,32 +2983,32 @@
             this.groupBox13.TabIndex = 20;
             this.groupBox13.TabStop = false;
             // 
-            // comboBox52
+            // stabSolCombo
             // 
-            this.comboBox52.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox52.FormattingEnabled = true;
-            this.comboBox52.Location = new System.Drawing.Point(201, 93);
-            this.comboBox52.Name = "comboBox52";
-            this.comboBox52.Size = new System.Drawing.Size(171, 26);
-            this.comboBox52.TabIndex = 43;
+            this.stabSolCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stabSolCombo.FormattingEnabled = true;
+            this.stabSolCombo.Location = new System.Drawing.Point(201, 93);
+            this.stabSolCombo.Name = "stabSolCombo";
+            this.stabSolCombo.Size = new System.Drawing.Size(171, 26);
+            this.stabSolCombo.TabIndex = 43;
             // 
-            // comboBox53
+            // tubeDecodeCombo
             // 
-            this.comboBox53.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox53.FormattingEnabled = true;
-            this.comboBox53.Location = new System.Drawing.Point(201, 57);
-            this.comboBox53.Name = "comboBox53";
-            this.comboBox53.Size = new System.Drawing.Size(171, 26);
-            this.comboBox53.TabIndex = 42;
+            this.tubeDecodeCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeDecodeCombo.FormattingEnabled = true;
+            this.tubeDecodeCombo.Location = new System.Drawing.Point(201, 57);
+            this.tubeDecodeCombo.Name = "tubeDecodeCombo";
+            this.tubeDecodeCombo.Size = new System.Drawing.Size(171, 26);
+            this.tubeDecodeCombo.TabIndex = 42;
             // 
-            // comboBox54
+            // tubeSymCombo
             // 
-            this.comboBox54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox54.FormattingEnabled = true;
-            this.comboBox54.Location = new System.Drawing.Point(201, 23);
-            this.comboBox54.Name = "comboBox54";
-            this.comboBox54.Size = new System.Drawing.Size(171, 26);
-            this.comboBox54.TabIndex = 41;
+            this.tubeSymCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeSymCombo.FormattingEnabled = true;
+            this.tubeSymCombo.Location = new System.Drawing.Point(201, 23);
+            this.tubeSymCombo.Name = "tubeSymCombo";
+            this.tubeSymCombo.Size = new System.Drawing.Size(171, 26);
+            this.tubeSymCombo.TabIndex = 41;
             // 
             // groupBox14
             // 
@@ -3129,14 +3129,14 @@
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.comboBox55);
-            this.groupBox15.Controls.Add(this.comboBox56);
-            this.groupBox15.Controls.Add(this.comboBox57);
-            this.groupBox15.Controls.Add(this.comboBox58);
-            this.groupBox15.Controls.Add(this.comboBox59);
-            this.groupBox15.Controls.Add(this.comboBox60);
-            this.groupBox15.Controls.Add(this.comboBox61);
-            this.groupBox15.Controls.Add(this.comboBox62);
+            this.groupBox15.Controls.Add(this.fillToCombo);
+            this.groupBox15.Controls.Add(this.airPressureCombo);
+            this.groupBox15.Controls.Add(this.sealingDwellCombo);
+            this.groupBox15.Controls.Add(this.sealingTempCombo);
+            this.groupBox15.Controls.Add(this.orageneCombo);
+            this.groupBox15.Controls.Add(this.hibarPumpCombo);
+            this.groupBox15.Controls.Add(this.barcodeScanCombo);
+            this.groupBox15.Controls.Add(this.modelSelectCombo);
             this.groupBox15.Controls.Add(this.label87);
             this.groupBox15.Controls.Add(this.label88);
             this.groupBox15.Controls.Add(this.label89);
@@ -3151,77 +3151,77 @@
             this.groupBox15.TabIndex = 19;
             this.groupBox15.TabStop = false;
             // 
-            // comboBox55
+            // fillToCombo
             // 
-            this.comboBox55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox55.FormattingEnabled = true;
-            this.comboBox55.Location = new System.Drawing.Point(196, 258);
-            this.comboBox55.Name = "comboBox55";
-            this.comboBox55.Size = new System.Drawing.Size(171, 26);
-            this.comboBox55.TabIndex = 42;
+            this.fillToCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fillToCombo.FormattingEnabled = true;
+            this.fillToCombo.Location = new System.Drawing.Point(196, 258);
+            this.fillToCombo.Name = "fillToCombo";
+            this.fillToCombo.Size = new System.Drawing.Size(171, 26);
+            this.fillToCombo.TabIndex = 42;
             // 
-            // comboBox56
+            // airPressureCombo
             // 
-            this.comboBox56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox56.FormattingEnabled = true;
-            this.comboBox56.Location = new System.Drawing.Point(196, 223);
-            this.comboBox56.Name = "comboBox56";
-            this.comboBox56.Size = new System.Drawing.Size(171, 26);
-            this.comboBox56.TabIndex = 41;
+            this.airPressureCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.airPressureCombo.FormattingEnabled = true;
+            this.airPressureCombo.Location = new System.Drawing.Point(196, 223);
+            this.airPressureCombo.Name = "airPressureCombo";
+            this.airPressureCombo.Size = new System.Drawing.Size(171, 26);
+            this.airPressureCombo.TabIndex = 41;
             // 
-            // comboBox57
+            // sealingDwellCombo
             // 
-            this.comboBox57.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox57.FormattingEnabled = true;
-            this.comboBox57.Location = new System.Drawing.Point(196, 191);
-            this.comboBox57.Name = "comboBox57";
-            this.comboBox57.Size = new System.Drawing.Size(171, 26);
-            this.comboBox57.TabIndex = 40;
+            this.sealingDwellCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sealingDwellCombo.FormattingEnabled = true;
+            this.sealingDwellCombo.Location = new System.Drawing.Point(196, 191);
+            this.sealingDwellCombo.Name = "sealingDwellCombo";
+            this.sealingDwellCombo.Size = new System.Drawing.Size(171, 26);
+            this.sealingDwellCombo.TabIndex = 40;
             // 
-            // comboBox58
+            // sealingTempCombo
             // 
-            this.comboBox58.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox58.FormattingEnabled = true;
-            this.comboBox58.Location = new System.Drawing.Point(196, 159);
-            this.comboBox58.Name = "comboBox58";
-            this.comboBox58.Size = new System.Drawing.Size(171, 26);
-            this.comboBox58.TabIndex = 39;
+            this.sealingTempCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sealingTempCombo.FormattingEnabled = true;
+            this.sealingTempCombo.Location = new System.Drawing.Point(196, 159);
+            this.sealingTempCombo.Name = "sealingTempCombo";
+            this.sealingTempCombo.Size = new System.Drawing.Size(171, 26);
+            this.sealingTempCombo.TabIndex = 39;
             // 
-            // comboBox59
+            // orageneCombo
             // 
-            this.comboBox59.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox59.FormattingEnabled = true;
-            this.comboBox59.Location = new System.Drawing.Point(196, 125);
-            this.comboBox59.Name = "comboBox59";
-            this.comboBox59.Size = new System.Drawing.Size(171, 26);
-            this.comboBox59.TabIndex = 38;
+            this.orageneCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orageneCombo.FormattingEnabled = true;
+            this.orageneCombo.Location = new System.Drawing.Point(196, 125);
+            this.orageneCombo.Name = "orageneCombo";
+            this.orageneCombo.Size = new System.Drawing.Size(171, 26);
+            this.orageneCombo.TabIndex = 38;
             // 
-            // comboBox60
+            // hibarPumpCombo
             // 
-            this.comboBox60.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox60.FormattingEnabled = true;
-            this.comboBox60.Location = new System.Drawing.Point(196, 90);
-            this.comboBox60.Name = "comboBox60";
-            this.comboBox60.Size = new System.Drawing.Size(171, 26);
-            this.comboBox60.TabIndex = 37;
+            this.hibarPumpCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hibarPumpCombo.FormattingEnabled = true;
+            this.hibarPumpCombo.Location = new System.Drawing.Point(196, 90);
+            this.hibarPumpCombo.Name = "hibarPumpCombo";
+            this.hibarPumpCombo.Size = new System.Drawing.Size(171, 26);
+            this.hibarPumpCombo.TabIndex = 37;
             // 
-            // comboBox61
+            // barcodeScanCombo
             // 
-            this.comboBox61.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox61.FormattingEnabled = true;
-            this.comboBox61.Location = new System.Drawing.Point(196, 57);
-            this.comboBox61.Name = "comboBox61";
-            this.comboBox61.Size = new System.Drawing.Size(171, 26);
-            this.comboBox61.TabIndex = 36;
+            this.barcodeScanCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barcodeScanCombo.FormattingEnabled = true;
+            this.barcodeScanCombo.Location = new System.Drawing.Point(196, 57);
+            this.barcodeScanCombo.Name = "barcodeScanCombo";
+            this.barcodeScanCombo.Size = new System.Drawing.Size(171, 26);
+            this.barcodeScanCombo.TabIndex = 36;
             // 
-            // comboBox62
+            // modelSelectCombo
             // 
-            this.comboBox62.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox62.FormattingEnabled = true;
-            this.comboBox62.Location = new System.Drawing.Point(196, 23);
-            this.comboBox62.Name = "comboBox62";
-            this.comboBox62.Size = new System.Drawing.Size(171, 26);
-            this.comboBox62.TabIndex = 35;
+            this.modelSelectCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modelSelectCombo.FormattingEnabled = true;
+            this.modelSelectCombo.Location = new System.Drawing.Point(196, 23);
+            this.modelSelectCombo.Name = "modelSelectCombo";
+            this.modelSelectCombo.Size = new System.Drawing.Size(171, 26);
+            this.modelSelectCombo.TabIndex = 35;
             // 
             // label87
             // 
@@ -3430,11 +3430,11 @@
             this.groupBox19.Controls.Add(this.label127);
             this.groupBox19.Controls.Add(this.label129);
             this.groupBox19.Controls.Add(this.label128);
-            this.groupBox19.Controls.Add(this.comboBox15);
-            this.groupBox19.Controls.Add(this.comboBox14);
-            this.groupBox19.Controls.Add(this.comboBox11);
-            this.groupBox19.Controls.Add(this.comboBox13);
-            this.groupBox19.Controls.Add(this.comboBox12);
+            this.groupBox19.Controls.Add(this.tubeInspec1);
+            this.groupBox19.Controls.Add(this.tubeInspec2);
+            this.groupBox19.Controls.Add(this.tubeInspec5);
+            this.groupBox19.Controls.Add(this.tubeInspec3);
+            this.groupBox19.Controls.Add(this.tubeInspec4);
             this.groupBox19.Location = new System.Drawing.Point(13, 943);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Size = new System.Drawing.Size(812, 272);
@@ -3513,50 +3513,50 @@
             this.label128.TabIndex = 93;
             this.label128.Text = "5.";
             // 
-            // comboBox15
+            // tubeInspec1
             // 
-            this.comboBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(54, 88);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(737, 26);
-            this.comboBox15.TabIndex = 87;
+            this.tubeInspec1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeInspec1.FormattingEnabled = true;
+            this.tubeInspec1.Location = new System.Drawing.Point(54, 88);
+            this.tubeInspec1.Name = "tubeInspec1";
+            this.tubeInspec1.Size = new System.Drawing.Size(737, 26);
+            this.tubeInspec1.TabIndex = 87;
             // 
-            // comboBox14
+            // tubeInspec2
             // 
-            this.comboBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(54, 122);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(737, 26);
-            this.comboBox14.TabIndex = 88;
+            this.tubeInspec2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeInspec2.FormattingEnabled = true;
+            this.tubeInspec2.Location = new System.Drawing.Point(54, 122);
+            this.tubeInspec2.Name = "tubeInspec2";
+            this.tubeInspec2.Size = new System.Drawing.Size(737, 26);
+            this.tubeInspec2.TabIndex = 88;
             // 
-            // comboBox11
+            // tubeInspec5
             // 
-            this.comboBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(54, 224);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(737, 26);
-            this.comboBox11.TabIndex = 91;
+            this.tubeInspec5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeInspec5.FormattingEnabled = true;
+            this.tubeInspec5.Location = new System.Drawing.Point(54, 224);
+            this.tubeInspec5.Name = "tubeInspec5";
+            this.tubeInspec5.Size = new System.Drawing.Size(737, 26);
+            this.tubeInspec5.TabIndex = 91;
             // 
-            // comboBox13
+            // tubeInspec3
             // 
-            this.comboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(54, 155);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(737, 26);
-            this.comboBox13.TabIndex = 89;
+            this.tubeInspec3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeInspec3.FormattingEnabled = true;
+            this.tubeInspec3.Location = new System.Drawing.Point(54, 155);
+            this.tubeInspec3.Name = "tubeInspec3";
+            this.tubeInspec3.Size = new System.Drawing.Size(737, 26);
+            this.tubeInspec3.TabIndex = 89;
             // 
-            // comboBox12
+            // tubeInspec4
             // 
-            this.comboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(54, 190);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(737, 26);
-            this.comboBox12.TabIndex = 90;
+            this.tubeInspec4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeInspec4.FormattingEnabled = true;
+            this.tubeInspec4.Location = new System.Drawing.Point(54, 190);
+            this.tubeInspec4.Name = "tubeInspec4";
+            this.tubeInspec4.Size = new System.Drawing.Size(737, 26);
+            this.tubeInspec4.TabIndex = 90;
             // 
             // label96
             // 
@@ -3599,31 +3599,31 @@
             this.groupBox25.Controls.Add(this.label99);
             this.groupBox25.Controls.Add(this.label98);
             this.groupBox25.Controls.Add(this.label97);
-            this.groupBox25.Controls.Add(this.comboBox9);
-            this.groupBox25.Controls.Add(this.comboBox10);
-            this.groupBox25.Controls.Add(this.comboBox6);
-            this.groupBox25.Controls.Add(this.comboBox2);
-            this.groupBox25.Controls.Add(this.comboBox7);
-            this.groupBox25.Controls.Add(this.comboBox3);
-            this.groupBox25.Controls.Add(this.comboBox4);
-            this.groupBox25.Controls.Add(this.comboBox8);
-            this.groupBox25.Controls.Add(this.comboBox5);
-            this.groupBox25.Controls.Add(this.comboBox63);
-            this.groupBox25.Controls.Add(this.comboBox64);
-            this.groupBox25.Controls.Add(this.comboBox65);
-            this.groupBox25.Controls.Add(this.comboBox66);
-            this.groupBox25.Controls.Add(this.comboBox67);
-            this.groupBox25.Controls.Add(this.comboBox68);
-            this.groupBox25.Controls.Add(this.comboBox77);
-            this.groupBox25.Controls.Add(this.comboBox78);
-            this.groupBox25.Controls.Add(this.comboBox69);
-            this.groupBox25.Controls.Add(this.comboBox70);
-            this.groupBox25.Controls.Add(this.comboBox71);
-            this.groupBox25.Controls.Add(this.comboBox72);
-            this.groupBox25.Controls.Add(this.comboBox73);
-            this.groupBox25.Controls.Add(this.comboBox74);
-            this.groupBox25.Controls.Add(this.comboBox75);
-            this.groupBox25.Controls.Add(this.comboBox76);
+            this.groupBox25.Controls.Add(this.visInspecCombo25);
+            this.groupBox25.Controls.Add(this.visInspecCombo24);
+            this.groupBox25.Controls.Add(this.visInspecCombo23);
+            this.groupBox25.Controls.Add(this.visInspecCombo20);
+            this.groupBox25.Controls.Add(this.visInspecCombo22);
+            this.groupBox25.Controls.Add(this.visInspecCombo19);
+            this.groupBox25.Controls.Add(this.visInspecCombo18);
+            this.groupBox25.Controls.Add(this.visInspecCombo21);
+            this.groupBox25.Controls.Add(this.visInspecCombo17);
+            this.groupBox25.Controls.Add(this.visInspecCombo16);
+            this.groupBox25.Controls.Add(this.visInspecCombo15);
+            this.groupBox25.Controls.Add(this.visInspecCombo14);
+            this.groupBox25.Controls.Add(this.visInspecCombo13);
+            this.groupBox25.Controls.Add(this.visInspecCombo12);
+            this.groupBox25.Controls.Add(this.visInspecCombo11);
+            this.groupBox25.Controls.Add(this.visInspecCombo10);
+            this.groupBox25.Controls.Add(this.visInspecCombo9);
+            this.groupBox25.Controls.Add(this.visInspecCombo8);
+            this.groupBox25.Controls.Add(this.visInspecCombo7);
+            this.groupBox25.Controls.Add(this.visInspecCombo6);
+            this.groupBox25.Controls.Add(this.visInspecCombo5);
+            this.groupBox25.Controls.Add(this.visInspecCombo4);
+            this.groupBox25.Controls.Add(this.visInspecCombo3);
+            this.groupBox25.Controls.Add(this.visInspecCombo2);
+            this.groupBox25.Controls.Add(this.visInspecCombo1);
             this.groupBox25.Location = new System.Drawing.Point(13, 3);
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.Size = new System.Drawing.Size(812, 934);
@@ -3902,230 +3902,230 @@
             this.label97.TabIndex = 60;
             this.label97.Text = "1.";
             // 
-            // comboBox9
+            // visInspecCombo25
             // 
-            this.comboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(54, 887);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(737, 26);
-            this.comboBox9.TabIndex = 59;
+            this.visInspecCombo25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo25.FormattingEnabled = true;
+            this.visInspecCombo25.Location = new System.Drawing.Point(54, 887);
+            this.visInspecCombo25.Name = "visInspecCombo25";
+            this.visInspecCombo25.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo25.TabIndex = 59;
             // 
-            // comboBox10
+            // visInspecCombo24
             // 
-            this.comboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(54, 852);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(737, 26);
-            this.comboBox10.TabIndex = 58;
+            this.visInspecCombo24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo24.FormattingEnabled = true;
+            this.visInspecCombo24.Location = new System.Drawing.Point(54, 852);
+            this.visInspecCombo24.Name = "visInspecCombo24";
+            this.visInspecCombo24.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo24.TabIndex = 58;
             // 
-            // comboBox6
+            // visInspecCombo23
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(54, 819);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(737, 26);
-            this.comboBox6.TabIndex = 57;
+            this.visInspecCombo23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo23.FormattingEnabled = true;
+            this.visInspecCombo23.Location = new System.Drawing.Point(54, 819);
+            this.visInspecCombo23.Name = "visInspecCombo23";
+            this.visInspecCombo23.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo23.TabIndex = 57;
             // 
-            // comboBox2
+            // visInspecCombo20
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(54, 720);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(737, 26);
-            this.comboBox2.TabIndex = 54;
+            this.visInspecCombo20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo20.FormattingEnabled = true;
+            this.visInspecCombo20.Location = new System.Drawing.Point(54, 720);
+            this.visInspecCombo20.Name = "visInspecCombo20";
+            this.visInspecCombo20.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo20.TabIndex = 54;
             // 
-            // comboBox7
+            // visInspecCombo22
             // 
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(54, 784);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(737, 26);
-            this.comboBox7.TabIndex = 56;
+            this.visInspecCombo22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo22.FormattingEnabled = true;
+            this.visInspecCombo22.Location = new System.Drawing.Point(54, 784);
+            this.visInspecCombo22.Name = "visInspecCombo22";
+            this.visInspecCombo22.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo22.TabIndex = 56;
             // 
-            // comboBox3
+            // visInspecCombo19
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(54, 685);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(737, 26);
-            this.comboBox3.TabIndex = 53;
+            this.visInspecCombo19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo19.FormattingEnabled = true;
+            this.visInspecCombo19.Location = new System.Drawing.Point(54, 685);
+            this.visInspecCombo19.Name = "visInspecCombo19";
+            this.visInspecCombo19.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo19.TabIndex = 53;
             // 
-            // comboBox4
+            // visInspecCombo18
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(54, 653);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(737, 26);
-            this.comboBox4.TabIndex = 52;
+            this.visInspecCombo18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo18.FormattingEnabled = true;
+            this.visInspecCombo18.Location = new System.Drawing.Point(54, 653);
+            this.visInspecCombo18.Name = "visInspecCombo18";
+            this.visInspecCombo18.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo18.TabIndex = 52;
             // 
-            // comboBox8
+            // visInspecCombo21
             // 
-            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(54, 752);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(737, 26);
-            this.comboBox8.TabIndex = 55;
+            this.visInspecCombo21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo21.FormattingEnabled = true;
+            this.visInspecCombo21.Location = new System.Drawing.Point(54, 752);
+            this.visInspecCombo21.Name = "visInspecCombo21";
+            this.visInspecCombo21.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo21.TabIndex = 55;
             // 
-            // comboBox5
+            // visInspecCombo17
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(54, 621);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(737, 26);
-            this.comboBox5.TabIndex = 51;
+            this.visInspecCombo17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo17.FormattingEnabled = true;
+            this.visInspecCombo17.Location = new System.Drawing.Point(54, 621);
+            this.visInspecCombo17.Name = "visInspecCombo17";
+            this.visInspecCombo17.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo17.TabIndex = 51;
             // 
-            // comboBox63
+            // visInspecCombo16
             // 
-            this.comboBox63.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox63.FormattingEnabled = true;
-            this.comboBox63.Location = new System.Drawing.Point(54, 586);
-            this.comboBox63.Name = "comboBox63";
-            this.comboBox63.Size = new System.Drawing.Size(737, 26);
-            this.comboBox63.TabIndex = 50;
+            this.visInspecCombo16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo16.FormattingEnabled = true;
+            this.visInspecCombo16.Location = new System.Drawing.Point(54, 586);
+            this.visInspecCombo16.Name = "visInspecCombo16";
+            this.visInspecCombo16.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo16.TabIndex = 50;
             // 
-            // comboBox64
+            // visInspecCombo15
             // 
-            this.comboBox64.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox64.FormattingEnabled = true;
-            this.comboBox64.Location = new System.Drawing.Point(54, 551);
-            this.comboBox64.Name = "comboBox64";
-            this.comboBox64.Size = new System.Drawing.Size(737, 26);
-            this.comboBox64.TabIndex = 49;
+            this.visInspecCombo15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo15.FormattingEnabled = true;
+            this.visInspecCombo15.Location = new System.Drawing.Point(54, 551);
+            this.visInspecCombo15.Name = "visInspecCombo15";
+            this.visInspecCombo15.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo15.TabIndex = 49;
             // 
-            // comboBox65
+            // visInspecCombo14
             // 
-            this.comboBox65.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox65.FormattingEnabled = true;
-            this.comboBox65.Location = new System.Drawing.Point(54, 519);
-            this.comboBox65.Name = "comboBox65";
-            this.comboBox65.Size = new System.Drawing.Size(737, 26);
-            this.comboBox65.TabIndex = 48;
+            this.visInspecCombo14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo14.FormattingEnabled = true;
+            this.visInspecCombo14.Location = new System.Drawing.Point(54, 519);
+            this.visInspecCombo14.Name = "visInspecCombo14";
+            this.visInspecCombo14.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo14.TabIndex = 48;
             // 
-            // comboBox66
+            // visInspecCombo13
             // 
-            this.comboBox66.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox66.FormattingEnabled = true;
-            this.comboBox66.Location = new System.Drawing.Point(54, 487);
-            this.comboBox66.Name = "comboBox66";
-            this.comboBox66.Size = new System.Drawing.Size(737, 26);
-            this.comboBox66.TabIndex = 47;
+            this.visInspecCombo13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo13.FormattingEnabled = true;
+            this.visInspecCombo13.Location = new System.Drawing.Point(54, 487);
+            this.visInspecCombo13.Name = "visInspecCombo13";
+            this.visInspecCombo13.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo13.TabIndex = 47;
             // 
-            // comboBox67
+            // visInspecCombo12
             // 
-            this.comboBox67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox67.FormattingEnabled = true;
-            this.comboBox67.Location = new System.Drawing.Point(54, 453);
-            this.comboBox67.Name = "comboBox67";
-            this.comboBox67.Size = new System.Drawing.Size(737, 26);
-            this.comboBox67.TabIndex = 46;
+            this.visInspecCombo12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo12.FormattingEnabled = true;
+            this.visInspecCombo12.Location = new System.Drawing.Point(54, 453);
+            this.visInspecCombo12.Name = "visInspecCombo12";
+            this.visInspecCombo12.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo12.TabIndex = 46;
             // 
-            // comboBox68
+            // visInspecCombo11
             // 
-            this.comboBox68.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox68.FormattingEnabled = true;
-            this.comboBox68.Location = new System.Drawing.Point(54, 418);
-            this.comboBox68.Name = "comboBox68";
-            this.comboBox68.Size = new System.Drawing.Size(737, 26);
-            this.comboBox68.TabIndex = 45;
+            this.visInspecCombo11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo11.FormattingEnabled = true;
+            this.visInspecCombo11.Location = new System.Drawing.Point(54, 418);
+            this.visInspecCombo11.Name = "visInspecCombo11";
+            this.visInspecCombo11.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo11.TabIndex = 45;
             // 
-            // comboBox77
+            // visInspecCombo10
             // 
-            this.comboBox77.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox77.FormattingEnabled = true;
-            this.comboBox77.Location = new System.Drawing.Point(54, 385);
-            this.comboBox77.Name = "comboBox77";
-            this.comboBox77.Size = new System.Drawing.Size(737, 26);
-            this.comboBox77.TabIndex = 44;
+            this.visInspecCombo10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo10.FormattingEnabled = true;
+            this.visInspecCombo10.Location = new System.Drawing.Point(54, 385);
+            this.visInspecCombo10.Name = "visInspecCombo10";
+            this.visInspecCombo10.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo10.TabIndex = 44;
             // 
-            // comboBox78
+            // visInspecCombo9
             // 
-            this.comboBox78.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox78.FormattingEnabled = true;
-            this.comboBox78.Location = new System.Drawing.Point(54, 351);
-            this.comboBox78.Name = "comboBox78";
-            this.comboBox78.Size = new System.Drawing.Size(737, 26);
-            this.comboBox78.TabIndex = 43;
+            this.visInspecCombo9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo9.FormattingEnabled = true;
+            this.visInspecCombo9.Location = new System.Drawing.Point(54, 351);
+            this.visInspecCombo9.Name = "visInspecCombo9";
+            this.visInspecCombo9.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo9.TabIndex = 43;
             // 
-            // comboBox69
+            // visInspecCombo8
             // 
-            this.comboBox69.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox69.FormattingEnabled = true;
-            this.comboBox69.Location = new System.Drawing.Point(54, 319);
-            this.comboBox69.Name = "comboBox69";
-            this.comboBox69.Size = new System.Drawing.Size(737, 26);
-            this.comboBox69.TabIndex = 42;
+            this.visInspecCombo8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo8.FormattingEnabled = true;
+            this.visInspecCombo8.Location = new System.Drawing.Point(54, 319);
+            this.visInspecCombo8.Name = "visInspecCombo8";
+            this.visInspecCombo8.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo8.TabIndex = 42;
             // 
-            // comboBox70
+            // visInspecCombo7
             // 
-            this.comboBox70.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox70.FormattingEnabled = true;
-            this.comboBox70.Location = new System.Drawing.Point(54, 284);
-            this.comboBox70.Name = "comboBox70";
-            this.comboBox70.Size = new System.Drawing.Size(737, 26);
-            this.comboBox70.TabIndex = 41;
+            this.visInspecCombo7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo7.FormattingEnabled = true;
+            this.visInspecCombo7.Location = new System.Drawing.Point(54, 284);
+            this.visInspecCombo7.Name = "visInspecCombo7";
+            this.visInspecCombo7.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo7.TabIndex = 41;
             // 
-            // comboBox71
+            // visInspecCombo6
             // 
-            this.comboBox71.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox71.FormattingEnabled = true;
-            this.comboBox71.Location = new System.Drawing.Point(54, 252);
-            this.comboBox71.Name = "comboBox71";
-            this.comboBox71.Size = new System.Drawing.Size(737, 26);
-            this.comboBox71.TabIndex = 40;
+            this.visInspecCombo6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo6.FormattingEnabled = true;
+            this.visInspecCombo6.Location = new System.Drawing.Point(54, 252);
+            this.visInspecCombo6.Name = "visInspecCombo6";
+            this.visInspecCombo6.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo6.TabIndex = 40;
             // 
-            // comboBox72
+            // visInspecCombo5
             // 
-            this.comboBox72.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox72.FormattingEnabled = true;
-            this.comboBox72.Location = new System.Drawing.Point(54, 220);
-            this.comboBox72.Name = "comboBox72";
-            this.comboBox72.Size = new System.Drawing.Size(737, 26);
-            this.comboBox72.TabIndex = 39;
+            this.visInspecCombo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo5.FormattingEnabled = true;
+            this.visInspecCombo5.Location = new System.Drawing.Point(54, 220);
+            this.visInspecCombo5.Name = "visInspecCombo5";
+            this.visInspecCombo5.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo5.TabIndex = 39;
             // 
-            // comboBox73
+            // visInspecCombo4
             // 
-            this.comboBox73.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox73.FormattingEnabled = true;
-            this.comboBox73.Location = new System.Drawing.Point(54, 186);
-            this.comboBox73.Name = "comboBox73";
-            this.comboBox73.Size = new System.Drawing.Size(737, 26);
-            this.comboBox73.TabIndex = 38;
+            this.visInspecCombo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo4.FormattingEnabled = true;
+            this.visInspecCombo4.Location = new System.Drawing.Point(54, 186);
+            this.visInspecCombo4.Name = "visInspecCombo4";
+            this.visInspecCombo4.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo4.TabIndex = 38;
             // 
-            // comboBox74
+            // visInspecCombo3
             // 
-            this.comboBox74.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox74.FormattingEnabled = true;
-            this.comboBox74.Location = new System.Drawing.Point(54, 151);
-            this.comboBox74.Name = "comboBox74";
-            this.comboBox74.Size = new System.Drawing.Size(737, 26);
-            this.comboBox74.TabIndex = 37;
+            this.visInspecCombo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo3.FormattingEnabled = true;
+            this.visInspecCombo3.Location = new System.Drawing.Point(54, 151);
+            this.visInspecCombo3.Name = "visInspecCombo3";
+            this.visInspecCombo3.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo3.TabIndex = 37;
             // 
-            // comboBox75
+            // visInspecCombo2
             // 
-            this.comboBox75.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox75.FormattingEnabled = true;
-            this.comboBox75.Location = new System.Drawing.Point(54, 118);
-            this.comboBox75.Name = "comboBox75";
-            this.comboBox75.Size = new System.Drawing.Size(737, 26);
-            this.comboBox75.TabIndex = 36;
+            this.visInspecCombo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo2.FormattingEnabled = true;
+            this.visInspecCombo2.Location = new System.Drawing.Point(54, 118);
+            this.visInspecCombo2.Name = "visInspecCombo2";
+            this.visInspecCombo2.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo2.TabIndex = 36;
             // 
-            // comboBox76
+            // visInspecCombo1
             // 
-            this.comboBox76.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox76.FormattingEnabled = true;
-            this.comboBox76.Location = new System.Drawing.Point(54, 84);
-            this.comboBox76.Name = "comboBox76";
-            this.comboBox76.Size = new System.Drawing.Size(737, 26);
-            this.comboBox76.TabIndex = 35;
+            this.visInspecCombo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visInspecCombo1.FormattingEnabled = true;
+            this.visInspecCombo1.Location = new System.Drawing.Point(54, 84);
+            this.visInspecCombo1.Name = "visInspecCombo1";
+            this.visInspecCombo1.Size = new System.Drawing.Size(737, 26);
+            this.visInspecCombo1.TabIndex = 35;
             // 
             // nextButton5
             // 
@@ -5048,13 +5048,13 @@
             // groupBox34
             // 
             this.groupBox34.Controls.Add(this.prettyBoxCheckBox);
-            this.groupBox34.Controls.Add(this.textBox6);
+            this.groupBox34.Controls.Add(this.mailerBoxText);
             this.groupBox34.Controls.Add(this.label176);
-            this.groupBox34.Controls.Add(this.textBox4);
+            this.groupBox34.Controls.Add(this.shipIDText);
             this.groupBox34.Controls.Add(this.label175);
             this.groupBox34.Location = new System.Drawing.Point(18, 76);
             this.groupBox34.Name = "groupBox34";
-            this.groupBox34.Size = new System.Drawing.Size(805, 194);
+            this.groupBox34.Size = new System.Drawing.Size(805, 185);
             this.groupBox34.TabIndex = 26;
             this.groupBox34.TabStop = false;
             // 
@@ -5063,7 +5063,7 @@
             this.prettyBoxCheckBox.AutoSize = true;
             this.prettyBoxCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.prettyBoxCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prettyBoxCheckBox.Location = new System.Drawing.Point(23, 155);
+            this.prettyBoxCheckBox.Location = new System.Drawing.Point(23, 144);
             this.prettyBoxCheckBox.Name = "prettyBoxCheckBox";
             this.prettyBoxCheckBox.Size = new System.Drawing.Size(103, 22);
             this.prettyBoxCheckBox.TabIndex = 6;
@@ -5071,13 +5071,13 @@
             this.prettyBoxCheckBox.UseVisualStyleBackColor = true;
             this.prettyBoxCheckBox.CheckedChanged += new System.EventHandler(this.prettyBoxCheckBox_CheckedChanged);
             // 
-            // textBox6
+            // mailerBoxText
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(163, 67);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(341, 24);
-            this.textBox6.TabIndex = 3;
+            this.mailerBoxText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mailerBoxText.Location = new System.Drawing.Point(163, 67);
+            this.mailerBoxText.Name = "mailerBoxText";
+            this.mailerBoxText.Size = new System.Drawing.Size(341, 24);
+            this.mailerBoxText.TabIndex = 3;
             // 
             // label176
             // 
@@ -5089,13 +5089,13 @@
             this.label176.TabIndex = 2;
             this.label176.Text = "Mailer Box Label:";
             // 
-            // textBox4
+            // shipIDText
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(163, 28);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(341, 24);
-            this.textBox4.TabIndex = 1;
+            this.shipIDText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shipIDText.Location = new System.Drawing.Point(163, 28);
+            this.shipIDText.Name = "shipIDText";
+            this.shipIDText.Size = new System.Drawing.Size(341, 24);
+            this.shipIDText.TabIndex = 1;
             // 
             // label175
             // 
@@ -5639,49 +5639,49 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ComboBox comboBox36;
+        private System.Windows.Forms.ComboBox darknessCombo;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.ComboBox comboBox35;
+        private System.Windows.Forms.ComboBox visionCombo;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.ComboBox comboBox34;
+        private System.Windows.Forms.ComboBox randomFieldCombo;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.ComboBox comboBox33;
+        private System.Windows.Forms.ComboBox labelStockCombo;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox udiMeasure3;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.ComboBox comboBox31;
-        private System.Windows.Forms.ComboBox comboBox32;
+        private System.Windows.Forms.ComboBox udiMeasure1;
+        private System.Windows.Forms.ComboBox udiMeasure2;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox bwsMeasure3;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox bwsMeasure1;
+        private System.Windows.Forms.ComboBox bwsMeasure2;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.ComboBox comboBox37;
+        private System.Windows.Forms.ComboBox barMeasure3;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.ComboBox comboBox38;
-        private System.Windows.Forms.ComboBox comboBox39;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox barMeasure1;
+        private System.Windows.Forms.ComboBox barMeasure2;
+        private System.Windows.Forms.DateTimePicker collectSalDatePicker;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.ComboBox comboBox40;
+        private System.Windows.Forms.ComboBox hrbCombo;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.ComboBox comboBox41;
+        private System.Windows.Forms.ComboBox lotNumCombo;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.ComboBox comboBox42;
+        private System.Windows.Forms.ComboBox fillToLowerCombo;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.ComboBox comboBox43;
+        private System.Windows.Forms.ComboBox labelIDCombo;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.ComboBox comboBox44;
-        private System.Windows.Forms.ComboBox comboBox45;
-        private System.Windows.Forms.ComboBox comboBox46;
+        private System.Windows.Forms.ComboBox gtinCombo;
+        private System.Windows.Forms.ComboBox udiVerCombo;
+        private System.Windows.Forms.ComboBox udiReqCombo;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.ComboBox comboBox47;
+        private System.Windows.Forms.ComboBox fillToUpperCombo;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.ComboBox comboBox48;
-        private System.Windows.Forms.ComboBox comboBox49;
-        private System.Windows.Forms.ComboBox comboBox50;
-        private System.Windows.Forms.ComboBox comboBox51;
+        private System.Windows.Forms.ComboBox fillToTextCombo;
+        private System.Windows.Forms.ComboBox manuIDCombo;
+        private System.Windows.Forms.ComboBox barcodeIDCombo;
+        private System.Windows.Forms.ComboBox phvCombo;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label76;
@@ -5690,9 +5690,9 @@
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.ComboBox comboBox52;
-        private System.Windows.Forms.ComboBox comboBox53;
-        private System.Windows.Forms.ComboBox comboBox54;
+        private System.Windows.Forms.ComboBox stabSolCombo;
+        private System.Windows.Forms.ComboBox tubeDecodeCombo;
+        private System.Windows.Forms.ComboBox tubeSymCombo;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.ComboBox extraField3;
         private System.Windows.Forms.ComboBox extraField2;
@@ -5705,14 +5705,14 @@
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.ComboBox comboBox55;
-        private System.Windows.Forms.ComboBox comboBox56;
-        private System.Windows.Forms.ComboBox comboBox57;
-        private System.Windows.Forms.ComboBox comboBox58;
-        private System.Windows.Forms.ComboBox comboBox59;
-        private System.Windows.Forms.ComboBox comboBox60;
-        private System.Windows.Forms.ComboBox comboBox61;
-        private System.Windows.Forms.ComboBox comboBox62;
+        private System.Windows.Forms.ComboBox fillToCombo;
+        private System.Windows.Forms.ComboBox airPressureCombo;
+        private System.Windows.Forms.ComboBox sealingDwellCombo;
+        private System.Windows.Forms.ComboBox sealingTempCombo;
+        private System.Windows.Forms.ComboBox orageneCombo;
+        private System.Windows.Forms.ComboBox hibarPumpCombo;
+        private System.Windows.Forms.ComboBox barcodeScanCombo;
+        private System.Windows.Forms.ComboBox modelSelectCombo;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label89;
@@ -5733,31 +5733,31 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.ComboBox comboBox63;
-        private System.Windows.Forms.ComboBox comboBox64;
-        private System.Windows.Forms.ComboBox comboBox65;
-        private System.Windows.Forms.ComboBox comboBox66;
-        private System.Windows.Forms.ComboBox comboBox67;
-        private System.Windows.Forms.ComboBox comboBox68;
-        private System.Windows.Forms.ComboBox comboBox77;
-        private System.Windows.Forms.ComboBox comboBox78;
-        private System.Windows.Forms.ComboBox comboBox69;
-        private System.Windows.Forms.ComboBox comboBox70;
-        private System.Windows.Forms.ComboBox comboBox71;
-        private System.Windows.Forms.ComboBox comboBox72;
-        private System.Windows.Forms.ComboBox comboBox73;
-        private System.Windows.Forms.ComboBox comboBox74;
-        private System.Windows.Forms.ComboBox comboBox75;
-        private System.Windows.Forms.ComboBox comboBox76;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox visInspecCombo16;
+        private System.Windows.Forms.ComboBox visInspecCombo15;
+        private System.Windows.Forms.ComboBox visInspecCombo14;
+        private System.Windows.Forms.ComboBox visInspecCombo13;
+        private System.Windows.Forms.ComboBox visInspecCombo12;
+        private System.Windows.Forms.ComboBox visInspecCombo11;
+        private System.Windows.Forms.ComboBox visInspecCombo10;
+        private System.Windows.Forms.ComboBox visInspecCombo9;
+        private System.Windows.Forms.ComboBox visInspecCombo8;
+        private System.Windows.Forms.ComboBox visInspecCombo7;
+        private System.Windows.Forms.ComboBox visInspecCombo6;
+        private System.Windows.Forms.ComboBox visInspecCombo5;
+        private System.Windows.Forms.ComboBox visInspecCombo4;
+        private System.Windows.Forms.ComboBox visInspecCombo3;
+        private System.Windows.Forms.ComboBox visInspecCombo2;
+        private System.Windows.Forms.ComboBox visInspecCombo1;
+        private System.Windows.Forms.ComboBox visInspecCombo20;
+        private System.Windows.Forms.ComboBox visInspecCombo19;
+        private System.Windows.Forms.ComboBox visInspecCombo18;
+        private System.Windows.Forms.ComboBox visInspecCombo17;
+        private System.Windows.Forms.ComboBox visInspecCombo25;
+        private System.Windows.Forms.ComboBox visInspecCombo24;
+        private System.Windows.Forms.ComboBox visInspecCombo23;
+        private System.Windows.Forms.ComboBox visInspecCombo22;
+        private System.Windows.Forms.ComboBox visInspecCombo21;
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.Label label120;
         private System.Windows.Forms.Label label119;
@@ -5793,11 +5793,11 @@
         private System.Windows.Forms.Label label127;
         private System.Windows.Forms.Label label129;
         private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox tubeInspec1;
+        private System.Windows.Forms.ComboBox tubeInspec2;
+        private System.Windows.Forms.ComboBox tubeInspec5;
+        private System.Windows.Forms.ComboBox tubeInspec3;
+        private System.Windows.Forms.ComboBox tubeInspec4;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button nextButton6;
         private System.Windows.Forms.Button backButton6;
@@ -5822,7 +5822,7 @@
         private System.Windows.Forms.GroupBox groupBox34;
         private System.Windows.Forms.Label label173;
         private System.Windows.Forms.Label label174;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox shipIDText;
         private System.Windows.Forms.Label label175;
         private System.Windows.Forms.CheckBox prettyBoxCheckBox;
         private System.Windows.Forms.Button button30;
@@ -5893,7 +5893,7 @@
         private System.Windows.Forms.GroupBox groupBox46;
         private System.Windows.Forms.Label label232;
         private System.Windows.Forms.Label label233;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox mailerBoxText;
         private System.Windows.Forms.Label label176;
         private System.Windows.Forms.Label label130;
         private System.Windows.Forms.Label label131;
