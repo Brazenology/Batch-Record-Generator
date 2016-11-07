@@ -56,7 +56,7 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.labelPreviewButton = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.label61 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -633,7 +633,7 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Controls.Add(this.tableLayoutPanel1);
             this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Controls.Add(this.button14);
+            this.groupBox2.Controls.Add(this.labelPreviewButton);
             this.groupBox2.Controls.Add(this.button13);
             this.groupBox2.Controls.Add(this.label61);
             this.groupBox2.Controls.Add(this.groupBox4);
@@ -649,8 +649,8 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 6;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.31313F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.68687F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.63218F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.36781F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
@@ -673,7 +673,7 @@
             this.label68.Location = new System.Drawing.Point(4, 1);
             this.label68.Name = "label68";
             this.label68.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.label68.Size = new System.Drawing.Size(73, 33);
+            this.label68.Size = new System.Drawing.Size(84, 29);
             this.label68.TabIndex = 0;
             this.label68.Text = "DOM\r\n(YYYY-MM-DD)";
             this.label68.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -858,17 +858,17 @@
             this.panel3.Size = new System.Drawing.Size(255, 95);
             this.panel3.TabIndex = 29;
             // 
-            // button14
+            // labelPreviewButton
             // 
-            this.button14.BackColor = System.Drawing.Color.LimeGreen;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(739, 222);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(96, 28);
-            this.button14.TabIndex = 28;
-            this.button14.Text = "Preview";
-            this.button14.UseVisualStyleBackColor = false;
+            this.labelPreviewButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.labelPreviewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelPreviewButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreviewButton.Location = new System.Drawing.Point(739, 222);
+            this.labelPreviewButton.Name = "labelPreviewButton";
+            this.labelPreviewButton.Size = new System.Drawing.Size(96, 28);
+            this.labelPreviewButton.TabIndex = 28;
+            this.labelPreviewButton.Text = "Preview";
+            this.labelPreviewButton.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
@@ -5300,7 +5300,7 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button labelPreviewButton;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.GroupBox groupBox4;

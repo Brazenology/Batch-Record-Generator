@@ -45,34 +45,41 @@
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.pPartDescLabel = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label62 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label136 = new System.Windows.Forms.Label();
+            this.pPartRefLabel = new System.Windows.Forms.Label();
+            this.pDateLabel = new System.Windows.Forms.Label();
+            this.pCustNameLabel = new System.Windows.Forms.Label();
+            this.pRevNumLabel = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
+            this.pDocNumLabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.labelPreviewButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.label61 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.applyDateCheckBox = new System.Windows.Forms.CheckBox();
+            this.labelDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.revNumText = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.partDescText = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.partRefCombo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.custNameText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.docNumText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -640,8 +647,8 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Controls.Add(this.tableLayoutPanel1);
             this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Controls.Add(this.button14);
-            this.groupBox2.Controls.Add(this.button13);
+            this.groupBox2.Controls.Add(this.labelPreviewButton);
+            this.groupBox2.Controls.Add(this.clearButton);
             this.groupBox2.Controls.Add(this.label61);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
@@ -656,12 +663,12 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 6;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.31313F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.68687F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.01533F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.98467F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 228F));
             this.tableLayoutPanel3.Controls.Add(this.label68, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label69, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label70, 4, 0);
@@ -680,7 +687,7 @@
             this.label68.Location = new System.Drawing.Point(4, 1);
             this.label68.Name = "label68";
             this.label68.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.label68.Size = new System.Drawing.Size(73, 33);
+            this.label68.Size = new System.Drawing.Size(84, 29);
             this.label68.TabIndex = 0;
             this.label68.Text = "DOM\r\n(YYYY-MM-DD)";
             this.label68.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -689,7 +696,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(265, 1);
+            this.label69.Location = new System.Drawing.Point(263, 1);
             this.label69.Name = "label69";
             this.label69.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label69.Size = new System.Drawing.Size(44, 29);
@@ -701,7 +708,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(534, 1);
+            this.label70.Location = new System.Drawing.Point(532, 1);
             this.label70.Name = "label70";
             this.label70.Padding = new System.Windows.Forms.Padding(6, 10, 0, 0);
             this.label70.Size = new System.Drawing.Size(44, 26);
@@ -714,8 +721,9 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.96435F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.03565F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.42959F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.57041F));
+            this.tableLayoutPanel4.Controls.Add(this.pPartDescLabel, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label66, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 324);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -723,6 +731,18 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(562, 25);
             this.tableLayoutPanel4.TabIndex = 27;
+            // 
+            // pPartDescLabel
+            // 
+            this.pPartDescLabel.AutoSize = true;
+            this.pPartDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pPartDescLabel.Location = new System.Drawing.Point(113, 1);
+            this.pPartDescLabel.Name = "pPartDescLabel";
+            this.pPartDescLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.pPartDescLabel.Size = new System.Drawing.Size(71, 20);
+            this.pPartDescLabel.TabIndex = 33;
+            this.pPartDescLabel.Text = "undefined";
+            this.pPartDescLabel.Visible = false;
             // 
             // label66
             // 
@@ -771,13 +791,19 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.93393F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.06606F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+            this.tableLayoutPanel1.Controls.Add(this.label136, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pPartRefLabel, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pDateLabel, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pCustNameLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pRevNumLabel, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label67, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label10, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label9, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label65, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label64, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label63, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pDocNumLabel, 1, 0);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 254);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -790,11 +816,66 @@
             this.tableLayoutPanel1.TabIndex = 24;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label136.Location = new System.Drawing.Point(400, 46);
+            this.label136.Name = "label136";
+            this.label136.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.label136.Size = new System.Drawing.Size(38, 20);
+            this.label136.TabIndex = 32;
+            this.label136.Text = "TBD";
+            // 
+            // pPartRefLabel
+            // 
+            this.pPartRefLabel.AutoSize = true;
+            this.pPartRefLabel.Location = new System.Drawing.Point(113, 46);
+            this.pPartRefLabel.Name = "pPartRefLabel";
+            this.pPartRefLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.pPartRefLabel.Size = new System.Drawing.Size(71, 20);
+            this.pPartRefLabel.TabIndex = 31;
+            this.pPartRefLabel.Text = "undefined";
+            this.pPartRefLabel.Visible = false;
+            // 
+            // pDateLabel
+            // 
+            this.pDateLabel.AutoSize = true;
+            this.pDateLabel.Location = new System.Drawing.Point(400, 23);
+            this.pDateLabel.Name = "pDateLabel";
+            this.pDateLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.pDateLabel.Size = new System.Drawing.Size(71, 20);
+            this.pDateLabel.TabIndex = 30;
+            this.pDateLabel.Text = "undefined";
+            this.pDateLabel.Visible = false;
+            // 
+            // pCustNameLabel
+            // 
+            this.pCustNameLabel.AutoSize = true;
+            this.pCustNameLabel.Location = new System.Drawing.Point(113, 23);
+            this.pCustNameLabel.Name = "pCustNameLabel";
+            this.pCustNameLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.pCustNameLabel.Size = new System.Drawing.Size(71, 20);
+            this.pCustNameLabel.TabIndex = 29;
+            this.pCustNameLabel.Text = "undefined";
+            this.pCustNameLabel.Visible = false;
+            // 
+            // pRevNumLabel
+            // 
+            this.pRevNumLabel.AutoSize = true;
+            this.pRevNumLabel.Location = new System.Drawing.Point(400, 1);
+            this.pRevNumLabel.Name = "pRevNumLabel";
+            this.pRevNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.pRevNumLabel.Size = new System.Drawing.Size(71, 20);
+            this.pRevNumLabel.TabIndex = 28;
+            this.pRevNumLabel.Text = "undefined";
+            this.pRevNumLabel.Visible = false;
+            // 
             // label67
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(326, 46);
+            this.label67.Location = new System.Drawing.Point(324, 46);
             this.label67.Name = "label67";
             this.label67.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label67.Size = new System.Drawing.Size(40, 16);
@@ -805,7 +886,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(326, 23);
+            this.label10.Location = new System.Drawing.Point(324, 23);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label10.Size = new System.Drawing.Size(33, 16);
@@ -816,7 +897,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(326, 1);
+            this.label9.Location = new System.Drawing.Point(324, 1);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label9.Size = new System.Drawing.Size(54, 16);
@@ -856,6 +937,17 @@
             this.label63.TabIndex = 0;
             this.label63.Text = "Document #:";
             // 
+            // pDocNumLabel
+            // 
+            this.pDocNumLabel.AutoSize = true;
+            this.pDocNumLabel.Location = new System.Drawing.Point(113, 1);
+            this.pDocNumLabel.Name = "pDocNumLabel";
+            this.pDocNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.pDocNumLabel.Size = new System.Drawing.Size(71, 20);
+            this.pDocNumLabel.TabIndex = 27;
+            this.pDocNumLabel.Text = "undefined";
+            this.pDocNumLabel.Visible = false;
+            // 
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
@@ -867,29 +959,31 @@
             this.panel3.TabIndex = 29;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button14
+            // labelPreviewButton
             // 
-            this.button14.BackColor = System.Drawing.Color.LimeGreen;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(739, 222);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(96, 28);
-            this.button14.TabIndex = 28;
-            this.button14.Text = "Preview";
-            this.button14.UseVisualStyleBackColor = false;
+            this.labelPreviewButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.labelPreviewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelPreviewButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreviewButton.Location = new System.Drawing.Point(739, 222);
+            this.labelPreviewButton.Name = "labelPreviewButton";
+            this.labelPreviewButton.Size = new System.Drawing.Size(96, 28);
+            this.labelPreviewButton.TabIndex = 28;
+            this.labelPreviewButton.Text = "Preview";
+            this.labelPreviewButton.UseVisualStyleBackColor = false;
+            this.labelPreviewButton.Click += new System.EventHandler(this.labelPreviewButton_Click);
             // 
-            // button13
+            // clearButton
             // 
-            this.button13.BackColor = System.Drawing.Color.LightGray;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(674, 222);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(59, 28);
-            this.button13.TabIndex = 27;
-            this.button13.Text = "Clear";
-            this.button13.UseVisualStyleBackColor = false;
+            this.clearButton.BackColor = System.Drawing.Color.LightGray;
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Location = new System.Drawing.Point(674, 222);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(59, 28);
+            this.clearButton.TabIndex = 27;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // label61
             // 
@@ -906,7 +1000,7 @@
             // 
             this.groupBox4.Controls.Add(this.groupBox16);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.revNumText);
             this.groupBox4.Location = new System.Drawing.Point(440, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(395, 186);
@@ -915,38 +1009,38 @@
             // 
             // groupBox16
             // 
-            this.groupBox16.Controls.Add(this.checkBox2);
-            this.groupBox16.Controls.Add(this.dateTimePicker1);
+            this.groupBox16.Controls.Add(this.applyDateCheckBox);
+            this.groupBox16.Controls.Add(this.labelDatePicker);
             this.groupBox16.Location = new System.Drawing.Point(20, 56);
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.Size = new System.Drawing.Size(354, 110);
             this.groupBox16.TabIndex = 21;
             this.groupBox16.TabStop = false;
             // 
-            // checkBox2
+            // applyDateCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(16, 24);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(105, 22);
-            this.checkBox2.TabIndex = 20;
-            this.checkBox2.Text = "Apply Date?";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.applyDateCheckBox.AutoSize = true;
+            this.applyDateCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.applyDateCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyDateCheckBox.Location = new System.Drawing.Point(16, 24);
+            this.applyDateCheckBox.Name = "applyDateCheckBox";
+            this.applyDateCheckBox.Size = new System.Drawing.Size(105, 22);
+            this.applyDateCheckBox.TabIndex = 20;
+            this.applyDateCheckBox.Text = "Apply Date?";
+            this.applyDateCheckBox.UseVisualStyleBackColor = true;
+            this.applyDateCheckBox.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // dateTimePicker1
+            // labelDatePicker
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CustomFormat = "YYYY-MM-DD";
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(16, 52);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(177, 24);
-            this.dateTimePicker1.TabIndex = 19;
+            this.labelDatePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDatePicker.CustomFormat = "YYYY-MM-DD";
+            this.labelDatePicker.Enabled = false;
+            this.labelDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.labelDatePicker.Location = new System.Drawing.Point(16, 52);
+            this.labelDatePicker.Name = "labelDatePicker";
+            this.labelDatePicker.Size = new System.Drawing.Size(177, 24);
+            this.labelDatePicker.TabIndex = 19;
             // 
             // label7
             // 
@@ -958,23 +1052,23 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Revision Number:";
             // 
-            // textBox5
+            // revNumText
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(149, 26);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(64, 24);
-            this.textBox5.TabIndex = 9;
+            this.revNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.revNumText.Location = new System.Drawing.Point(149, 26);
+            this.revNumText.Name = "revNumText";
+            this.revNumText.Size = new System.Drawing.Size(64, 24);
+            this.revNumText.TabIndex = 9;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.partDescText);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.partRefCombo);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.custNameText);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.docNumText);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(21, 19);
             this.groupBox3.Name = "groupBox3";
@@ -982,13 +1076,13 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
-            // textBox3
+            // partDescText
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(171, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 24);
-            this.textBox3.TabIndex = 7;
+            this.partDescText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.partDescText.Location = new System.Drawing.Point(171, 148);
+            this.partDescText.Name = "partDescText";
+            this.partDescText.Size = new System.Drawing.Size(208, 24);
+            this.partDescText.TabIndex = 7;
             // 
             // label5
             // 
@@ -1000,14 +1094,14 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Part Description:";
             // 
-            // comboBox1
+            // partRefCombo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(171, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(208, 26);
-            this.comboBox1.TabIndex = 5;
+            this.partRefCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.partRefCombo.FormattingEnabled = true;
+            this.partRefCombo.Location = new System.Drawing.Point(171, 105);
+            this.partRefCombo.Name = "partRefCombo";
+            this.partRefCombo.Size = new System.Drawing.Size(208, 26);
+            this.partRefCombo.TabIndex = 5;
             // 
             // label4
             // 
@@ -1019,13 +1113,13 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Part Reference:";
             // 
-            // textBox2
+            // custNameText
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(171, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 24);
-            this.textBox2.TabIndex = 3;
+            this.custNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custNameText.Location = new System.Drawing.Point(171, 66);
+            this.custNameText.Name = "custNameText";
+            this.custNameText.Size = new System.Drawing.Size(208, 24);
+            this.custNameText.TabIndex = 3;
             // 
             // label3
             // 
@@ -1037,13 +1131,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Customer Name:";
             // 
-            // textBox1
+            // docNumText
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(171, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 24);
-            this.textBox1.TabIndex = 1;
+            this.docNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.docNumText.Location = new System.Drawing.Point(171, 26);
+            this.docNumText.Name = "docNumText";
+            this.docNumText.Size = new System.Drawing.Size(208, 24);
+            this.docNumText.TabIndex = 1;
             // 
             // label2
             // 
@@ -5374,20 +5468,20 @@
         private System.Windows.Forms.Label incLabel;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox partDescText;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox partRefCombo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox custNameText;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox docNumText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button backButton1;
         private System.Windows.Forms.Button nextButton1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox revNumText;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -5521,9 +5615,9 @@
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.DateTimePicker labelDatePicker;
+        private System.Windows.Forms.Button labelPreviewButton;
+        private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label68;
@@ -5627,7 +5721,7 @@
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox applyDateCheckBox;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.Label label6;
@@ -5808,5 +5902,12 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label pPartDescLabel;
+        private System.Windows.Forms.Label label136;
+        private System.Windows.Forms.Label pPartRefLabel;
+        private System.Windows.Forms.Label pDateLabel;
+        private System.Windows.Forms.Label pCustNameLabel;
+        private System.Windows.Forms.Label pRevNumLabel;
+        private System.Windows.Forms.Label pDocNumLabel;
     }
 }

@@ -80,13 +80,13 @@ namespace BatchRecordGenerator
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked)
+            if (applyDateCheckBox.Checked)
             {
-                dateTimePicker1.Enabled = true;
+                labelDatePicker.Enabled = true;
             }
             else
             {
-                dateTimePicker1.Enabled = false;
+                labelDatePicker.Enabled = false;
             }
         }
 
@@ -195,6 +195,92 @@ namespace BatchRecordGenerator
         private void backButton9_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage8;
+        }
+
+        private void labelPreviewButton_Click(object sender, EventArgs e)
+        {
+            //Sets the labels in the preview pane to be equal to their matching input fields
+            if (!string.IsNullOrEmpty(docNumText.Text))
+            {
+                pDocNumLabel.Text = docNumText.Text;
+            }
+            else
+            {
+                pDocNumLabel.Text = "undefined";
+            }
+            //
+            if (!string.IsNullOrEmpty(custNameText.Text))
+            {
+                pCustNameLabel.Text = custNameText.Text;
+            }
+            else
+            {
+                pCustNameLabel.Text = "undefined";
+            }
+            //
+            if (!string.IsNullOrEmpty(partRefCombo.Text))
+            {
+                pPartRefLabel.Text = partRefCombo.Text;
+            }
+            else
+            {
+                pPartRefLabel.Text = "undefined";
+            }
+            //
+            if (!string.IsNullOrEmpty(partDescText.Text))
+            {
+                pPartDescLabel.Text = partDescText.Text;
+            }
+            else
+            {
+                pPartDescLabel.Text = "undefined";
+            }
+            //
+            if (!string.IsNullOrEmpty(revNumText.Text))
+            {
+                pRevNumLabel.Text = revNumText.Text;
+            }
+            else
+            {
+                pRevNumLabel.Text = "undefined";
+            }
+            //
+            if (applyDateCheckBox.Checked)
+            {
+                pDateLabel.Text = labelDatePicker.Text;
+            }
+            else
+            {
+                pDateLabel.Text = "undefined";
+            }
+
+            //Makes the information in the preview pane visible
+            pDocNumLabel.Visible = true;
+            pCustNameLabel.Visible = true;
+            pPartRefLabel.Visible = true;
+            pPartDescLabel.Visible = true;
+            pRevNumLabel.Visible = true;
+            pDateLabel.Visible = true;
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            //Makes the information in the preview pane no longer visible 
+            pDocNumLabel.Visible = false;
+            pCustNameLabel.Visible = false;
+            pPartRefLabel.Visible = false;
+            pPartDescLabel.Visible = false;
+            pRevNumLabel.Visible = false;
+            pDateLabel.Visible = false;
+
+            //Resets the fields to undefined
+            pDocNumLabel.Text = "undefined";
+            pCustNameLabel.Text = "undefined";
+            pPartRefLabel.Text = "undefined";
+            pPartRefLabel.Text = "undefined";
+            pPartDescLabel.Text = "undefined";
+            pDateLabel.Text = "undefined";
+
         }
     }
 }
