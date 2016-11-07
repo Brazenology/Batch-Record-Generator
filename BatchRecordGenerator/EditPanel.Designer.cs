@@ -1,6 +1,6 @@
 ﻿namespace BatchRecordGenerator
 {
-    partial class CreatePanel
+    partial class EditPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreatePanel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditPanel));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.previewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -471,11 +471,6 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.backButton9 = new System.Windows.Forms.Button();
-            this.verLabel = new System.Windows.Forms.Label();
-            this.incLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cancelRecordLink = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -538,8 +533,8 @@
             this.helpToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(921, 24);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size(925, 24);
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
@@ -583,7 +578,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(897, 623);
-            this.tabControl1.TabIndex = 1;
+            this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
             // 
@@ -620,7 +615,6 @@
             this.backButton1.TabIndex = 3;
             this.backButton1.Text = "<< &Back";
             this.backButton1.UseVisualStyleBackColor = true;
-            this.backButton1.Click += new System.EventHandler(this.backButton1_Click);
             // 
             // nextButton1
             // 
@@ -631,7 +625,6 @@
             this.nextButton1.TabIndex = 2;
             this.nextButton1.Text = "&Next >>";
             this.nextButton1.UseVisualStyleBackColor = true;
-            this.nextButton1.Click += new System.EventHandler(this.nextButton1_Click);
             // 
             // groupBox2
             // 
@@ -714,8 +707,8 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.96435F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.03565F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.42959F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.57041F));
             this.tableLayoutPanel4.Controls.Add(this.label66, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 324);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -788,7 +781,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(562, 71);
             this.tableLayoutPanel1.TabIndex = 24;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label67
             // 
@@ -865,7 +857,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(255, 95);
             this.panel3.TabIndex = 29;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button14
             // 
@@ -934,7 +925,6 @@
             this.checkBox2.TabIndex = 20;
             this.checkBox2.Text = "Apply Date?";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // dateTimePicker1
             // 
@@ -2187,7 +2177,6 @@
             this.backButton2.TabIndex = 18;
             this.backButton2.Text = "<< &Back";
             this.backButton2.UseVisualStyleBackColor = true;
-            this.backButton2.Click += new System.EventHandler(this.backButton2_Click);
             // 
             // nextButton2
             // 
@@ -2198,7 +2187,6 @@
             this.nextButton2.TabIndex = 17;
             this.nextButton2.Text = "&Next >>";
             this.nextButton2.UseVisualStyleBackColor = true;
-            this.nextButton2.Click += new System.EventHandler(this.nextButton2_Click);
             // 
             // tabPage3
             // 
@@ -2264,7 +2252,6 @@
             this.backButton3.TabIndex = 21;
             this.backButton3.Text = "<< &Back";
             this.backButton3.UseVisualStyleBackColor = true;
-            this.backButton3.Click += new System.EventHandler(this.backButton3_Click);
             // 
             // nextButton3
             // 
@@ -2275,7 +2262,6 @@
             this.nextButton3.TabIndex = 20;
             this.nextButton3.Text = "&Next >>";
             this.nextButton3.UseVisualStyleBackColor = true;
-            this.nextButton3.Click += new System.EventHandler(this.nextButton3_Click);
             // 
             // tabPage4
             // 
@@ -3001,7 +2987,6 @@
             this.addOptionsCheckBox.TabIndex = 16;
             this.addOptionsCheckBox.Text = "Additional Options Toggle";
             this.addOptionsCheckBox.UseVisualStyleBackColor = true;
-            this.addOptionsCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // label84
             // 
@@ -3259,7 +3244,6 @@
             this.backButton4.TabIndex = 24;
             this.backButton4.Text = "<< &Back";
             this.backButton4.UseVisualStyleBackColor = true;
-            this.backButton4.Click += new System.EventHandler(this.backButton4_Click);
             // 
             // nextButton4
             // 
@@ -3270,7 +3254,6 @@
             this.nextButton4.TabIndex = 23;
             this.nextButton4.Text = "&Next >>";
             this.nextButton4.UseVisualStyleBackColor = true;
-            this.nextButton4.Click += new System.EventHandler(this.nextButton4_Click);
             // 
             // tabPage5
             // 
@@ -3305,7 +3288,6 @@
             this.backButton5.TabIndex = 27;
             this.backButton5.Text = "<< &Back";
             this.backButton5.UseVisualStyleBackColor = true;
-            this.backButton5.Click += new System.EventHandler(this.backButton5_Click);
             // 
             // groupBox18
             // 
@@ -3474,7 +3456,6 @@
             this.label96.TabIndex = 18;
             this.label96.Text = "Please select all criteria neccessary.";
             this.label96.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label96.Click += new System.EventHandler(this.label96_Click);
             // 
             // groupBox25
             // 
@@ -3576,7 +3557,6 @@
             this.label121.Size = new System.Drawing.Size(22, 18);
             this.label121.TabIndex = 83;
             this.label121.Text = "3.";
-            this.label121.Click += new System.EventHandler(this.label121_Click);
             // 
             // label120
             // 
@@ -4042,7 +4022,6 @@
             this.nextButton5.TabIndex = 26;
             this.nextButton5.Text = "&Next >>";
             this.nextButton5.UseVisualStyleBackColor = true;
-            this.nextButton5.Click += new System.EventHandler(this.nextButton5_Click);
             // 
             // groupBox17
             // 
@@ -4088,7 +4067,6 @@
             this.tabPage6.Size = new System.Drawing.Size(889, 597);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Weigh Scale Procedure";
-            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
             // groupBox47
             // 
@@ -4232,7 +4210,6 @@
             this.nextButton6.TabIndex = 29;
             this.nextButton6.Text = "&Next >>";
             this.nextButton6.UseVisualStyleBackColor = true;
-            this.nextButton6.Click += new System.EventHandler(this.nextButton6_Click);
             // 
             // backButton6
             // 
@@ -4243,7 +4220,6 @@
             this.backButton6.TabIndex = 30;
             this.backButton6.Text = "<< &Back";
             this.backButton6.UseVisualStyleBackColor = true;
-            this.backButton6.Click += new System.EventHandler(this.backButton6_Click);
             // 
             // tabPage7
             // 
@@ -4883,7 +4859,6 @@
             this.nextButton7.TabIndex = 32;
             this.nextButton7.Text = "&Next >>";
             this.nextButton7.UseVisualStyleBackColor = true;
-            this.nextButton7.Click += new System.EventHandler(this.nextButton7_Click);
             // 
             // backButton7
             // 
@@ -4894,7 +4869,6 @@
             this.backButton7.TabIndex = 33;
             this.backButton7.Text = "<< &Back";
             this.backButton7.UseVisualStyleBackColor = true;
-            this.backButton7.Click += new System.EventHandler(this.backButton7_Click);
             // 
             // tabPage8
             // 
@@ -4929,7 +4903,6 @@
             this.backButton8.TabIndex = 33;
             this.backButton8.Text = "<< &Back";
             this.backButton8.UseVisualStyleBackColor = true;
-            this.backButton8.Click += new System.EventHandler(this.backButton8_Click);
             // 
             // groupBox33
             // 
@@ -4975,7 +4948,6 @@
             this.prettyBoxCheckBox.TabIndex = 6;
             this.prettyBoxCheckBox.Text = "Pretty Box?";
             this.prettyBoxCheckBox.UseVisualStyleBackColor = true;
-            this.prettyBoxCheckBox.CheckedChanged += new System.EventHandler(this.prettyBoxCheckBox_CheckedChanged);
             // 
             // textBox6
             // 
@@ -5043,7 +5015,6 @@
             this.nextButton8.TabIndex = 32;
             this.nextButton8.Text = "&Next >>";
             this.nextButton8.UseVisualStyleBackColor = true;
-            this.nextButton8.Click += new System.EventHandler(this.nextButton8_Click);
             // 
             // groupBox32
             // 
@@ -5197,75 +5168,16 @@
             this.backButton9.TabIndex = 33;
             this.backButton9.Text = "<< &Back";
             this.backButton9.UseVisualStyleBackColor = true;
-            this.backButton9.Click += new System.EventHandler(this.backButton9_Click);
             // 
-            // verLabel
-            // 
-            this.verLabel.AutoSize = true;
-            this.verLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.verLabel.Location = new System.Drawing.Point(13, 678);
-            this.verLabel.Name = "verLabel";
-            this.verLabel.Size = new System.Drawing.Size(106, 17);
-            this.verLabel.TabIndex = 9;
-            this.verLabel.Text = "Version No. 1.0";
-            // 
-            // incLabel
-            // 
-            this.incLabel.AutoSize = true;
-            this.incLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incLabel.Location = new System.Drawing.Point(921, 678);
-            this.incLabel.Name = "incLabel";
-            this.incLabel.Size = new System.Drawing.Size(144, 17);
-            this.incLabel.TabIndex = 8;
-            this.incLabel.Text = "Southmedic Inc. 2016";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(765, 678);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Southmedic Inc. 2016";
-            // 
-            // label11
-            // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Location = new System.Drawing.Point(16, 668);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(889, 2);
-            this.label11.TabIndex = 14;
-            // 
-            // cancelRecordLink
-            // 
-            this.cancelRecordLink.AutoSize = true;
-            this.cancelRecordLink.Location = new System.Drawing.Point(796, 45);
-            this.cancelRecordLink.Name = "cancelRecordLink";
-            this.cancelRecordLink.Size = new System.Drawing.Size(109, 13);
-            this.cancelRecordLink.TabIndex = 15;
-            this.cancelRecordLink.TabStop = true;
-            this.cancelRecordLink.Text = "Cancel Batch Record";
-            this.cancelRecordLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.cancelRecordLink_LinkClicked_1);
-            // 
-            // CreatePanel
+            // EditPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 707);
-            this.Controls.Add(this.cancelRecordLink);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.verLabel);
-            this.Controls.Add(this.incLabel);
+            this.ClientSize = new System.Drawing.Size(925, 711);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.Name = "CreatePanel";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Create New Batch Record";
+            this.Name = "EditPanel";
+            this.Text = "Edit Batch Record";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -5363,16 +5275,40 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem previewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button backButton1;
+        private System.Windows.Forms.Button nextButton1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label verLabel;
-        private System.Windows.Forms.Label incLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label61;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
@@ -5382,22 +5318,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button backButton1;
-        private System.Windows.Forms.Button nextButton1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button nextButton2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button backButton2;
-        private System.Windows.Forms.ToolStripMenuItem previewToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label44;
@@ -5504,42 +5428,21 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button backButton2;
+        private System.Windows.Forms.Button nextButton2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox44;
+        private System.Windows.Forms.Label label230;
+        private System.Windows.Forms.Label label231;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button backButton3;
         private System.Windows.Forms.Button nextButton3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.LinkLabel cancelRecordLink;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button backButton4;
-        private System.Windows.Forms.Button nextButton4;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
@@ -5627,43 +5530,35 @@
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Button backButton4;
+        private System.Windows.Forms.Button nextButton4;
+        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button backButton5;
-        private System.Windows.Forms.Button nextButton5;
+        private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.Label label127;
+        private System.Windows.Forms.Label label129;
+        private System.Windows.Forms.Label label128;
+        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBox12;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.ComboBox comboBox63;
-        private System.Windows.Forms.ComboBox comboBox64;
-        private System.Windows.Forms.ComboBox comboBox65;
-        private System.Windows.Forms.ComboBox comboBox66;
-        private System.Windows.Forms.ComboBox comboBox67;
-        private System.Windows.Forms.ComboBox comboBox68;
-        private System.Windows.Forms.ComboBox comboBox77;
-        private System.Windows.Forms.ComboBox comboBox78;
-        private System.Windows.Forms.ComboBox comboBox69;
-        private System.Windows.Forms.ComboBox comboBox70;
-        private System.Windows.Forms.ComboBox comboBox71;
-        private System.Windows.Forms.ComboBox comboBox72;
-        private System.Windows.Forms.ComboBox comboBox73;
-        private System.Windows.Forms.ComboBox comboBox74;
-        private System.Windows.Forms.ComboBox comboBox75;
-        private System.Windows.Forms.ComboBox comboBox76;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.Label label120;
         private System.Windows.Forms.Label label119;
@@ -5688,52 +5583,51 @@
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label122;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.Label label123;
-        private System.Windows.Forms.Label label126;
-        private System.Windows.Forms.Label label124;
-        private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox63;
+        private System.Windows.Forms.ComboBox comboBox64;
+        private System.Windows.Forms.ComboBox comboBox65;
+        private System.Windows.Forms.ComboBox comboBox66;
+        private System.Windows.Forms.ComboBox comboBox67;
+        private System.Windows.Forms.ComboBox comboBox68;
+        private System.Windows.Forms.ComboBox comboBox77;
+        private System.Windows.Forms.ComboBox comboBox78;
+        private System.Windows.Forms.ComboBox comboBox69;
+        private System.Windows.Forms.ComboBox comboBox70;
+        private System.Windows.Forms.ComboBox comboBox71;
+        private System.Windows.Forms.ComboBox comboBox72;
+        private System.Windows.Forms.ComboBox comboBox73;
+        private System.Windows.Forms.ComboBox comboBox74;
+        private System.Windows.Forms.ComboBox comboBox75;
+        private System.Windows.Forms.ComboBox comboBox76;
+        private System.Windows.Forms.Button nextButton5;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.GroupBox groupBox47;
+        private System.Windows.Forms.Label label130;
+        private System.Windows.Forms.Label label131;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox groupBox46;
+        private System.Windows.Forms.Label label232;
+        private System.Windows.Forms.Label label233;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button nextButton6;
         private System.Windows.Forms.Button backButton6;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
-        private System.Windows.Forms.GroupBox groupBox30;
-        private System.Windows.Forms.Label label153;
-        private System.Windows.Forms.Label label170;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button backButton9;
-        private System.Windows.Forms.GroupBox groupBox31;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.GroupBox groupBox32;
-        private System.Windows.Forms.Label label171;
-        private System.Windows.Forms.Label label172;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button backButton8;
-        private System.Windows.Forms.GroupBox groupBox33;
-        private System.Windows.Forms.Button nextButton8;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.GroupBox groupBox34;
-        private System.Windows.Forms.Label label173;
-        private System.Windows.Forms.Label label174;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label175;
-        private System.Windows.Forms.CheckBox prettyBoxCheckBox;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button nextButton7;
-        private System.Windows.Forms.Button backButton7;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.GroupBox groupBox36;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox38;
@@ -5792,21 +5686,34 @@
         private System.Windows.Forms.GroupBox groupBox39;
         private System.Windows.Forms.Label label215;
         private System.Windows.Forms.Label label216;
-        private System.Windows.Forms.GroupBox groupBox44;
-        private System.Windows.Forms.Label label230;
-        private System.Windows.Forms.Label label231;
-        private System.Windows.Forms.GroupBox groupBox47;
-        private System.Windows.Forms.GroupBox groupBox46;
-        private System.Windows.Forms.Label label232;
-        private System.Windows.Forms.Label label233;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button nextButton7;
+        private System.Windows.Forms.Button backButton7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button backButton8;
+        private System.Windows.Forms.GroupBox groupBox33;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.GroupBox groupBox34;
+        private System.Windows.Forms.CheckBox prettyBoxCheckBox;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label176;
-        private System.Windows.Forms.Label label130;
-        private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.GroupBox groupBox20;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label175;
+        private System.Windows.Forms.Label label173;
+        private System.Windows.Forms.Label label174;
+        private System.Windows.Forms.Button nextButton8;
+        private System.Windows.Forms.GroupBox groupBox32;
+        private System.Windows.Forms.Label label171;
+        private System.Windows.Forms.Label label172;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.GroupBox groupBox31;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.GroupBox groupBox30;
+        private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.Label label170;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button backButton9;
     }
 }

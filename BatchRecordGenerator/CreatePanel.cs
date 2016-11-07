@@ -17,92 +17,6 @@ namespace BatchRecordGenerator
             InitializeComponent();
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         /******************Quick Links*************************/
         private void cancelRecordLink_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -113,7 +27,8 @@ namespace BatchRecordGenerator
 
         private void CreatePanel_Exit(object sender, EventArgs e)
         {
-
+            HomePanel home = new HomePanel();
+            home.Show();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -153,7 +68,6 @@ namespace BatchRecordGenerator
                 extraField1.Enabled = true;
                 extraField2.Enabled = true;
                 extraField3.Enabled = true;
-                addOptionsCheckBox2.Checked = true;
 
             }
             else
@@ -161,7 +75,6 @@ namespace BatchRecordGenerator
                 extraField1.Enabled = false;
                 extraField2.Enabled = false;
                 extraField3.Enabled = false;
-                addOptionsCheckBox2.Checked = false;
             }
         }
 
@@ -192,143 +105,96 @@ namespace BatchRecordGenerator
 
         }
 
-        private void addOptionsCheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (addOptionsCheckBox2.Checked)
-            {
-                extraField4.Enabled = true;
-                extraField5.Enabled = true;
-                extraField6.Enabled = true;
-            }
-            else
-            {
-                extraField4.Enabled = false;
-                extraField5.Enabled = false;
-                extraField6.Enabled = false;
-            }
-        }
-
         private void prettyBoxCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (prettyBoxCheckBox.Checked)
-            {
-                prettyBoxTextBox.Enabled = true;
-            }
-            else
-            {
-                prettyBoxTextBox.Enabled = false;
-            }
+
         }
 
+
         /************************* Navigation buttons (cycles through tabs)*************************/
-        private void button1_Click(object sender, EventArgs e)
+        private void nextButton1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void nextButton2_Click(object sender, EventArgs e)
         {
-            //Disabled button
+            tabControl1.SelectedTab = tabPage3;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void nextButton3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage4;
+        }
+
+        private void nextButton4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage5;
+        }
+
+        private void nextButton5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage6;
+        }
+
+        private void nextButton6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage7;
+        }
+
+        private void nextButton7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage8;
+        }
+
+        private void nextButton8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage9;
+        }
+
+        private void backButton1_Click(object sender, EventArgs e)
+        {
+            //Disabled
+        }
+
+        private void backButton2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage1;
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void backButton3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage4;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void backButton4_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage3;
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage5;
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage6;
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage7;
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage5;
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage6;
-        }
-
-        private void button16_Click(object sender, EventArgs e)
+        private void backButton5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage4;
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void backButton6_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage8;
+            tabControl1.SelectedTab = tabPage5;
         }
 
-        private void button29_Click(object sender, EventArgs e)
+        private void backButton7_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage10;
+            tabControl1.SelectedTab = tabPage6;
         }
 
-        private void button25_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage10;
-        }
-
-        private void button32_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage9;
-        }
-
-        private void button31_Click(object sender, EventArgs e)
+        private void backButton8_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage7;
         }
 
-        private void button28_Click(object sender, EventArgs e)
+        private void backButton9_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage8;
-        }
-
-        private void button35_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage11;
-        }
-
-        private void button34_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage9;
-        }
-
-        private void label80_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

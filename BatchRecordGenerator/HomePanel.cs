@@ -17,31 +17,11 @@ namespace BatchRecordGenerator
             InitializeComponent();
         }
 
-        private void fIleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void createButton_Click(object sender, EventArgs e)
         {
             CreatePanel createPanel = new CreatePanel();
             createPanel.Show();
             this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,9 +37,11 @@ namespace BatchRecordGenerator
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void editButton_Click(object sender, EventArgs e)
         {
-
+            EditPanel editPanel = new EditPanel();
+            editPanel.Show();
+            this.Hide();
         }
     }
 }

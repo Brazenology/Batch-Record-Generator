@@ -35,7 +35,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.createButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.incLabel = new System.Windows.Forms.Label();
             this.verLabel = new System.Windows.Forms.Label();
@@ -69,7 +69,6 @@
             this.fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
             this.fIleToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fIleToolStripMenuItem.Text = "File";
-            this.fIleToolStripMenuItem.Click += new System.EventHandler(this.fIleToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -102,19 +101,19 @@
             this.createButton.UseVisualStyleBackColor = false;
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
-            // button1
+            // editButton
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Eras Bold ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Location = new System.Drawing.Point(17, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(301, 144);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Edit Existing Batch Record";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.editButton.BackColor = System.Drawing.Color.CadetBlue;
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.editButton.Font = new System.Drawing.Font("Eras Bold ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.editButton.Location = new System.Drawing.Point(17, 19);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(301, 144);
+            this.editButton.TabIndex = 0;
+            this.editButton.Text = "Edit Existing Batch Record";
+            this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // button2
             // 
@@ -128,7 +127,6 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "View/Print Batch Record";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // incLabel
             // 
@@ -187,7 +185,7 @@
             // 
             // editBox
             // 
-            this.editBox.Controls.Add(this.button1);
+            this.editBox.Controls.Add(this.editButton);
             this.editBox.Location = new System.Drawing.Point(380, 439);
             this.editBox.Name = "editBox";
             this.editBox.Size = new System.Drawing.Size(335, 265);
@@ -245,7 +243,7 @@
         private System.Windows.Forms.Label verLabel;
         private System.Windows.Forms.Label incLabel;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel3;

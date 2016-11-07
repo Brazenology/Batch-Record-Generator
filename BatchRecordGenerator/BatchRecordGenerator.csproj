@@ -75,6 +75,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPanel.Designer.cs">
+      <DependentUpon>EditPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
     <EmbeddedResource Include="CreatePanel.resx">
       <DependentUpon>CreatePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPanel.resx">
+      <DependentUpon>EditPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePanel.resx">
       <DependentUpon>HomePanel.cs</DependentUpon>
