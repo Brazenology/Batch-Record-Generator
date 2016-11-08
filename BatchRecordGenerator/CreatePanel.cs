@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BatchRecordGenerator
 {
     public partial class CreatePanel : Form
     {
+
+        //Global Variables
+        int errorCount = 0;
         public CreatePanel()
         {
             InitializeComponent();
@@ -144,6 +148,121 @@ namespace BatchRecordGenerator
             asterisk59.Visible = false;
             asterisk60.Visible = false;
             asterisk61.Visible = false;
+
+
+            SqlConnection conn = new SqlConnection(@"Data Source=PAPALOA;Initial Catalog=DNADatabase;Integrated Security=True");
+            conn.Open();
+            SqlCommand sc = new SqlCommand("select partName from tblParts", conn);
+            SqlDataReader reader;
+
+            reader = sc.ExecuteReader();
+            DataTable parts = new DataTable();
+            parts.Columns.Add("partName", typeof(string));
+            parts.Load(reader);
+
+
+            //Populates all part combo boxes from tblParts
+            part1ComboBox.ValueMember = "partName";
+            part1ComboBox.DisplayMember = "partName";
+            part1ComboBox.DataSource = parts;
+
+            part2ComboBox.ValueMember = "partName";
+            part2ComboBox.DisplayMember = "partName";
+            part2ComboBox.DataSource = parts;
+
+            part3ComboBox.ValueMember = "partName";
+            part3ComboBox.DisplayMember = "partName";
+            part3ComboBox.DataSource = parts;
+
+            part4ComboBox.ValueMember = "partName";
+            part4ComboBox.DisplayMember = "partName";
+            part4ComboBox.DataSource = parts;
+
+            part5ComboBox.ValueMember = "partName";
+            part5ComboBox.DisplayMember = "partName";
+            part5ComboBox.DataSource = parts;
+
+            part6ComboBox.ValueMember = "partName";
+            part6ComboBox.DisplayMember = "partName";
+            part6ComboBox.DataSource = parts;
+
+            part7ComboBox.ValueMember = "partName";
+            part7ComboBox.DisplayMember = "partName";
+            part7ComboBox.DataSource = parts;
+
+            part8ComboBox.ValueMember = "partName";
+            part8ComboBox.DisplayMember = "partName";
+            part8ComboBox.DataSource = parts;
+
+            part9ComboBox.ValueMember = "partName";
+            part9ComboBox.DisplayMember = "partName";
+            part9ComboBox.DataSource = parts;
+
+            part10ComboBox.ValueMember = "partName";
+            part10ComboBox.DisplayMember = "partName";
+            part10ComboBox.DataSource = parts;
+
+            part11ComboBox.ValueMember = "partName";
+            part11ComboBox.DisplayMember = "partName";
+            part11ComboBox.DataSource = parts;
+
+            part12ComboBox.ValueMember = "partName";
+            part12ComboBox.DisplayMember = "partName";
+            part12ComboBox.DataSource = parts;
+
+            part13ComboBox.ValueMember = "partName";
+            part13ComboBox.DisplayMember = "partName";
+            part13ComboBox.DataSource = parts;
+
+            part14ComboBox.ValueMember = "partName";
+            part14ComboBox.DisplayMember = "partName";
+            part14ComboBox.DataSource = parts;
+
+            part15ComboBox.ValueMember = "partName";
+            part15ComboBox.DisplayMember = "partName";
+            part15ComboBox.DataSource = parts;
+
+            part16ComboBox.ValueMember = "partName";
+            part16ComboBox.DisplayMember = "partName";
+            part16ComboBox.DataSource = parts;
+
+            part17ComboBox.ValueMember = "partName";
+            part17ComboBox.DisplayMember = "partName";
+            part17ComboBox.DataSource = parts;
+
+            part18ComboBox.ValueMember = "partName";
+            part18ComboBox.DisplayMember = "partName";
+            part18ComboBox.DataSource = parts;
+
+            part19ComboBox.ValueMember = "partName";
+            part19ComboBox.DisplayMember = "partName";
+            part19ComboBox.DataSource = parts;
+
+            part20ComboBox.ValueMember = "partName";
+            part20ComboBox.DisplayMember = "partName";
+            part20ComboBox.DataSource = parts;
+
+            part21ComboBox.ValueMember = "partName";
+            part21ComboBox.DisplayMember = "partName";
+            part21ComboBox.DataSource = parts;
+
+            part22ComboBox.ValueMember = "partName";
+            part22ComboBox.DisplayMember = "partName";
+            part22ComboBox.DataSource = parts;
+
+            part23ComboBox.ValueMember = "partName";
+            part23ComboBox.DisplayMember = "partName";
+            part23ComboBox.DataSource = parts;
+
+            part24ComboBox.ValueMember = "partName";
+            part24ComboBox.DisplayMember = "partName";
+            part24ComboBox.DataSource = parts;
+
+            part25ComboBox.ValueMember = "partName";
+            part25ComboBox.DisplayMember = "partName";
+            part25ComboBox.DataSource = parts;
+
+            conn.Close();
         }
 
         /******************Quick Links*************************/
@@ -153,6 +272,7 @@ namespace BatchRecordGenerator
             HomePanel home = new HomePanel();
             home.Show();
         }
+        /**********************END*****************************/
 
         private void CreatePanel_Exit(object sender, EventArgs e)
         {
@@ -160,7 +280,7 @@ namespace BatchRecordGenerator
             home.Show();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
@@ -185,11 +305,6 @@ namespace BatchRecordGenerator
             e.Graphics.DrawRectangle(Pens.Gray, rect);
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (applyDateCheckBox.Checked)
@@ -201,27 +316,6 @@ namespace BatchRecordGenerator
                 labelDatePicker.Enabled = false;
             }
         }
-
-        private void label96_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label121_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void prettyBoxCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
 
         /************************* Navigation buttons (cycles through tabs)*************************/
         private void nextButton1_Click(object sender, EventArgs e)
@@ -406,12 +500,24 @@ namespace BatchRecordGenerator
         {
 
             errorCheck();
+
+            if (errorCount > 0)
+            {
+                MessageBox.Show("It appears you left " + errorCount + " required field(s) blank. Please check the information you provided and fill in all fields with a red asterisk(*).", "Missing Fields",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            else
+            {
+                //insert into database
+            }
+
         }
 
         private void errorCheck()
         {
 
-            int errorCount = 0; //Counts how many errors were found
+           errorCount = 0; //Counts how many errors were found
 
             //Document Number Field
             if (string.IsNullOrEmpty(docNumText.Text))
@@ -852,6 +958,355 @@ namespace BatchRecordGenerator
             {
                 asterisk30.Visible = false;
             }
+
+            //Model Select Field
+            if (string.IsNullOrEmpty(modelSelectCombo.Text))
+            {
+                asterisk31.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk31.Visible = false;
+            }
+
+            //Barcode Scan Program Field
+            if (string.IsNullOrEmpty(barcodeScanCombo.Text))
+            {
+                asterisk32.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk32.Visible = false;
+            }
+
+            //Hibar Pump Field
+            if (string.IsNullOrEmpty(hibarPumpCombo.Text))
+            {
+                asterisk33.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk33.Visible = false;
+            }
+
+            //Oragene Volume Field
+            if (string.IsNullOrEmpty(orageneCombo.Text))
+            {
+                asterisk34.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk34.Visible = false;
+            }
+
+            //Sealing Head Temp Field
+            if (string.IsNullOrEmpty(sealingTempCombo.Text))
+            {
+                asterisk35.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk35.Visible = false;
+            }
+
+            //Sealing Head Dwell Field
+            if (string.IsNullOrEmpty(sealingDwellCombo.Text))
+            {
+                asterisk36.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk36.Visible = false;
+            }
+
+            //Air Pressure Field
+            if (string.IsNullOrEmpty(airPressureCombo.Text))
+            {
+                asterisk37.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk37.Visible = false;
+            }
+
+            //Fill To Height Field
+            if (string.IsNullOrEmpty(fillToCombo.Text))
+            {
+                asterisk38.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk38.Visible = false;
+            }
+
+            //Tube Barcode Symbology Field
+            if (string.IsNullOrEmpty(tubeSymCombo.Text))
+            {
+                asterisk39.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk39.Visible = false;
+            }
+
+            //Tube Barcode Decodability Field
+            if (string.IsNullOrEmpty(tubeDecodeCombo.Text))
+            {
+                asterisk40.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk40.Visible = false;
+            }
+
+            //Stabilizing Solution Field
+            if (string.IsNullOrEmpty(stabSolCombo.Text))
+            {
+                asterisk41.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk41.Visible = false;
+            }
+
+            //Print Head verificaition Field
+            if (string.IsNullOrEmpty(phvCombo.Text))
+            {
+                asterisk42.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk42.Visible = false;
+            }
+
+            //Barcode Identification Field
+            if (string.IsNullOrEmpty(barcodeIDCombo.Text))
+            {
+                asterisk43.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk43.Visible = false;
+            }
+
+            //Manufacturer Identification Field
+            if (string.IsNullOrEmpty(manuIDCombo.Text))
+            {
+                asterisk44.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk44.Visible = false;
+            }
+
+            //Fill To Line Text Field
+            if (string.IsNullOrEmpty(fillToTextCombo.Text))
+            {
+                asterisk45.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk45.Visible = false;
+            }
+
+            //Fill To Upper Field
+            if (string.IsNullOrEmpty(fillToUpperCombo.Text))
+            {
+                asterisk46.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk46.Visible = false;
+            }
+
+            //UDI Barcode Requirement Field
+            if (string.IsNullOrEmpty(udiReqCombo.Text))
+            {
+                asterisk47.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk47.Visible = false;
+            }
+
+            //UDI Barcode Verification Field
+            if (string.IsNullOrEmpty(udiVerCombo.Text))
+            {
+                asterisk48.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk48.Visible = false;
+            }
+
+            //UDI Human Readable GTIN Field
+            if (string.IsNullOrEmpty(gtinCombo.Text))
+            {
+                asterisk49.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk49.Visible = false;
+            }
+
+            //Label Identification Number Field
+            if (string.IsNullOrEmpty(labelIDCombo.Text))
+            {
+                asterisk50.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk50.Visible = false;
+            }
+
+            //Fill To Lower Field
+            if (string.IsNullOrEmpty(fillToLowerCombo.Text))
+            {
+                asterisk51.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk51.Visible = false;
+            }
+
+            //Lot Number Field
+            if (string.IsNullOrEmpty(lotNumCombo.Text))
+            {
+                asterisk52.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk52.Visible = false;
+            }
+
+            //Collect Saliva By Date Field
+            if (string.IsNullOrEmpty(collectSalDatePicker.Text))
+            {
+                asterisk53.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk53.Visible = false;
+            }
+
+            //Human Readable Barcode Field
+            if (string.IsNullOrEmpty(hrbCombo.Text))
+            {
+                asterisk54.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk54.Visible = false;
+            }
+
+            //Label Stock Design Field
+            if (string.IsNullOrEmpty(labelStockCombo.Text))
+            {
+                asterisk55.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk55.Visible = false;
+            }
+
+
+            //Random Field
+            if (string.IsNullOrEmpty(randomFieldCombo.Text))
+            {
+                asterisk56.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk56.Visible = false;
+            }
+
+
+            //Darkness Setting Field
+            if (string.IsNullOrEmpty(darknessCombo.Text))
+            {
+                asterisk57.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk57.Visible = false;
+            }
+
+
+            //Vision Camera Field
+            if (string.IsNullOrEmpty(visionCombo.Text))
+            {
+                asterisk58.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk58.Visible = false;
+            }
+
+            //Weigh Scale Procedure Radio Button Check
+            if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked || radioButton5.Checked)
+            {
+                asterisk59.Visible = false;
+            }
+            else
+            {
+                asterisk59.Visible = true;
+                errorCount++;
+            }
+
+            //Ship ID Text Field
+            if (string.IsNullOrEmpty(shipIDText.Text))
+            {
+                asterisk60.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk60.Visible = false;
+            }
+
+            //Mailer Box Label Field
+            if (string.IsNullOrEmpty(mailerBoxText.Text))
+            {
+                asterisk61.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk61.Visible = false;
+            }
+        }
+
+        private void CreatePanel_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
         }
     }
 }

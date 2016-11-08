@@ -320,9 +320,9 @@
             this.asterisk33 = new System.Windows.Forms.Label();
             this.asterisk32 = new System.Windows.Forms.Label();
             this.asterisk31 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.stabSolCombo = new System.Windows.Forms.ComboBox();
+            this.tubeDecodeCombo = new System.Windows.Forms.ComboBox();
+            this.tubeSymCombo = new System.Windows.Forms.ComboBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.addFieldCombo3 = new System.Windows.Forms.ComboBox();
             this.addFieldCombo2 = new System.Windows.Forms.ComboBox();
@@ -727,7 +727,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.tableLayoutPanel3.Controls.Add(this.label68, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label69, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label70, 4, 0);
@@ -746,7 +746,7 @@
             this.label68.Location = new System.Drawing.Point(4, 1);
             this.label68.Name = "label68";
             this.label68.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.label68.Size = new System.Drawing.Size(84, 29);
+            this.label68.Size = new System.Drawing.Size(81, 33);
             this.label68.TabIndex = 0;
             this.label68.Text = "DOM\r\n(YYYY-MM-DD)";
             this.label68.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -755,7 +755,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(255, 1);
+            this.label69.Location = new System.Drawing.Point(251, 1);
             this.label69.Name = "label69";
             this.label69.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label69.Size = new System.Drawing.Size(44, 29);
@@ -767,7 +767,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(524, 1);
+            this.label70.Location = new System.Drawing.Point(520, 1);
             this.label70.Name = "label70";
             this.label70.Padding = new System.Windows.Forms.Padding(6, 10, 0, 0);
             this.label70.Size = new System.Drawing.Size(44, 26);
@@ -780,8 +780,8 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.07308F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.92692F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.71658F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.28342F));
             this.tableLayoutPanel4.Controls.Add(this.pPartDescLabel, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label66, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 324);
@@ -795,7 +795,7 @@
             // 
             this.pPartDescLabel.AutoSize = true;
             this.pPartDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pPartDescLabel.Location = new System.Drawing.Point(111, 1);
+            this.pPartDescLabel.Location = new System.Drawing.Point(109, 1);
             this.pPartDescLabel.Name = "pPartDescLabel";
             this.pPartDescLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pPartDescLabel.Size = new System.Drawing.Size(71, 20);
@@ -850,7 +850,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.93393F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.06606F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.tableLayoutPanel1.Controls.Add(this.label136, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.pPartRefLabel, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pDateLabel, 3, 1);
@@ -873,13 +873,12 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(562, 71);
             this.tableLayoutPanel1.TabIndex = 24;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label136
             // 
             this.label136.AutoSize = true;
             this.label136.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label136.Location = new System.Drawing.Point(392, 46);
+            this.label136.Location = new System.Drawing.Point(388, 46);
             this.label136.Name = "label136";
             this.label136.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.label136.Size = new System.Drawing.Size(38, 20);
@@ -889,7 +888,7 @@
             // pPartRefLabel
             // 
             this.pPartRefLabel.AutoSize = true;
-            this.pPartRefLabel.Location = new System.Drawing.Point(110, 46);
+            this.pPartRefLabel.Location = new System.Drawing.Point(109, 46);
             this.pPartRefLabel.Name = "pPartRefLabel";
             this.pPartRefLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pPartRefLabel.Size = new System.Drawing.Size(71, 20);
@@ -900,7 +899,7 @@
             // pDateLabel
             // 
             this.pDateLabel.AutoSize = true;
-            this.pDateLabel.Location = new System.Drawing.Point(392, 23);
+            this.pDateLabel.Location = new System.Drawing.Point(388, 23);
             this.pDateLabel.Name = "pDateLabel";
             this.pDateLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pDateLabel.Size = new System.Drawing.Size(71, 20);
@@ -911,7 +910,7 @@
             // pCustNameLabel
             // 
             this.pCustNameLabel.AutoSize = true;
-            this.pCustNameLabel.Location = new System.Drawing.Point(110, 23);
+            this.pCustNameLabel.Location = new System.Drawing.Point(109, 23);
             this.pCustNameLabel.Name = "pCustNameLabel";
             this.pCustNameLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pCustNameLabel.Size = new System.Drawing.Size(71, 20);
@@ -922,7 +921,7 @@
             // pRevNumLabel
             // 
             this.pRevNumLabel.AutoSize = true;
-            this.pRevNumLabel.Location = new System.Drawing.Point(392, 1);
+            this.pRevNumLabel.Location = new System.Drawing.Point(388, 1);
             this.pRevNumLabel.Name = "pRevNumLabel";
             this.pRevNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pRevNumLabel.Size = new System.Drawing.Size(71, 20);
@@ -934,7 +933,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(316, 46);
+            this.label67.Location = new System.Drawing.Point(312, 46);
             this.label67.Name = "label67";
             this.label67.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label67.Size = new System.Drawing.Size(40, 16);
@@ -945,7 +944,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(316, 23);
+            this.label10.Location = new System.Drawing.Point(312, 23);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label10.Size = new System.Drawing.Size(33, 16);
@@ -956,7 +955,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(316, 1);
+            this.label9.Location = new System.Drawing.Point(312, 1);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label9.Size = new System.Drawing.Size(54, 16);
@@ -999,7 +998,7 @@
             // pDocNumLabel
             // 
             this.pDocNumLabel.AutoSize = true;
-            this.pDocNumLabel.Location = new System.Drawing.Point(110, 1);
+            this.pDocNumLabel.Location = new System.Drawing.Point(109, 1);
             this.pDocNumLabel.Name = "pDocNumLabel";
             this.pDocNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pDocNumLabel.Size = new System.Drawing.Size(71, 20);
@@ -1744,6 +1743,7 @@
             // 
             // part25ComboBox
             // 
+            this.part25ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part25ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part25ComboBox.FormattingEnabled = true;
             this.part25ComboBox.Location = new System.Drawing.Point(86, 786);
@@ -1779,6 +1779,7 @@
             // 
             // part24ComboBox
             // 
+            this.part24ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part24ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part24ComboBox.FormattingEnabled = true;
             this.part24ComboBox.Location = new System.Drawing.Point(86, 754);
@@ -1814,6 +1815,7 @@
             // 
             // part23ComboBox
             // 
+            this.part23ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part23ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part23ComboBox.FormattingEnabled = true;
             this.part23ComboBox.Location = new System.Drawing.Point(86, 722);
@@ -1849,6 +1851,7 @@
             // 
             // part22ComboBox
             // 
+            this.part22ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part22ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part22ComboBox.FormattingEnabled = true;
             this.part22ComboBox.Location = new System.Drawing.Point(86, 690);
@@ -1884,6 +1887,7 @@
             // 
             // part21ComboBox
             // 
+            this.part21ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part21ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part21ComboBox.FormattingEnabled = true;
             this.part21ComboBox.Location = new System.Drawing.Point(86, 658);
@@ -1919,6 +1923,7 @@
             // 
             // part20ComboBox
             // 
+            this.part20ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part20ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part20ComboBox.FormattingEnabled = true;
             this.part20ComboBox.Location = new System.Drawing.Point(86, 626);
@@ -1954,6 +1959,7 @@
             // 
             // part19ComboBox
             // 
+            this.part19ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part19ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part19ComboBox.FormattingEnabled = true;
             this.part19ComboBox.Location = new System.Drawing.Point(86, 594);
@@ -1989,6 +1995,7 @@
             // 
             // part18ComboBox
             // 
+            this.part18ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part18ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part18ComboBox.FormattingEnabled = true;
             this.part18ComboBox.Location = new System.Drawing.Point(86, 562);
@@ -2024,6 +2031,7 @@
             // 
             // part17ComboBox
             // 
+            this.part17ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part17ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part17ComboBox.FormattingEnabled = true;
             this.part17ComboBox.Location = new System.Drawing.Point(86, 530);
@@ -2059,6 +2067,7 @@
             // 
             // part16ComboBox
             // 
+            this.part16ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part16ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part16ComboBox.FormattingEnabled = true;
             this.part16ComboBox.Location = new System.Drawing.Point(86, 497);
@@ -2094,6 +2103,7 @@
             // 
             // part15ComboBox
             // 
+            this.part15ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part15ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part15ComboBox.FormattingEnabled = true;
             this.part15ComboBox.Location = new System.Drawing.Point(86, 463);
@@ -2139,6 +2149,7 @@
             // 
             // part14ComboBox
             // 
+            this.part14ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part14ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part14ComboBox.FormattingEnabled = true;
             this.part14ComboBox.Location = new System.Drawing.Point(86, 431);
@@ -2184,6 +2195,7 @@
             // 
             // part13ComboBox
             // 
+            this.part13ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part13ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part13ComboBox.FormattingEnabled = true;
             this.part13ComboBox.Location = new System.Drawing.Point(86, 399);
@@ -2201,6 +2213,7 @@
             // 
             // part12ComboBox
             // 
+            this.part12ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part12ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part12ComboBox.FormattingEnabled = true;
             this.part12ComboBox.Location = new System.Drawing.Point(86, 364);
@@ -2234,6 +2247,7 @@
             // 
             // part11ComboBox
             // 
+            this.part11ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part11ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part11ComboBox.FormattingEnabled = true;
             this.part11ComboBox.Location = new System.Drawing.Point(86, 332);
@@ -2259,6 +2273,7 @@
             // 
             // part10ComboBox
             // 
+            this.part10ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part10ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part10ComboBox.FormattingEnabled = true;
             this.part10ComboBox.Location = new System.Drawing.Point(86, 300);
@@ -2294,6 +2309,7 @@
             // 
             // part9ComboBox
             // 
+            this.part9ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part9ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part9ComboBox.FormattingEnabled = true;
             this.part9ComboBox.Location = new System.Drawing.Point(86, 268);
@@ -2329,6 +2345,7 @@
             // 
             // part8ComboBox
             // 
+            this.part8ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part8ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part8ComboBox.FormattingEnabled = true;
             this.part8ComboBox.Location = new System.Drawing.Point(86, 236);
@@ -2364,6 +2381,7 @@
             // 
             // part7ComboBox
             // 
+            this.part7ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part7ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part7ComboBox.FormattingEnabled = true;
             this.part7ComboBox.Location = new System.Drawing.Point(86, 204);
@@ -2399,6 +2417,7 @@
             // 
             // part6ComboBox
             // 
+            this.part6ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part6ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part6ComboBox.FormattingEnabled = true;
             this.part6ComboBox.Location = new System.Drawing.Point(86, 172);
@@ -2434,6 +2453,7 @@
             // 
             // part5ComboBox
             // 
+            this.part5ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part5ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part5ComboBox.FormattingEnabled = true;
             this.part5ComboBox.Location = new System.Drawing.Point(86, 140);
@@ -2469,6 +2489,7 @@
             // 
             // part4ComboBox
             // 
+            this.part4ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part4ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part4ComboBox.FormattingEnabled = true;
             this.part4ComboBox.Location = new System.Drawing.Point(86, 108);
@@ -2504,6 +2525,7 @@
             // 
             // part3ComboBox
             // 
+            this.part3ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part3ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part3ComboBox.FormattingEnabled = true;
             this.part3ComboBox.Location = new System.Drawing.Point(86, 76);
@@ -2539,6 +2561,7 @@
             // 
             // part2ComboBox
             // 
+            this.part2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part2ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part2ComboBox.FormattingEnabled = true;
             this.part2ComboBox.Location = new System.Drawing.Point(86, 44);
@@ -2548,6 +2571,7 @@
             // 
             // part1ComboBox
             // 
+            this.part1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.part1ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.part1ComboBox.FormattingEnabled = true;
             this.part1ComboBox.Location = new System.Drawing.Point(86, 12);
@@ -2819,7 +2843,7 @@
             this.panel2.Controls.Add(this.groupBox15);
             this.panel2.Location = new System.Drawing.Point(6, 13);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(845, 429);
+            this.panel2.Size = new System.Drawing.Size(846, 429);
             this.panel2.TabIndex = 18;
             // 
             // label45
@@ -3599,9 +3623,9 @@
             this.groupBox15.Controls.Add(this.asterisk33);
             this.groupBox15.Controls.Add(this.asterisk32);
             this.groupBox15.Controls.Add(this.asterisk31);
-            this.groupBox15.Controls.Add(this.comboBox6);
-            this.groupBox15.Controls.Add(this.comboBox5);
-            this.groupBox15.Controls.Add(this.comboBox4);
+            this.groupBox15.Controls.Add(this.stabSolCombo);
+            this.groupBox15.Controls.Add(this.tubeDecodeCombo);
+            this.groupBox15.Controls.Add(this.tubeSymCombo);
             this.groupBox15.Controls.Add(this.groupBox21);
             this.groupBox15.Controls.Add(this.label134);
             this.groupBox15.Controls.Add(this.label133);
@@ -3749,32 +3773,32 @@
             this.asterisk31.TabIndex = 153;
             this.asterisk31.Text = "*";
             // 
-            // comboBox6
+            // stabSolCombo
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(592, 93);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(171, 26);
-            this.comboBox6.TabIndex = 50;
+            this.stabSolCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stabSolCombo.FormattingEnabled = true;
+            this.stabSolCombo.Location = new System.Drawing.Point(592, 93);
+            this.stabSolCombo.Name = "stabSolCombo";
+            this.stabSolCombo.Size = new System.Drawing.Size(171, 26);
+            this.stabSolCombo.TabIndex = 50;
             // 
-            // comboBox5
+            // tubeDecodeCombo
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(592, 57);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(171, 26);
-            this.comboBox5.TabIndex = 49;
+            this.tubeDecodeCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeDecodeCombo.FormattingEnabled = true;
+            this.tubeDecodeCombo.Location = new System.Drawing.Point(592, 57);
+            this.tubeDecodeCombo.Name = "tubeDecodeCombo";
+            this.tubeDecodeCombo.Size = new System.Drawing.Size(171, 26);
+            this.tubeDecodeCombo.TabIndex = 49;
             // 
-            // comboBox4
+            // tubeSymCombo
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(592, 23);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(171, 26);
-            this.comboBox4.TabIndex = 48;
+            this.tubeSymCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tubeSymCombo.FormattingEnabled = true;
+            this.tubeSymCombo.Location = new System.Drawing.Point(592, 23);
+            this.tubeSymCombo.Name = "tubeSymCombo";
+            this.tubeSymCombo.Size = new System.Drawing.Size(171, 26);
+            this.tubeSymCombo.TabIndex = 48;
             // 
             // groupBox21
             // 
@@ -3861,6 +3885,7 @@
             this.checkBox1.TabIndex = 16;
             this.checkBox1.Text = "Additional Options Toggle";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // label134
             // 
@@ -4309,7 +4334,6 @@
             this.label96.TabIndex = 18;
             this.label96.Text = "Please select all criteria neccessary.";
             this.label96.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label96.Click += new System.EventHandler(this.label96_Click);
             // 
             // groupBox25
             // 
@@ -4411,7 +4435,6 @@
             this.label121.Size = new System.Drawing.Size(22, 20);
             this.label121.TabIndex = 83;
             this.label121.Text = "3.";
-            this.label121.Click += new System.EventHandler(this.label121_Click);
             // 
             // label120
             // 
@@ -4923,7 +4946,6 @@
             this.tabPage6.Size = new System.Drawing.Size(889, 597);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Weigh Scale Procedure";
-            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
             // groupBox47
             // 
@@ -5846,7 +5868,6 @@
             this.prettyBoxCheckBox.TabIndex = 6;
             this.prettyBoxCheckBox.Text = "Pretty Box?";
             this.prettyBoxCheckBox.UseVisualStyleBackColor = true;
-            this.prettyBoxCheckBox.CheckedChanged += new System.EventHandler(this.prettyBoxCheckBox_CheckedChanged);
             // 
             // mailerBoxText
             // 
@@ -6141,6 +6162,7 @@
             this.Name = "CreatePanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create New Batch Record";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreatePanel_FormClosed);
             this.Load += new System.EventHandler(this.CreatePanel_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -6732,9 +6754,9 @@
         private System.Windows.Forms.Label asterisk33;
         private System.Windows.Forms.Label asterisk32;
         private System.Windows.Forms.Label asterisk31;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox stabSolCombo;
+        private System.Windows.Forms.ComboBox tubeDecodeCombo;
+        private System.Windows.Forms.ComboBox tubeSymCombo;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.ComboBox addFieldCombo3;
         private System.Windows.Forms.ComboBox addFieldCombo2;
