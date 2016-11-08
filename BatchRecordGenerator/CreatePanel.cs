@@ -309,6 +309,8 @@ namespace BatchRecordGenerator
             tabControl1.SelectedTab = tabPage8;
         }
 
+        //******************************END***********************************//
+
         private void labelPreviewButton_Click(object sender, EventArgs e)
         {
             //Sets the labels in the preview pane to be equal to their matching input fields
@@ -395,164 +397,461 @@ namespace BatchRecordGenerator
 
         }
 
-        private void label97_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label122_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label120_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label113_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label112_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label111_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label110_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label109_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label107_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label108_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label103_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label98_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label99_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label100_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label101_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label102_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label104_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label105_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label106_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label114_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label119_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label116_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label115_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label129_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label125_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label126_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label127_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label128_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label117_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        /*
+         *The finish button will first check all required input fields to ensure they have been filled out.
+         * If a field has been let blank, the corresponding error indicator will appear and the user will be notified via pop-up box.
+         *If there are no errors, the batch record is processed and inserted into the database.
+        */
         private void finishButton_Click(object sender, EventArgs e)
         {
 
+            errorCheck();
+        }
+
+        private void errorCheck()
+        {
+
+            int errorCount = 0; //Counts how many errors were found
+
+            //Document Number Field
+            if (string.IsNullOrEmpty(docNumText.Text))
+            {
+                asterisk1.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk1.Visible = false;
+            }
+
+            //Customer Name Field
+            if (string.IsNullOrEmpty(custNameText.Text))
+            {
+                asterisk2.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk2.Visible = false;
+            }
+
+            //Part Reference Field
+            if (string.IsNullOrEmpty(partRefCombo.Text))
+            {
+                asterisk3.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk3.Visible = false;
+            }
+
+            //Part Description Field
+            if (string.IsNullOrEmpty(partDescText.Text))
+            {
+                asterisk4.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk4.Visible = false;
+            }
+
+            //Revision Number Field
+            if (string.IsNullOrEmpty(revNumText.Text))
+            {
+                asterisk5.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk5.Visible = false;
+            }
+
+
+            //BOM Field 2
+            if (!string.IsNullOrEmpty(part2ComboBox.Text) && string.IsNullOrEmpty(quantityText2.Text))
+            {
+                asterisk7.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part2ComboBox.Text) && !string.IsNullOrEmpty(quantityText2.Text))
+            {
+                asterisk7.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk7.Visible = false;
+            }
+
+            //BOM Field 3
+            if (!string.IsNullOrEmpty(part3ComboBox.Text) && string.IsNullOrEmpty(quantityText3.Text))
+            {
+                asterisk8.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part3ComboBox.Text) && !string.IsNullOrEmpty(quantityText3.Text))
+            {
+                asterisk8.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk8.Visible = false;
+            }
+
+            //BOM Field 4
+            if (!string.IsNullOrEmpty(part4ComboBox.Text) && string.IsNullOrEmpty(quantityText4.Text))
+            {
+                asterisk9.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part4ComboBox.Text) && !string.IsNullOrEmpty(quantityText4.Text))
+            {
+                asterisk9.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk9.Visible = false;
+            }
+
+            //BOM Field 5
+            if (!string.IsNullOrEmpty(part5ComboBox.Text) && string.IsNullOrEmpty(quantityText5.Text))
+            {
+                asterisk10.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part5ComboBox.Text) && !string.IsNullOrEmpty(quantityText5.Text))
+            {
+                asterisk10.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk10.Visible = false;
+            }
+
+            //BOM Field 6
+            if (!string.IsNullOrEmpty(part6ComboBox.Text) && string.IsNullOrEmpty(quantityText6.Text))
+            {
+                asterisk11.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part6ComboBox.Text) && !string.IsNullOrEmpty(quantityText6.Text))
+            {
+                asterisk11.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk11.Visible = false;
+            }
+
+            //BOM Field 7
+            if (!string.IsNullOrEmpty(part7ComboBox.Text) && string.IsNullOrEmpty(quantityText7.Text))
+            {
+                asterisk12.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part7ComboBox.Text) && !string.IsNullOrEmpty(quantityText7.Text))
+            {
+                asterisk12.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk12.Visible = false;
+            }
+
+            //BOM Field 8
+            if (!string.IsNullOrEmpty(part8ComboBox.Text) && string.IsNullOrEmpty(quantityText8.Text))
+            {
+                asterisk13.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part8ComboBox.Text) && !string.IsNullOrEmpty(quantityText8.Text))
+            {
+                asterisk13.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk13.Visible = false;
+            }
+
+            //BOM Field 9
+            if (!string.IsNullOrEmpty(part9ComboBox.Text) && string.IsNullOrEmpty(quantityText9.Text))
+            {
+                asterisk14.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part9ComboBox.Text) && !string.IsNullOrEmpty(quantityText9.Text))
+            {
+                asterisk14.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk14.Visible = false;
+            }
+
+            //BOM Field 10
+            if (!string.IsNullOrEmpty(part10ComboBox.Text) && string.IsNullOrEmpty(quantityText10.Text))
+            {
+                asterisk15.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part10ComboBox.Text) && !string.IsNullOrEmpty(quantityText10.Text))
+            {
+                asterisk15.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk15.Visible = false;
+            }
+
+            //BOM Field 11
+            if (!string.IsNullOrEmpty(part11ComboBox.Text) && string.IsNullOrEmpty(quantityText11.Text))
+            {
+                asterisk16.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part11ComboBox.Text) && !string.IsNullOrEmpty(quantityText11.Text))
+            {
+                asterisk16.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk16.Visible = false;
+            }
+
+            //BOM Field 12
+            if (!string.IsNullOrEmpty(part12ComboBox.Text) && string.IsNullOrEmpty(quantityText12.Text))
+            {
+                asterisk17.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part12ComboBox.Text) && !string.IsNullOrEmpty(quantityText12.Text))
+            {
+                asterisk17.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk17.Visible = false;
+            }
+
+            //BOM Field 13
+            if (!string.IsNullOrEmpty(part13ComboBox.Text) && string.IsNullOrEmpty(quantityText13.Text))
+            {
+                asterisk18.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part13ComboBox.Text) && !string.IsNullOrEmpty(quantityText13.Text))
+            {
+                asterisk18.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk18.Visible = false;
+            }
+
+            //BOM Field 14
+            if (!string.IsNullOrEmpty(part14ComboBox.Text) && string.IsNullOrEmpty(quantityText14.Text))
+            {
+                asterisk19.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part14ComboBox.Text) && !string.IsNullOrEmpty(quantityText14.Text))
+            {
+                asterisk19.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk19.Visible = false;
+            }
+
+            //BOM Field 15
+            if (!string.IsNullOrEmpty(part15ComboBox.Text) && string.IsNullOrEmpty(quantityText15.Text))
+            {
+                asterisk20.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part15ComboBox.Text) && !string.IsNullOrEmpty(quantityText15.Text))
+            {
+                asterisk20.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk20.Visible = false;
+            }
+
+            //BOM Field 16
+            if (!string.IsNullOrEmpty(part16ComboBox.Text) && string.IsNullOrEmpty(quantityText16.Text))
+            {
+                asterisk21.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part16ComboBox.Text) && !string.IsNullOrEmpty(quantityText16.Text))
+            {
+                asterisk21.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk21.Visible = false;
+            }
+
+            //BOM Field 17
+            if (!string.IsNullOrEmpty(part17ComboBox.Text) && string.IsNullOrEmpty(quantityText17.Text))
+            {
+                asterisk22.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part17ComboBox.Text) && !string.IsNullOrEmpty(quantityText17.Text))
+            {
+                asterisk22.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk22.Visible = false;
+            }
+
+            //BOM Field 18
+            if (!string.IsNullOrEmpty(part18ComboBox.Text) && string.IsNullOrEmpty(quantityText18.Text))
+            {
+                asterisk23.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part18ComboBox.Text) && !string.IsNullOrEmpty(quantityText18.Text))
+            {
+                asterisk23.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk23.Visible = false;
+            }
+
+            //BOM Field 19
+            if (!string.IsNullOrEmpty(part19ComboBox.Text) && string.IsNullOrEmpty(quantityText19.Text))
+            {
+                asterisk24.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part19ComboBox.Text) && !string.IsNullOrEmpty(quantityText19.Text))
+            {
+                asterisk24.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk24.Visible = false;
+            }
+
+            //BOM Field 20
+            if (!string.IsNullOrEmpty(part20ComboBox.Text) && string.IsNullOrEmpty(quantityText20.Text))
+            {
+                asterisk25.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part20ComboBox.Text) && !string.IsNullOrEmpty(quantityText20.Text))
+            {
+                asterisk25.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk25.Visible = false;
+            }
+
+            //BOM Field 21
+            if (!string.IsNullOrEmpty(part21ComboBox.Text) && string.IsNullOrEmpty(quantityText21.Text))
+            {
+                asterisk26.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part21ComboBox.Text) && !string.IsNullOrEmpty(quantityText21.Text))
+            {
+                asterisk26.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk26.Visible = false;
+            }
+
+            //BOM Field 22
+            if (!string.IsNullOrEmpty(part22ComboBox.Text) && string.IsNullOrEmpty(quantityText22.Text))
+            {
+                asterisk27.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part22ComboBox.Text) && !string.IsNullOrEmpty(quantityText22.Text))
+            {
+                asterisk27.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk27.Visible = false;
+            }
+
+            //BOM Field 23
+            if (!string.IsNullOrEmpty(part23ComboBox.Text) && string.IsNullOrEmpty(quantityText23.Text))
+            {
+                asterisk28.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part23ComboBox.Text) && !string.IsNullOrEmpty(quantityText23.Text))
+            {
+                asterisk28.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk28.Visible = false;
+            }
+
+            //BOM Field 24
+            if (!string.IsNullOrEmpty(part24ComboBox.Text) && string.IsNullOrEmpty(quantityText24.Text))
+            {
+                asterisk29.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part24ComboBox.Text) && !string.IsNullOrEmpty(quantityText24.Text))
+            {
+                asterisk29.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk29.Visible = false;
+            }
+
+            //BOM Field 25
+            if (!string.IsNullOrEmpty(part25ComboBox.Text) && string.IsNullOrEmpty(quantityText25.Text))
+            {
+                asterisk30.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part25ComboBox.Text) && !string.IsNullOrEmpty(quantityText25.Text))
+            {
+                asterisk30.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk30.Visible = false;
+            }
         }
     }
 }
