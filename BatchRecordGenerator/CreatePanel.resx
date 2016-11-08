@@ -330,8 +330,8 @@
 </value>
   </data>
   <data name="label23.Text" xml:space="preserve">
-    <value>The line clearance process is a collection of all parts necessary to complete the item pertaining to the batch record. Please indicate all parts necessary, a 
-brief description, and the total quantity required.
+    <value>The line clearance process (or bill of materials) is a collection of all parts necessary to complete the item pertaining to the batch record. Please indicate all 
+parts necessary. a description will automatically appear which are specific to each part. Also, be sure to fill in all quantity fields.
 </value>
   </data>
   <data name="label230.Text" xml:space="preserve">
@@ -340,8 +340,8 @@ brief description, and the total quantity required.
 </value>
   </data>
   <data name="label74.Text" xml:space="preserve">
-    <value>The line clearance process is a collection of all parts necessary to complete the item pertaining to the batch record. Please indicate all parts necessary, a 
-brief description, and the total quantity required.
+    <value>This step encapsulates a collection of processes: Startup/ Setup, In-Process Inspection, and Tube Label Inspection. To be concise, the information 
+gathered here will appear on multiple pages of the Batch Record Document. 
 </value>
   </data>
   <data name="label6.Text" xml:space="preserve">
@@ -360,11 +360,6 @@ brief description, and the total quantity required.
 </value>
   </data>
   <data name="label171.Text" xml:space="preserve">
-    <value>The line clearance process is a collection of all parts necessary to complete the item pertaining to the batch record. Please indicate all parts necessary, a 
-brief description, and the total quantity required.
-</value>
-  </data>
-  <data name="label153.Text" xml:space="preserve">
     <value>The line clearance process is a collection of all parts necessary to complete the item pertaining to the batch record. Please indicate all parts necessary, a 
 brief description, and the total quantity required.
 </value>
