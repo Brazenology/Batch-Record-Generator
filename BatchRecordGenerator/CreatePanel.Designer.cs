@@ -66,14 +66,12 @@
             this.labelPreviewButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.label61 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.asterisk5 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.applyDateCheckBox = new System.Windows.Forms.CheckBox();
             this.labelDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.asterisk5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.revNumText = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.asterisk4 = new System.Windows.Forms.Label();
             this.asterisk2 = new System.Windows.Forms.Label();
             this.asterisk3 = new System.Windows.Forms.Label();
@@ -551,8 +549,6 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox16.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -709,7 +705,6 @@
             this.groupBox2.Controls.Add(this.labelPreviewButton);
             this.groupBox2.Controls.Add(this.clearButton);
             this.groupBox2.Controls.Add(this.label61);
-            this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(15, 95);
             this.groupBox2.Name = "groupBox2";
@@ -727,7 +722,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
             this.tableLayoutPanel3.Controls.Add(this.label68, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label69, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label70, 4, 0);
@@ -746,7 +741,7 @@
             this.label68.Location = new System.Drawing.Point(4, 1);
             this.label68.Name = "label68";
             this.label68.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.label68.Size = new System.Drawing.Size(81, 33);
+            this.label68.Size = new System.Drawing.Size(73, 33);
             this.label68.TabIndex = 0;
             this.label68.Text = "DOM\r\n(YYYY-MM-DD)";
             this.label68.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -755,7 +750,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(251, 1);
+            this.label69.Location = new System.Drawing.Point(245, 1);
             this.label69.Name = "label69";
             this.label69.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label69.Size = new System.Drawing.Size(44, 29);
@@ -767,7 +762,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(520, 1);
+            this.label70.Location = new System.Drawing.Point(514, 1);
             this.label70.Name = "label70";
             this.label70.Padding = new System.Windows.Forms.Padding(6, 10, 0, 0);
             this.label70.Size = new System.Drawing.Size(44, 26);
@@ -780,8 +775,8 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.71658F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.28342F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.36007F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.63993F));
             this.tableLayoutPanel4.Controls.Add(this.pPartDescLabel, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label66, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 324);
@@ -795,7 +790,7 @@
             // 
             this.pPartDescLabel.AutoSize = true;
             this.pPartDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pPartDescLabel.Location = new System.Drawing.Point(109, 1);
+            this.pPartDescLabel.Location = new System.Drawing.Point(107, 1);
             this.pPartDescLabel.Name = "pPartDescLabel";
             this.pPartDescLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pPartDescLabel.Size = new System.Drawing.Size(71, 20);
@@ -850,7 +845,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.93393F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.06606F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
             this.tableLayoutPanel1.Controls.Add(this.label136, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.pPartRefLabel, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pDateLabel, 3, 1);
@@ -878,7 +873,7 @@
             // 
             this.label136.AutoSize = true;
             this.label136.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label136.Location = new System.Drawing.Point(388, 46);
+            this.label136.Location = new System.Drawing.Point(382, 46);
             this.label136.Name = "label136";
             this.label136.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.label136.Size = new System.Drawing.Size(38, 20);
@@ -888,7 +883,7 @@
             // pPartRefLabel
             // 
             this.pPartRefLabel.AutoSize = true;
-            this.pPartRefLabel.Location = new System.Drawing.Point(109, 46);
+            this.pPartRefLabel.Location = new System.Drawing.Point(107, 46);
             this.pPartRefLabel.Name = "pPartRefLabel";
             this.pPartRefLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pPartRefLabel.Size = new System.Drawing.Size(71, 20);
@@ -899,7 +894,7 @@
             // pDateLabel
             // 
             this.pDateLabel.AutoSize = true;
-            this.pDateLabel.Location = new System.Drawing.Point(388, 23);
+            this.pDateLabel.Location = new System.Drawing.Point(382, 23);
             this.pDateLabel.Name = "pDateLabel";
             this.pDateLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pDateLabel.Size = new System.Drawing.Size(71, 20);
@@ -910,7 +905,7 @@
             // pCustNameLabel
             // 
             this.pCustNameLabel.AutoSize = true;
-            this.pCustNameLabel.Location = new System.Drawing.Point(109, 23);
+            this.pCustNameLabel.Location = new System.Drawing.Point(107, 23);
             this.pCustNameLabel.Name = "pCustNameLabel";
             this.pCustNameLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pCustNameLabel.Size = new System.Drawing.Size(71, 20);
@@ -921,7 +916,7 @@
             // pRevNumLabel
             // 
             this.pRevNumLabel.AutoSize = true;
-            this.pRevNumLabel.Location = new System.Drawing.Point(388, 1);
+            this.pRevNumLabel.Location = new System.Drawing.Point(382, 1);
             this.pRevNumLabel.Name = "pRevNumLabel";
             this.pRevNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pRevNumLabel.Size = new System.Drawing.Size(71, 20);
@@ -933,7 +928,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(312, 46);
+            this.label67.Location = new System.Drawing.Point(306, 46);
             this.label67.Name = "label67";
             this.label67.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label67.Size = new System.Drawing.Size(40, 16);
@@ -944,7 +939,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(312, 23);
+            this.label10.Location = new System.Drawing.Point(306, 23);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label10.Size = new System.Drawing.Size(33, 16);
@@ -955,7 +950,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(312, 1);
+            this.label9.Location = new System.Drawing.Point(306, 1);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label9.Size = new System.Drawing.Size(54, 16);
@@ -998,7 +993,7 @@
             // pDocNumLabel
             // 
             this.pDocNumLabel.AutoSize = true;
-            this.pDocNumLabel.Location = new System.Drawing.Point(109, 1);
+            this.pDocNumLabel.Location = new System.Drawing.Point(107, 1);
             this.pDocNumLabel.Name = "pDocNumLabel";
             this.pDocNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.pDocNumLabel.Size = new System.Drawing.Size(71, 20);
@@ -1054,83 +1049,13 @@
             this.label61.Text = "After completing the above information, a preview of the label can be viewed belo" +
     "w via the Preview button.";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.asterisk5);
-            this.groupBox4.Controls.Add(this.groupBox16);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.revNumText);
-            this.groupBox4.Location = new System.Drawing.Point(440, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(395, 186);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            // 
-            // asterisk5
-            // 
-            this.asterisk5.AutoSize = true;
-            this.asterisk5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asterisk5.Location = new System.Drawing.Point(195, 30);
-            this.asterisk5.Name = "asterisk5";
-            this.asterisk5.Size = new System.Drawing.Size(15, 20);
-            this.asterisk5.TabIndex = 30;
-            this.asterisk5.Text = "*";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.applyDateCheckBox);
-            this.groupBox16.Controls.Add(this.labelDatePicker);
-            this.groupBox16.Location = new System.Drawing.Point(20, 56);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(354, 110);
-            this.groupBox16.TabIndex = 21;
-            this.groupBox16.TabStop = false;
-            // 
-            // applyDateCheckBox
-            // 
-            this.applyDateCheckBox.AutoSize = true;
-            this.applyDateCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.applyDateCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.applyDateCheckBox.Location = new System.Drawing.Point(16, 24);
-            this.applyDateCheckBox.Name = "applyDateCheckBox";
-            this.applyDateCheckBox.Size = new System.Drawing.Size(105, 22);
-            this.applyDateCheckBox.TabIndex = 20;
-            this.applyDateCheckBox.Text = "Apply Date?";
-            this.applyDateCheckBox.UseVisualStyleBackColor = true;
-            this.applyDateCheckBox.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // labelDatePicker
-            // 
-            this.labelDatePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatePicker.CustomFormat = "YYYY-MM-DD";
-            this.labelDatePicker.Enabled = false;
-            this.labelDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.labelDatePicker.Location = new System.Drawing.Point(16, 52);
-            this.labelDatePicker.Name = "labelDatePicker";
-            this.labelDatePicker.Size = new System.Drawing.Size(177, 24);
-            this.labelDatePicker.TabIndex = 19;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 18);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Revision Number:";
-            // 
-            // revNumText
-            // 
-            this.revNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.revNumText.Location = new System.Drawing.Point(149, 26);
-            this.revNumText.Name = "revNumText";
-            this.revNumText.Size = new System.Drawing.Size(40, 24);
-            this.revNumText.TabIndex = 9;
-            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.applyDateCheckBox);
+            this.groupBox3.Controls.Add(this.labelDatePicker);
+            this.groupBox3.Controls.Add(this.asterisk5);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.revNumText);
             this.groupBox3.Controls.Add(this.asterisk4);
             this.groupBox3.Controls.Add(this.asterisk2);
             this.groupBox3.Controls.Add(this.asterisk3);
@@ -1145,15 +1070,68 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(21, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(395, 186);
+            this.groupBox3.Size = new System.Drawing.Size(814, 186);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
+            // 
+            // applyDateCheckBox
+            // 
+            this.applyDateCheckBox.AutoSize = true;
+            this.applyDateCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.applyDateCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyDateCheckBox.Location = new System.Drawing.Point(559, 28);
+            this.applyDateCheckBox.Name = "applyDateCheckBox";
+            this.applyDateCheckBox.Size = new System.Drawing.Size(105, 22);
+            this.applyDateCheckBox.TabIndex = 37;
+            this.applyDateCheckBox.Text = "Apply Date?";
+            this.applyDateCheckBox.UseVisualStyleBackColor = true;
+            this.applyDateCheckBox.CheckedChanged += new System.EventHandler(this.applyDateCheckBox_CheckedChanged);
+            // 
+            // labelDatePicker
+            // 
+            this.labelDatePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDatePicker.CustomFormat = "YYYY-MM-DD";
+            this.labelDatePicker.Enabled = false;
+            this.labelDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.labelDatePicker.Location = new System.Drawing.Point(688, 24);
+            this.labelDatePicker.Name = "labelDatePicker";
+            this.labelDatePicker.Size = new System.Drawing.Size(105, 24);
+            this.labelDatePicker.TabIndex = 36;
+            // 
+            // asterisk5
+            // 
+            this.asterisk5.AutoSize = true;
+            this.asterisk5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asterisk5.Location = new System.Drawing.Point(734, 71);
+            this.asterisk5.Name = "asterisk5";
+            this.asterisk5.Size = new System.Drawing.Size(15, 20);
+            this.asterisk5.TabIndex = 35;
+            this.asterisk5.Text = "*";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(556, 70);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 18);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Revision Number:";
+            // 
+            // revNumText
+            // 
+            this.revNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.revNumText.Location = new System.Drawing.Point(688, 67);
+            this.revNumText.Name = "revNumText";
+            this.revNumText.Size = new System.Drawing.Size(40, 24);
+            this.revNumText.TabIndex = 34;
             // 
             // asterisk4
             // 
             this.asterisk4.AutoSize = true;
             this.asterisk4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asterisk4.Location = new System.Drawing.Point(366, 151);
+            this.asterisk4.Location = new System.Drawing.Point(515, 150);
             this.asterisk4.Name = "asterisk4";
             this.asterisk4.Size = new System.Drawing.Size(15, 20);
             this.asterisk4.TabIndex = 11;
@@ -1163,7 +1141,7 @@
             // 
             this.asterisk2.AutoSize = true;
             this.asterisk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asterisk2.Location = new System.Drawing.Point(366, 70);
+            this.asterisk2.Location = new System.Drawing.Point(515, 69);
             this.asterisk2.Name = "asterisk2";
             this.asterisk2.Size = new System.Drawing.Size(15, 20);
             this.asterisk2.TabIndex = 10;
@@ -1173,7 +1151,7 @@
             // 
             this.asterisk3.AutoSize = true;
             this.asterisk3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asterisk3.Location = new System.Drawing.Point(366, 111);
+            this.asterisk3.Location = new System.Drawing.Point(515, 110);
             this.asterisk3.Name = "asterisk3";
             this.asterisk3.Size = new System.Drawing.Size(15, 20);
             this.asterisk3.TabIndex = 9;
@@ -1183,7 +1161,7 @@
             // 
             this.asterisk1.AutoSize = true;
             this.asterisk1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asterisk1.Location = new System.Drawing.Point(366, 28);
+            this.asterisk1.Location = new System.Drawing.Point(515, 27);
             this.asterisk1.Name = "asterisk1";
             this.asterisk1.Size = new System.Drawing.Size(15, 20);
             this.asterisk1.TabIndex = 8;
@@ -1194,7 +1172,7 @@
             this.partDescText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partDescText.Location = new System.Drawing.Point(171, 148);
             this.partDescText.Name = "partDescText";
-            this.partDescText.Size = new System.Drawing.Size(189, 24);
+            this.partDescText.Size = new System.Drawing.Size(338, 24);
             this.partDescText.TabIndex = 7;
             // 
             // label5
@@ -1213,7 +1191,7 @@
             this.partRefCombo.FormattingEnabled = true;
             this.partRefCombo.Location = new System.Drawing.Point(171, 105);
             this.partRefCombo.Name = "partRefCombo";
-            this.partRefCombo.Size = new System.Drawing.Size(189, 26);
+            this.partRefCombo.Size = new System.Drawing.Size(338, 26);
             this.partRefCombo.TabIndex = 5;
             // 
             // label4
@@ -1231,7 +1209,7 @@
             this.custNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.custNameText.Location = new System.Drawing.Point(171, 66);
             this.custNameText.Name = "custNameText";
-            this.custNameText.Size = new System.Drawing.Size(189, 24);
+            this.custNameText.Size = new System.Drawing.Size(338, 24);
             this.custNameText.TabIndex = 3;
             // 
             // label3
@@ -1249,7 +1227,7 @@
             this.docNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.docNumText.Location = new System.Drawing.Point(171, 26);
             this.docNumText.Name = "docNumText";
-            this.docNumText.Size = new System.Drawing.Size(189, 24);
+            this.docNumText.Size = new System.Drawing.Size(338, 24);
             this.docNumText.TabIndex = 1;
             // 
             // label2
@@ -1750,6 +1728,7 @@
             this.part25ComboBox.Name = "part25ComboBox";
             this.part25ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part25ComboBox.TabIndex = 126;
+            this.part25ComboBox.SelectedIndexChanged += new System.EventHandler(this.part25ComboBox_SelectedIndexChanged);
             // 
             // descrip25
             // 
@@ -1786,6 +1765,7 @@
             this.part24ComboBox.Name = "part24ComboBox";
             this.part24ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part24ComboBox.TabIndex = 122;
+            this.part24ComboBox.SelectedIndexChanged += new System.EventHandler(this.part24ComboBox_SelectedIndexChanged);
             // 
             // descrip24
             // 
@@ -1822,6 +1802,7 @@
             this.part23ComboBox.Name = "part23ComboBox";
             this.part23ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part23ComboBox.TabIndex = 114;
+            this.part23ComboBox.SelectedIndexChanged += new System.EventHandler(this.part23ComboBox_SelectedIndexChanged);
             // 
             // descrip23
             // 
@@ -1858,6 +1839,7 @@
             this.part22ComboBox.Name = "part22ComboBox";
             this.part22ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part22ComboBox.TabIndex = 110;
+            this.part22ComboBox.SelectedIndexChanged += new System.EventHandler(this.part22ComboBox_SelectedIndexChanged);
             // 
             // descrip22
             // 
@@ -1894,6 +1876,7 @@
             this.part21ComboBox.Name = "part21ComboBox";
             this.part21ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part21ComboBox.TabIndex = 102;
+            this.part21ComboBox.SelectedIndexChanged += new System.EventHandler(this.part21ComboBox_SelectedIndexChanged);
             // 
             // descrip21
             // 
@@ -1930,6 +1913,7 @@
             this.part20ComboBox.Name = "part20ComboBox";
             this.part20ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part20ComboBox.TabIndex = 98;
+            this.part20ComboBox.SelectedIndexChanged += new System.EventHandler(this.part20ComboBox_SelectedIndexChanged);
             // 
             // descrip20
             // 
@@ -1966,6 +1950,7 @@
             this.part19ComboBox.Name = "part19ComboBox";
             this.part19ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part19ComboBox.TabIndex = 94;
+            this.part19ComboBox.SelectedIndexChanged += new System.EventHandler(this.part19ComboBox_SelectedIndexChanged);
             // 
             // descrip19
             // 
@@ -2002,6 +1987,7 @@
             this.part18ComboBox.Name = "part18ComboBox";
             this.part18ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part18ComboBox.TabIndex = 90;
+            this.part18ComboBox.SelectedIndexChanged += new System.EventHandler(this.part18ComboBox_SelectedIndexChanged);
             // 
             // descrip18
             // 
@@ -2038,6 +2024,7 @@
             this.part17ComboBox.Name = "part17ComboBox";
             this.part17ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part17ComboBox.TabIndex = 86;
+            this.part17ComboBox.SelectedIndexChanged += new System.EventHandler(this.part17ComboBox_SelectedIndexChanged);
             // 
             // descrip17
             // 
@@ -2074,6 +2061,7 @@
             this.part16ComboBox.Name = "part16ComboBox";
             this.part16ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part16ComboBox.TabIndex = 82;
+            this.part16ComboBox.SelectedIndexChanged += new System.EventHandler(this.part16ComboBox_SelectedIndexChanged);
             // 
             // descrip16
             // 
@@ -2110,6 +2098,7 @@
             this.part15ComboBox.Name = "part15ComboBox";
             this.part15ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part15ComboBox.TabIndex = 78;
+            this.part15ComboBox.SelectedIndexChanged += new System.EventHandler(this.part15ComboBox_SelectedIndexChanged);
             // 
             // descrip15
             // 
@@ -2156,6 +2145,7 @@
             this.part14ComboBox.Name = "part14ComboBox";
             this.part14ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part14ComboBox.TabIndex = 74;
+            this.part14ComboBox.SelectedIndexChanged += new System.EventHandler(this.part14ComboBox_SelectedIndexChanged);
             // 
             // label31
             // 
@@ -2202,6 +2192,7 @@
             this.part13ComboBox.Name = "part13ComboBox";
             this.part13ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part13ComboBox.TabIndex = 64;
+            this.part13ComboBox.SelectedIndexChanged += new System.EventHandler(this.part13ComboBox_SelectedIndexChanged);
             // 
             // descrip13
             // 
@@ -2220,6 +2211,7 @@
             this.part12ComboBox.Name = "part12ComboBox";
             this.part12ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part12ComboBox.TabIndex = 60;
+            this.part12ComboBox.SelectedIndexChanged += new System.EventHandler(this.part12ComboBox_SelectedIndexChanged);
             // 
             // quantityText13
             // 
@@ -2254,6 +2246,7 @@
             this.part11ComboBox.Name = "part11ComboBox";
             this.part11ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part11ComboBox.TabIndex = 56;
+            this.part11ComboBox.SelectedIndexChanged += new System.EventHandler(this.part11ComboBox_SelectedIndexChanged);
             // 
             // descrip11
             // 
@@ -2280,6 +2273,7 @@
             this.part10ComboBox.Name = "part10ComboBox";
             this.part10ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part10ComboBox.TabIndex = 52;
+            this.part10ComboBox.SelectedIndexChanged += new System.EventHandler(this.part10ComboBox_SelectedIndexChanged);
             // 
             // descrip10
             // 
@@ -2316,6 +2310,7 @@
             this.part9ComboBox.Name = "part9ComboBox";
             this.part9ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part9ComboBox.TabIndex = 48;
+            this.part9ComboBox.SelectedIndexChanged += new System.EventHandler(this.part9ComboBox_SelectedIndexChanged);
             // 
             // descrip9
             // 
@@ -2352,6 +2347,7 @@
             this.part8ComboBox.Name = "part8ComboBox";
             this.part8ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part8ComboBox.TabIndex = 44;
+            this.part8ComboBox.SelectedIndexChanged += new System.EventHandler(this.part8ComboBox_SelectedIndexChanged);
             // 
             // descrip8
             // 
@@ -2388,6 +2384,7 @@
             this.part7ComboBox.Name = "part7ComboBox";
             this.part7ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part7ComboBox.TabIndex = 40;
+            this.part7ComboBox.SelectedIndexChanged += new System.EventHandler(this.part7ComboBox_SelectedIndexChanged);
             // 
             // descrip7
             // 
@@ -2424,6 +2421,7 @@
             this.part6ComboBox.Name = "part6ComboBox";
             this.part6ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part6ComboBox.TabIndex = 36;
+            this.part6ComboBox.SelectedIndexChanged += new System.EventHandler(this.part6ComboBox_SelectedIndexChanged);
             // 
             // descrip6
             // 
@@ -2460,6 +2458,7 @@
             this.part5ComboBox.Name = "part5ComboBox";
             this.part5ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part5ComboBox.TabIndex = 32;
+            this.part5ComboBox.SelectedIndexChanged += new System.EventHandler(this.part5ComboBox_SelectedIndexChanged);
             // 
             // descrip5
             // 
@@ -2496,6 +2495,7 @@
             this.part4ComboBox.Name = "part4ComboBox";
             this.part4ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part4ComboBox.TabIndex = 28;
+            this.part4ComboBox.SelectedIndexChanged += new System.EventHandler(this.part4ComboBox_SelectedIndexChanged);
             // 
             // descrip4
             // 
@@ -2532,6 +2532,7 @@
             this.part3ComboBox.Name = "part3ComboBox";
             this.part3ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part3ComboBox.TabIndex = 24;
+            this.part3ComboBox.SelectedIndexChanged += new System.EventHandler(this.part3ComboBox_SelectedIndexChanged);
             // 
             // descrip3
             // 
@@ -2568,6 +2569,7 @@
             this.part2ComboBox.Name = "part2ComboBox";
             this.part2ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part2ComboBox.TabIndex = 20;
+            this.part2ComboBox.SelectedIndexChanged += new System.EventHandler(this.part2ComboBox_SelectedIndexChanged);
             // 
             // part1ComboBox
             // 
@@ -2578,6 +2580,7 @@
             this.part1ComboBox.Name = "part1ComboBox";
             this.part1ComboBox.Size = new System.Drawing.Size(196, 26);
             this.part1ComboBox.TabIndex = 8;
+            this.part1ComboBox.SelectedIndexChanged += new System.EventHandler(this.part1ComboBox_SelectedIndexChanged);
             // 
             // descrip1
             // 
@@ -2685,7 +2688,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(6, 41);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(841, 30);
+            this.label23.Size = new System.Drawing.Size(839, 30);
             this.label23.TabIndex = 1;
             this.label23.Text = resources.GetString("label23.Text");
             this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2936,7 +2939,7 @@
             this.asterisk58.AutoSize = true;
             this.asterisk58.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk58.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk58.Location = new System.Drawing.Point(773, 724);
+            this.asterisk58.Location = new System.Drawing.Point(769, 722);
             this.asterisk58.Name = "asterisk58";
             this.asterisk58.Size = new System.Drawing.Size(14, 18);
             this.asterisk58.TabIndex = 169;
@@ -2947,7 +2950,7 @@
             this.asterisk55.AutoSize = true;
             this.asterisk55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk55.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk55.Location = new System.Drawing.Point(773, 594);
+            this.asterisk55.Location = new System.Drawing.Point(769, 594);
             this.asterisk55.Name = "asterisk55";
             this.asterisk55.Size = new System.Drawing.Size(14, 18);
             this.asterisk55.TabIndex = 159;
@@ -2958,7 +2961,7 @@
             this.asterisk54.AutoSize = true;
             this.asterisk54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk54.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk54.Location = new System.Drawing.Point(774, 551);
+            this.asterisk54.Location = new System.Drawing.Point(769, 551);
             this.asterisk54.Name = "asterisk54";
             this.asterisk54.Size = new System.Drawing.Size(14, 18);
             this.asterisk54.TabIndex = 168;
@@ -2969,7 +2972,7 @@
             this.asterisk53.AutoSize = true;
             this.asterisk53.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk53.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk53.Location = new System.Drawing.Point(774, 509);
+            this.asterisk53.Location = new System.Drawing.Point(769, 509);
             this.asterisk53.Name = "asterisk53";
             this.asterisk53.Size = new System.Drawing.Size(14, 18);
             this.asterisk53.TabIndex = 167;
@@ -2980,7 +2983,7 @@
             this.asterisk52.AutoSize = true;
             this.asterisk52.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk52.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk52.Location = new System.Drawing.Point(774, 464);
+            this.asterisk52.Location = new System.Drawing.Point(769, 464);
             this.asterisk52.Name = "asterisk52";
             this.asterisk52.Size = new System.Drawing.Size(14, 18);
             this.asterisk52.TabIndex = 166;
@@ -2991,7 +2994,7 @@
             this.asterisk51.AutoSize = true;
             this.asterisk51.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk51.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk51.Location = new System.Drawing.Point(773, 423);
+            this.asterisk51.Location = new System.Drawing.Point(769, 423);
             this.asterisk51.Name = "asterisk51";
             this.asterisk51.Size = new System.Drawing.Size(14, 18);
             this.asterisk51.TabIndex = 165;
@@ -3002,7 +3005,7 @@
             this.asterisk50.AutoSize = true;
             this.asterisk50.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk50.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk50.Location = new System.Drawing.Point(773, 379);
+            this.asterisk50.Location = new System.Drawing.Point(769, 379);
             this.asterisk50.Name = "asterisk50";
             this.asterisk50.Size = new System.Drawing.Size(14, 18);
             this.asterisk50.TabIndex = 164;
@@ -3013,7 +3016,7 @@
             this.asterisk49.AutoSize = true;
             this.asterisk49.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk49.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk49.Location = new System.Drawing.Point(774, 337);
+            this.asterisk49.Location = new System.Drawing.Point(769, 337);
             this.asterisk49.Name = "asterisk49";
             this.asterisk49.Size = new System.Drawing.Size(14, 18);
             this.asterisk49.TabIndex = 163;
@@ -3024,7 +3027,7 @@
             this.asterisk48.AutoSize = true;
             this.asterisk48.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk48.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk48.Location = new System.Drawing.Point(773, 296);
+            this.asterisk48.Location = new System.Drawing.Point(769, 296);
             this.asterisk48.Name = "asterisk48";
             this.asterisk48.Size = new System.Drawing.Size(14, 18);
             this.asterisk48.TabIndex = 162;
@@ -3035,7 +3038,7 @@
             this.asterisk47.AutoSize = true;
             this.asterisk47.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk47.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk47.Location = new System.Drawing.Point(773, 254);
+            this.asterisk47.Location = new System.Drawing.Point(769, 254);
             this.asterisk47.Name = "asterisk47";
             this.asterisk47.Size = new System.Drawing.Size(14, 18);
             this.asterisk47.TabIndex = 161;
@@ -3046,7 +3049,7 @@
             this.asterisk46.AutoSize = true;
             this.asterisk46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk46.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk46.Location = new System.Drawing.Point(774, 212);
+            this.asterisk46.Location = new System.Drawing.Point(769, 212);
             this.asterisk46.Name = "asterisk46";
             this.asterisk46.Size = new System.Drawing.Size(14, 18);
             this.asterisk46.TabIndex = 160;
@@ -3057,7 +3060,7 @@
             this.asterisk45.AutoSize = true;
             this.asterisk45.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk45.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk45.Location = new System.Drawing.Point(773, 171);
+            this.asterisk45.Location = new System.Drawing.Point(769, 171);
             this.asterisk45.Name = "asterisk45";
             this.asterisk45.Size = new System.Drawing.Size(14, 18);
             this.asterisk45.TabIndex = 159;
@@ -3068,7 +3071,7 @@
             this.asterisk44.AutoSize = true;
             this.asterisk44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk44.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk44.Location = new System.Drawing.Point(774, 129);
+            this.asterisk44.Location = new System.Drawing.Point(769, 129);
             this.asterisk44.Name = "asterisk44";
             this.asterisk44.Size = new System.Drawing.Size(14, 18);
             this.asterisk44.TabIndex = 158;
@@ -3079,7 +3082,7 @@
             this.asterisk43.AutoSize = true;
             this.asterisk43.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk43.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk43.Location = new System.Drawing.Point(774, 88);
+            this.asterisk43.Location = new System.Drawing.Point(769, 88);
             this.asterisk43.Name = "asterisk43";
             this.asterisk43.Size = new System.Drawing.Size(14, 18);
             this.asterisk43.TabIndex = 157;
@@ -3090,7 +3093,7 @@
             this.asterisk57.AutoSize = true;
             this.asterisk57.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk57.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk57.Location = new System.Drawing.Point(773, 682);
+            this.asterisk57.Location = new System.Drawing.Point(769, 682);
             this.asterisk57.Name = "asterisk57";
             this.asterisk57.Size = new System.Drawing.Size(14, 18);
             this.asterisk57.TabIndex = 156;
@@ -3101,7 +3104,7 @@
             this.asterisk56.AutoSize = true;
             this.asterisk56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk56.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk56.Location = new System.Drawing.Point(773, 635);
+            this.asterisk56.Location = new System.Drawing.Point(769, 638);
             this.asterisk56.Name = "asterisk56";
             this.asterisk56.Size = new System.Drawing.Size(14, 18);
             this.asterisk56.TabIndex = 155;
@@ -3112,7 +3115,7 @@
             this.asterisk42.AutoSize = true;
             this.asterisk42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asterisk42.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asterisk42.Location = new System.Drawing.Point(774, 47);
+            this.asterisk42.Location = new System.Drawing.Point(769, 47);
             this.asterisk42.Name = "asterisk42";
             this.asterisk42.Size = new System.Drawing.Size(14, 18);
             this.asterisk42.TabIndex = 154;
@@ -3134,7 +3137,7 @@
             this.darknessCombo.FormattingEnabled = true;
             this.darknessCombo.Location = new System.Drawing.Point(360, 679);
             this.darknessCombo.Name = "darknessCombo";
-            this.darknessCombo.Size = new System.Drawing.Size(408, 26);
+            this.darknessCombo.Size = new System.Drawing.Size(403, 26);
             this.darknessCombo.TabIndex = 82;
             // 
             // label48
@@ -3153,7 +3156,7 @@
             this.visionCombo.FormattingEnabled = true;
             this.visionCombo.Location = new System.Drawing.Point(360, 721);
             this.visionCombo.Name = "visionCombo";
-            this.visionCombo.Size = new System.Drawing.Size(408, 26);
+            this.visionCombo.Size = new System.Drawing.Size(403, 26);
             this.visionCombo.TabIndex = 80;
             // 
             // label49
@@ -3172,7 +3175,7 @@
             this.randomFieldCombo.FormattingEnabled = true;
             this.randomFieldCombo.Location = new System.Drawing.Point(360, 635);
             this.randomFieldCombo.Name = "randomFieldCombo";
-            this.randomFieldCombo.Size = new System.Drawing.Size(408, 26);
+            this.randomFieldCombo.Size = new System.Drawing.Size(403, 26);
             this.randomFieldCombo.TabIndex = 78;
             // 
             // label50
@@ -3191,7 +3194,7 @@
             this.labelStockCombo.FormattingEnabled = true;
             this.labelStockCombo.Location = new System.Drawing.Point(360, 591);
             this.labelStockCombo.Name = "labelStockCombo";
-            this.labelStockCombo.Size = new System.Drawing.Size(408, 26);
+            this.labelStockCombo.Size = new System.Drawing.Size(403, 26);
             this.labelStockCombo.TabIndex = 76;
             // 
             // groupBox10
@@ -3348,7 +3351,7 @@
             this.collectSalDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.collectSalDatePicker.Location = new System.Drawing.Point(360, 509);
             this.collectSalDatePicker.Name = "collectSalDatePicker";
-            this.collectSalDatePicker.Size = new System.Drawing.Size(408, 24);
+            this.collectSalDatePicker.Size = new System.Drawing.Size(403, 24);
             this.collectSalDatePicker.TabIndex = 70;
             // 
             // label54
@@ -3367,7 +3370,7 @@
             this.hrbCombo.FormattingEnabled = true;
             this.hrbCombo.Location = new System.Drawing.Point(360, 548);
             this.hrbCombo.Name = "hrbCombo";
-            this.hrbCombo.Size = new System.Drawing.Size(408, 26);
+            this.hrbCombo.Size = new System.Drawing.Size(403, 26);
             this.hrbCombo.TabIndex = 68;
             // 
             // label55
@@ -3386,7 +3389,7 @@
             this.lotNumCombo.FormattingEnabled = true;
             this.lotNumCombo.Location = new System.Drawing.Point(360, 461);
             this.lotNumCombo.Name = "lotNumCombo";
-            this.lotNumCombo.Size = new System.Drawing.Size(408, 26);
+            this.lotNumCombo.Size = new System.Drawing.Size(403, 26);
             this.lotNumCombo.TabIndex = 65;
             // 
             // label56
@@ -3415,7 +3418,7 @@
             this.fillToLowerCombo.FormattingEnabled = true;
             this.fillToLowerCombo.Location = new System.Drawing.Point(360, 420);
             this.fillToLowerCombo.Name = "fillToLowerCombo";
-            this.fillToLowerCombo.Size = new System.Drawing.Size(408, 26);
+            this.fillToLowerCombo.Size = new System.Drawing.Size(403, 26);
             this.fillToLowerCombo.TabIndex = 63;
             // 
             // label58
@@ -3434,7 +3437,7 @@
             this.labelIDCombo.FormattingEnabled = true;
             this.labelIDCombo.Location = new System.Drawing.Point(360, 376);
             this.labelIDCombo.Name = "labelIDCombo";
-            this.labelIDCombo.Size = new System.Drawing.Size(408, 26);
+            this.labelIDCombo.Size = new System.Drawing.Size(403, 26);
             this.labelIDCombo.TabIndex = 61;
             // 
             // label59
@@ -3453,7 +3456,7 @@
             this.gtinCombo.FormattingEnabled = true;
             this.gtinCombo.Location = new System.Drawing.Point(360, 334);
             this.gtinCombo.Name = "gtinCombo";
-            this.gtinCombo.Size = new System.Drawing.Size(408, 26);
+            this.gtinCombo.Size = new System.Drawing.Size(403, 26);
             this.gtinCombo.TabIndex = 59;
             // 
             // udiVerCombo
@@ -3462,7 +3465,7 @@
             this.udiVerCombo.FormattingEnabled = true;
             this.udiVerCombo.Location = new System.Drawing.Point(360, 293);
             this.udiVerCombo.Name = "udiVerCombo";
-            this.udiVerCombo.Size = new System.Drawing.Size(408, 26);
+            this.udiVerCombo.Size = new System.Drawing.Size(403, 26);
             this.udiVerCombo.TabIndex = 58;
             // 
             // udiReqCombo
@@ -3471,7 +3474,7 @@
             this.udiReqCombo.FormattingEnabled = true;
             this.udiReqCombo.Location = new System.Drawing.Point(360, 251);
             this.udiReqCombo.Name = "udiReqCombo";
-            this.udiReqCombo.Size = new System.Drawing.Size(408, 26);
+            this.udiReqCombo.Size = new System.Drawing.Size(403, 26);
             this.udiReqCombo.TabIndex = 57;
             // 
             // label60
@@ -3490,7 +3493,7 @@
             this.fillToUpperCombo.FormattingEnabled = true;
             this.fillToUpperCombo.Location = new System.Drawing.Point(360, 209);
             this.fillToUpperCombo.Name = "fillToUpperCombo";
-            this.fillToUpperCombo.Size = new System.Drawing.Size(408, 26);
+            this.fillToUpperCombo.Size = new System.Drawing.Size(403, 26);
             this.fillToUpperCombo.TabIndex = 55;
             // 
             // label71
@@ -3509,7 +3512,7 @@
             this.fillToTextCombo.FormattingEnabled = true;
             this.fillToTextCombo.Location = new System.Drawing.Point(360, 168);
             this.fillToTextCombo.Name = "fillToTextCombo";
-            this.fillToTextCombo.Size = new System.Drawing.Size(408, 26);
+            this.fillToTextCombo.Size = new System.Drawing.Size(403, 26);
             this.fillToTextCombo.TabIndex = 53;
             // 
             // manuIDCombo
@@ -3518,7 +3521,7 @@
             this.manuIDCombo.FormattingEnabled = true;
             this.manuIDCombo.Location = new System.Drawing.Point(360, 126);
             this.manuIDCombo.Name = "manuIDCombo";
-            this.manuIDCombo.Size = new System.Drawing.Size(408, 26);
+            this.manuIDCombo.Size = new System.Drawing.Size(403, 26);
             this.manuIDCombo.TabIndex = 52;
             // 
             // barcodeIDCombo
@@ -3527,7 +3530,7 @@
             this.barcodeIDCombo.FormattingEnabled = true;
             this.barcodeIDCombo.Location = new System.Drawing.Point(360, 85);
             this.barcodeIDCombo.Name = "barcodeIDCombo";
-            this.barcodeIDCombo.Size = new System.Drawing.Size(408, 26);
+            this.barcodeIDCombo.Size = new System.Drawing.Size(403, 26);
             this.barcodeIDCombo.TabIndex = 51;
             // 
             // phvCombo
@@ -3536,7 +3539,7 @@
             this.phvCombo.FormattingEnabled = true;
             this.phvCombo.Location = new System.Drawing.Point(360, 44);
             this.phvCombo.Name = "phvCombo";
-            this.phvCombo.Size = new System.Drawing.Size(408, 26);
+            this.phvCombo.Size = new System.Drawing.Size(403, 26);
             this.phvCombo.TabIndex = 43;
             // 
             // label72
@@ -6080,7 +6083,7 @@
             this.finishButton.Name = "finishButton";
             this.finishButton.Size = new System.Drawing.Size(107, 38);
             this.finishButton.TabIndex = 32;
-            this.finishButton.Text = "Finish";
+            this.finishButton.Text = "&Finish";
             this.finishButton.UseVisualStyleBackColor = false;
             this.finishButton.Click += new System.EventHandler(this.finishButton_Click);
             // 
@@ -6162,7 +6165,6 @@
             this.Name = "CreatePanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create New Batch Record";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreatePanel_FormClosed);
             this.Load += new System.EventHandler(this.CreatePanel_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -6178,10 +6180,6 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -6268,7 +6266,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label verLabel;
         private System.Windows.Forms.Label incLabel;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox partDescText;
         private System.Windows.Forms.Label label5;
@@ -6282,8 +6279,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button backButton1;
         private System.Windows.Forms.Button nextButton1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox revNumText;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -6417,7 +6412,6 @@
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.DateTimePicker labelDatePicker;
         private System.Windows.Forms.Button labelPreviewButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Panel panel3;
@@ -6508,8 +6502,6 @@
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.CheckBox applyDateCheckBox;
-        private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
@@ -6697,7 +6689,6 @@
         private System.Windows.Forms.Label pRevNumLabel;
         private System.Windows.Forms.Label pDocNumLabel;
         private System.Windows.Forms.Label asterisk6;
-        private System.Windows.Forms.Label asterisk5;
         private System.Windows.Forms.Label asterisk4;
         private System.Windows.Forms.Label asterisk2;
         private System.Windows.Forms.Label asterisk3;
@@ -6771,5 +6762,10 @@
         private System.Windows.Forms.Label asterisk59;
         private System.Windows.Forms.Label asterisk61;
         private System.Windows.Forms.Label asterisk60;
+        private System.Windows.Forms.CheckBox applyDateCheckBox;
+        private System.Windows.Forms.DateTimePicker labelDatePicker;
+        private System.Windows.Forms.Label asterisk5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox revNumText;
     }
 }

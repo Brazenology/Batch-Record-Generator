@@ -330,8 +330,8 @@
 </value>
   </data>
   <data name="label23.Text" xml:space="preserve">
-    <value>The line clearance process (or bill of materials) is a collection of all parts necessary to complete the item pertaining to the batch record. Please indicate all 
-parts necessary. a description will automatically appear which are specific to each part. Also, be sure to fill in all quantity fields.
+    <value>The line clearance process (or bill of materials) is a collection of all parts necessary to complete the product pertaining to the batch record. Please indicate
+all parts necessary. a description will automatically appear which are specific to each part. Also, be sure to fill in all quantity fields.
 </value>
   </data>
   <data name="label230.Text" xml:space="preserve">

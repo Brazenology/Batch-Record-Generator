@@ -16,6 +16,8 @@ namespace BatchRecordGenerator
 
         //Global Variables
         int errorCount = 0;
+        string connString = "Data Source=PAPALOA;Initial Catalog=DNADatabase;Integrated Security=True";
+
         public CreatePanel()
         {
             InitializeComponent();
@@ -149,135 +151,84 @@ namespace BatchRecordGenerator
             asterisk60.Visible = false;
             asterisk61.Visible = false;
 
+            /***********Populate combo box fields from database****************/
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
 
-            SqlConnection conn = new SqlConnection(@"Data Source=PAPALOA;Initial Catalog=DNADatabase;Integrated Security=True");
-            conn.Open();
-            SqlCommand sc = new SqlCommand("select partName from tblParts", conn);
-            SqlDataReader reader;
+            string BOM = "SELECT partName FROM tblParts";
+            SqlCommand populateBOM = new SqlCommand(BOM, conn);
+            DataTable BOMdt = new DataTable();
+            SqlDataAdapter BOMda = new SqlDataAdapter(populateBOM);
+            
+            try
+            {
+                conn.Open();
+                populateBOM.ExecuteNonQuery();
+                BOMda.Fill(BOMdt);
 
-            reader = sc.ExecuteReader();
-            DataTable parts = new DataTable();
-            parts.Columns.Add("partName", typeof(string));
-            parts.Load(reader);
+                foreach(DataRow dr in BOMdt.Rows)
+                {
+                    part1ComboBox.Items.Add(dr["partName"].ToString());
+                    part2ComboBox.Items.Add(dr["partName"].ToString());
+                    part3ComboBox.Items.Add(dr["partName"].ToString());
+                    part4ComboBox.Items.Add(dr["partName"].ToString());
+                    part5ComboBox.Items.Add(dr["partName"].ToString());
+                    part6ComboBox.Items.Add(dr["partName"].ToString());
+                    part7ComboBox.Items.Add(dr["partName"].ToString());
+                    part8ComboBox.Items.Add(dr["partName"].ToString());
+                    part9ComboBox.Items.Add(dr["partName"].ToString());
+                    part10ComboBox.Items.Add(dr["partName"].ToString());
+                    part11ComboBox.Items.Add(dr["partName"].ToString());
+                    part12ComboBox.Items.Add(dr["partName"].ToString());
+                    part13ComboBox.Items.Add(dr["partName"].ToString());
+                    part14ComboBox.Items.Add(dr["partName"].ToString());
+                    part15ComboBox.Items.Add(dr["partName"].ToString());
+                    part16ComboBox.Items.Add(dr["partName"].ToString());
+                    part17ComboBox.Items.Add(dr["partName"].ToString());
+                    part18ComboBox.Items.Add(dr["partName"].ToString());
+                    part19ComboBox.Items.Add(dr["partName"].ToString());
+                    part20ComboBox.Items.Add(dr["partName"].ToString());
+                    part21ComboBox.Items.Add(dr["partName"].ToString());
+                    part22ComboBox.Items.Add(dr["partName"].ToString());
+                    part23ComboBox.Items.Add(dr["partName"].ToString());
+                    part24ComboBox.Items.Add(dr["partName"].ToString());
+                    part25ComboBox.Items.Add(dr["partName"].ToString());
+                }
 
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
 
-            //Populates all part combo boxes from tblParts
-            part1ComboBox.ValueMember = "partName";
-            part1ComboBox.DisplayMember = "partName";
-            part1ComboBox.DataSource = parts;
+            }
 
-            part2ComboBox.ValueMember = "partName";
-            part2ComboBox.DisplayMember = "partName";
-            part2ComboBox.DataSource = parts;
-
-            part3ComboBox.ValueMember = "partName";
-            part3ComboBox.DisplayMember = "partName";
-            part3ComboBox.DataSource = parts;
-
-            part4ComboBox.ValueMember = "partName";
-            part4ComboBox.DisplayMember = "partName";
-            part4ComboBox.DataSource = parts;
-
-            part5ComboBox.ValueMember = "partName";
-            part5ComboBox.DisplayMember = "partName";
-            part5ComboBox.DataSource = parts;
-
-            part6ComboBox.ValueMember = "partName";
-            part6ComboBox.DisplayMember = "partName";
-            part6ComboBox.DataSource = parts;
-
-            part7ComboBox.ValueMember = "partName";
-            part7ComboBox.DisplayMember = "partName";
-            part7ComboBox.DataSource = parts;
-
-            part8ComboBox.ValueMember = "partName";
-            part8ComboBox.DisplayMember = "partName";
-            part8ComboBox.DataSource = parts;
-
-            part9ComboBox.ValueMember = "partName";
-            part9ComboBox.DisplayMember = "partName";
-            part9ComboBox.DataSource = parts;
-
-            part10ComboBox.ValueMember = "partName";
-            part10ComboBox.DisplayMember = "partName";
-            part10ComboBox.DataSource = parts;
-
-            part11ComboBox.ValueMember = "partName";
-            part11ComboBox.DisplayMember = "partName";
-            part11ComboBox.DataSource = parts;
-
-            part12ComboBox.ValueMember = "partName";
-            part12ComboBox.DisplayMember = "partName";
-            part12ComboBox.DataSource = parts;
-
-            part13ComboBox.ValueMember = "partName";
-            part13ComboBox.DisplayMember = "partName";
-            part13ComboBox.DataSource = parts;
-
-            part14ComboBox.ValueMember = "partName";
-            part14ComboBox.DisplayMember = "partName";
-            part14ComboBox.DataSource = parts;
-
-            part15ComboBox.ValueMember = "partName";
-            part15ComboBox.DisplayMember = "partName";
-            part15ComboBox.DataSource = parts;
-
-            part16ComboBox.ValueMember = "partName";
-            part16ComboBox.DisplayMember = "partName";
-            part16ComboBox.DataSource = parts;
-
-            part17ComboBox.ValueMember = "partName";
-            part17ComboBox.DisplayMember = "partName";
-            part17ComboBox.DataSource = parts;
-
-            part18ComboBox.ValueMember = "partName";
-            part18ComboBox.DisplayMember = "partName";
-            part18ComboBox.DataSource = parts;
-
-            part19ComboBox.ValueMember = "partName";
-            part19ComboBox.DisplayMember = "partName";
-            part19ComboBox.DataSource = parts;
-
-            part20ComboBox.ValueMember = "partName";
-            part20ComboBox.DisplayMember = "partName";
-            part20ComboBox.DataSource = parts;
-
-            part21ComboBox.ValueMember = "partName";
-            part21ComboBox.DisplayMember = "partName";
-            part21ComboBox.DataSource = parts;
-
-            part22ComboBox.ValueMember = "partName";
-            part22ComboBox.DisplayMember = "partName";
-            part22ComboBox.DataSource = parts;
-
-            part23ComboBox.ValueMember = "partName";
-            part23ComboBox.DisplayMember = "partName";
-            part23ComboBox.DataSource = parts;
-
-            part24ComboBox.ValueMember = "partName";
-            part24ComboBox.DisplayMember = "partName";
-            part24ComboBox.DataSource = parts;
-
-            part25ComboBox.ValueMember = "partName";
-            part25ComboBox.DisplayMember = "partName";
-            part25ComboBox.DataSource = parts;
-
-            conn.Close();
+        /*********************************END*******************************/
         }
 
-        /******************Quick Links*************************/
+        /********************Quick Links*************************/
         private void cancelRecordLink_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
             HomePanel home = new HomePanel();
             home.Show();
         }
-        /**********************END*****************************/
+        /***********************END*****************************/
 
         private void CreatePanel_Exit(object sender, EventArgs e)
         {
             HomePanel home = new HomePanel();
             home.Show();
+        }
+
+        private void applyDateCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (applyDateCheckBox.Checked)
+            {
+                labelDatePicker.Enabled = true;
+            }
+            else
+            {
+                labelDatePicker.Enabled = false;
+            }
         }
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
@@ -491,6 +442,482 @@ namespace BatchRecordGenerator
 
         }
 
+
+        private void part1ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part1ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip1.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part2ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part2ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip2.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part3ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part3ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip3.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part4ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part4ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip4.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part5ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part5ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip5.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part6ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part6ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip6.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part7ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part7ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip7.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part8ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part8ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip8.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part9ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part9ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip9.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part10ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part10ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip10.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part11ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part11ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip11.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part12ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part12ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip12.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part13ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part13ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip13.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part14ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part14ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip14.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part15ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part15ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip15.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part16ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part16ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip16.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part17ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part17ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip17.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part18ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part18ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip18.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part19ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part19ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip19.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part20ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part20ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip20.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part21ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part21ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip21.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part22ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part22ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip22.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part23ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part23ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip23.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part24ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part24ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip24.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void part25ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+
+            string descripSelect = "SELECT partDesc FROM tblParts WHERE partName = '" + part25ComboBox.Text + "'"; //Selects matching description for part
+            SqlCommand populateDesc = new SqlCommand(descripSelect, conn);
+
+            try
+            {
+                conn.Open();
+                descrip25.Text = populateDesc.ExecuteScalar().ToString(); //Populates the textbox
+                conn.Close();
+            }
+            catch (Exception ex) //Display a warning message if the description for the part cannot be found
+            {
+                MessageBox.Show("Description for this part cannot be found.", "Missing Description", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
         /*
          *The finish button will first check all required input fields to ensure they have been filled out.
          * If a field has been let blank, the corresponding error indicator will appear and the user will be notified via pop-up box.
@@ -500,13 +927,13 @@ namespace BatchRecordGenerator
         {
 
             errorCheck();
+            //partDuplicateCheck();
 
             if (errorCount > 0)
             {
                 MessageBox.Show("It appears you left " + errorCount + " required field(s) blank. Please check the information you provided and fill in all fields with a red asterisk(*).", "Missing Fields",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
             else
             {
                 //insert into database
@@ -574,14 +1001,30 @@ namespace BatchRecordGenerator
                 asterisk5.Visible = false;
             }
 
+            //BOM Field 1
+            if (!string.IsNullOrEmpty(part1ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText1.Text))
+            {
+                asterisk6.Visible = true;
+                errorCount++;
+            }
+            else if (string.IsNullOrEmpty(part1ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText1.Text))
+            {
+                asterisk6.Visible = true;
+                errorCount++;
+            }
+            else
+            {
+                asterisk6.Visible = false;
+            }
+
 
             //BOM Field 2
-            if (!string.IsNullOrEmpty(part2ComboBox.Text) && string.IsNullOrEmpty(quantityText2.Text))
+            if (!string.IsNullOrEmpty(part2ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText2.Text))
             {
                 asterisk7.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part2ComboBox.Text) && !string.IsNullOrEmpty(quantityText2.Text))
+            else if (string.IsNullOrEmpty(part2ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText2.Text))
             {
                 asterisk7.Visible = true;
                 errorCount++;
@@ -592,12 +1035,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 3
-            if (!string.IsNullOrEmpty(part3ComboBox.Text) && string.IsNullOrEmpty(quantityText3.Text))
+            if (!string.IsNullOrEmpty(part3ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText3.Text))
             {
                 asterisk8.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part3ComboBox.Text) && !string.IsNullOrEmpty(quantityText3.Text))
+            else if (string.IsNullOrEmpty(part3ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText3.Text))
             {
                 asterisk8.Visible = true;
                 errorCount++;
@@ -608,12 +1051,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 4
-            if (!string.IsNullOrEmpty(part4ComboBox.Text) && string.IsNullOrEmpty(quantityText4.Text))
+            if (!string.IsNullOrEmpty(part4ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText4.Text))
             {
                 asterisk9.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part4ComboBox.Text) && !string.IsNullOrEmpty(quantityText4.Text))
+            else if (string.IsNullOrEmpty(part4ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText4.Text))
             {
                 asterisk9.Visible = true;
                 errorCount++;
@@ -624,12 +1067,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 5
-            if (!string.IsNullOrEmpty(part5ComboBox.Text) && string.IsNullOrEmpty(quantityText5.Text))
+            if (!string.IsNullOrEmpty(part5ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText5.Text))
             {
                 asterisk10.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part5ComboBox.Text) && !string.IsNullOrEmpty(quantityText5.Text))
+            else if (string.IsNullOrEmpty(part5ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText5.Text))
             {
                 asterisk10.Visible = true;
                 errorCount++;
@@ -640,12 +1083,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 6
-            if (!string.IsNullOrEmpty(part6ComboBox.Text) && string.IsNullOrEmpty(quantityText6.Text))
+            if (!string.IsNullOrEmpty(part6ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText6.Text))
             {
                 asterisk11.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part6ComboBox.Text) && !string.IsNullOrEmpty(quantityText6.Text))
+            else if (string.IsNullOrEmpty(part6ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText6.Text))
             {
                 asterisk11.Visible = true;
                 errorCount++;
@@ -656,12 +1099,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 7
-            if (!string.IsNullOrEmpty(part7ComboBox.Text) && string.IsNullOrEmpty(quantityText7.Text))
+            if (!string.IsNullOrEmpty(part7ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText7.Text))
             {
                 asterisk12.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part7ComboBox.Text) && !string.IsNullOrEmpty(quantityText7.Text))
+            else if (string.IsNullOrEmpty(part7ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText7.Text))
             {
                 asterisk12.Visible = true;
                 errorCount++;
@@ -672,12 +1115,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 8
-            if (!string.IsNullOrEmpty(part8ComboBox.Text) && string.IsNullOrEmpty(quantityText8.Text))
+            if (!string.IsNullOrEmpty(part8ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText8.Text))
             {
                 asterisk13.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part8ComboBox.Text) && !string.IsNullOrEmpty(quantityText8.Text))
+            else if (string.IsNullOrEmpty(part8ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText8.Text))
             {
                 asterisk13.Visible = true;
                 errorCount++;
@@ -688,12 +1131,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 9
-            if (!string.IsNullOrEmpty(part9ComboBox.Text) && string.IsNullOrEmpty(quantityText9.Text))
+            if (!string.IsNullOrEmpty(part9ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText9.Text))
             {
                 asterisk14.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part9ComboBox.Text) && !string.IsNullOrEmpty(quantityText9.Text))
+            else if (string.IsNullOrEmpty(part9ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText9.Text))
             {
                 asterisk14.Visible = true;
                 errorCount++;
@@ -704,12 +1147,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 10
-            if (!string.IsNullOrEmpty(part10ComboBox.Text) && string.IsNullOrEmpty(quantityText10.Text))
+            if (!string.IsNullOrEmpty(part10ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText10.Text))
             {
                 asterisk15.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part10ComboBox.Text) && !string.IsNullOrEmpty(quantityText10.Text))
+            else if (string.IsNullOrEmpty(part10ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText10.Text))
             {
                 asterisk15.Visible = true;
                 errorCount++;
@@ -720,12 +1163,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 11
-            if (!string.IsNullOrEmpty(part11ComboBox.Text) && string.IsNullOrEmpty(quantityText11.Text))
+            if (!string.IsNullOrEmpty(part11ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText11.Text))
             {
                 asterisk16.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part11ComboBox.Text) && !string.IsNullOrEmpty(quantityText11.Text))
+            else if (string.IsNullOrEmpty(part11ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText11.Text))
             {
                 asterisk16.Visible = true;
                 errorCount++;
@@ -736,12 +1179,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 12
-            if (!string.IsNullOrEmpty(part12ComboBox.Text) && string.IsNullOrEmpty(quantityText12.Text))
+            if (!string.IsNullOrEmpty(part12ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText12.Text))
             {
                 asterisk17.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part12ComboBox.Text) && !string.IsNullOrEmpty(quantityText12.Text))
+            else if (string.IsNullOrEmpty(part12ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText12.Text))
             {
                 asterisk17.Visible = true;
                 errorCount++;
@@ -752,12 +1195,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 13
-            if (!string.IsNullOrEmpty(part13ComboBox.Text) && string.IsNullOrEmpty(quantityText13.Text))
+            if (!string.IsNullOrEmpty(part13ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText13.Text))
             {
                 asterisk18.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part13ComboBox.Text) && !string.IsNullOrEmpty(quantityText13.Text))
+            else if (string.IsNullOrEmpty(part13ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText13.Text))
             {
                 asterisk18.Visible = true;
                 errorCount++;
@@ -768,12 +1211,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 14
-            if (!string.IsNullOrEmpty(part14ComboBox.Text) && string.IsNullOrEmpty(quantityText14.Text))
+            if (!string.IsNullOrEmpty(part14ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText14.Text))
             {
                 asterisk19.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part14ComboBox.Text) && !string.IsNullOrEmpty(quantityText14.Text))
+            else if (string.IsNullOrEmpty(part14ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText14.Text))
             {
                 asterisk19.Visible = true;
                 errorCount++;
@@ -784,12 +1227,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 15
-            if (!string.IsNullOrEmpty(part15ComboBox.Text) && string.IsNullOrEmpty(quantityText15.Text))
+            if (!string.IsNullOrEmpty(part15ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText15.Text))
             {
                 asterisk20.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part15ComboBox.Text) && !string.IsNullOrEmpty(quantityText15.Text))
+            else if (string.IsNullOrEmpty(part15ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText15.Text))
             {
                 asterisk20.Visible = true;
                 errorCount++;
@@ -800,12 +1243,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 16
-            if (!string.IsNullOrEmpty(part16ComboBox.Text) && string.IsNullOrEmpty(quantityText16.Text))
+            if (!string.IsNullOrEmpty(part16ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText16.Text))
             {
                 asterisk21.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part16ComboBox.Text) && !string.IsNullOrEmpty(quantityText16.Text))
+            else if (string.IsNullOrEmpty(part16ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText16.Text))
             {
                 asterisk21.Visible = true;
                 errorCount++;
@@ -816,12 +1259,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 17
-            if (!string.IsNullOrEmpty(part17ComboBox.Text) && string.IsNullOrEmpty(quantityText17.Text))
+            if (!string.IsNullOrEmpty(part17ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText17.Text))
             {
                 asterisk22.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part17ComboBox.Text) && !string.IsNullOrEmpty(quantityText17.Text))
+            else if (string.IsNullOrEmpty(part17ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText17.Text))
             {
                 asterisk22.Visible = true;
                 errorCount++;
@@ -832,12 +1275,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 18
-            if (!string.IsNullOrEmpty(part18ComboBox.Text) && string.IsNullOrEmpty(quantityText18.Text))
+            if (!string.IsNullOrEmpty(part18ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText18.Text))
             {
                 asterisk23.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part18ComboBox.Text) && !string.IsNullOrEmpty(quantityText18.Text))
+            else if (string.IsNullOrEmpty(part18ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText18.Text))
             {
                 asterisk23.Visible = true;
                 errorCount++;
@@ -848,12 +1291,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 19
-            if (!string.IsNullOrEmpty(part19ComboBox.Text) && string.IsNullOrEmpty(quantityText19.Text))
+            if (!string.IsNullOrEmpty(part19ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText19.Text))
             {
                 asterisk24.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part19ComboBox.Text) && !string.IsNullOrEmpty(quantityText19.Text))
+            else if (string.IsNullOrEmpty(part19ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText19.Text))
             {
                 asterisk24.Visible = true;
                 errorCount++;
@@ -864,12 +1307,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 20
-            if (!string.IsNullOrEmpty(part20ComboBox.Text) && string.IsNullOrEmpty(quantityText20.Text))
+            if (!string.IsNullOrEmpty(part20ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText20.Text))
             {
                 asterisk25.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part20ComboBox.Text) && !string.IsNullOrEmpty(quantityText20.Text))
+            else if (string.IsNullOrEmpty(part20ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText20.Text))
             {
                 asterisk25.Visible = true;
                 errorCount++;
@@ -880,12 +1323,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 21
-            if (!string.IsNullOrEmpty(part21ComboBox.Text) && string.IsNullOrEmpty(quantityText21.Text))
+            if (!string.IsNullOrEmpty(part21ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText21.Text))
             {
                 asterisk26.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part21ComboBox.Text) && !string.IsNullOrEmpty(quantityText21.Text))
+            else if (string.IsNullOrEmpty(part21ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText21.Text))
             {
                 asterisk26.Visible = true;
                 errorCount++;
@@ -896,12 +1339,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 22
-            if (!string.IsNullOrEmpty(part22ComboBox.Text) && string.IsNullOrEmpty(quantityText22.Text))
+            if (!string.IsNullOrEmpty(part22ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText22.Text))
             {
                 asterisk27.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part22ComboBox.Text) && !string.IsNullOrEmpty(quantityText22.Text))
+            else if (string.IsNullOrEmpty(part22ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText22.Text))
             {
                 asterisk27.Visible = true;
                 errorCount++;
@@ -912,12 +1355,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 23
-            if (!string.IsNullOrEmpty(part23ComboBox.Text) && string.IsNullOrEmpty(quantityText23.Text))
+            if (!string.IsNullOrEmpty(part23ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText23.Text))
             {
                 asterisk28.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part23ComboBox.Text) && !string.IsNullOrEmpty(quantityText23.Text))
+            else if (string.IsNullOrEmpty(part23ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText23.Text))
             {
                 asterisk28.Visible = true;
                 errorCount++;
@@ -928,12 +1371,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 24
-            if (!string.IsNullOrEmpty(part24ComboBox.Text) && string.IsNullOrEmpty(quantityText24.Text))
+            if (!string.IsNullOrEmpty(part24ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText24.Text))
             {
                 asterisk29.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part24ComboBox.Text) && !string.IsNullOrEmpty(quantityText24.Text))
+            else if (string.IsNullOrEmpty(part24ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText24.Text))
             {
                 asterisk29.Visible = true;
                 errorCount++;
@@ -944,12 +1387,12 @@ namespace BatchRecordGenerator
             }
 
             //BOM Field 25
-            if (!string.IsNullOrEmpty(part25ComboBox.Text) && string.IsNullOrEmpty(quantityText25.Text))
+            if (!string.IsNullOrEmpty(part25ComboBox.Text.Trim()) && string.IsNullOrEmpty(quantityText25.Text))
             {
                 asterisk30.Visible = true;
                 errorCount++;
             }
-            else if (string.IsNullOrEmpty(part25ComboBox.Text) && !string.IsNullOrEmpty(quantityText25.Text))
+            else if (string.IsNullOrEmpty(part25ComboBox.Text.Trim()) && !string.IsNullOrEmpty(quantityText25.Text))
             {
                 asterisk30.Visible = true;
                 errorCount++;
@@ -960,7 +1403,7 @@ namespace BatchRecordGenerator
             }
 
             //Model Select Field
-            if (string.IsNullOrEmpty(modelSelectCombo.Text))
+            if (string.IsNullOrEmpty(modelSelectCombo.Text.Trim()))
             {
                 asterisk31.Visible = true;
                 errorCount++;
@@ -971,7 +1414,7 @@ namespace BatchRecordGenerator
             }
 
             //Barcode Scan Program Field
-            if (string.IsNullOrEmpty(barcodeScanCombo.Text))
+            if (string.IsNullOrEmpty(barcodeScanCombo.Text.Trim()))
             {
                 asterisk32.Visible = true;
                 errorCount++;
@@ -982,7 +1425,7 @@ namespace BatchRecordGenerator
             }
 
             //Hibar Pump Field
-            if (string.IsNullOrEmpty(hibarPumpCombo.Text))
+            if (string.IsNullOrEmpty(hibarPumpCombo.Text.Trim()))
             {
                 asterisk33.Visible = true;
                 errorCount++;
@@ -993,7 +1436,7 @@ namespace BatchRecordGenerator
             }
 
             //Oragene Volume Field
-            if (string.IsNullOrEmpty(orageneCombo.Text))
+            if (string.IsNullOrEmpty(orageneCombo.Text.Trim()))
             {
                 asterisk34.Visible = true;
                 errorCount++;
@@ -1004,7 +1447,7 @@ namespace BatchRecordGenerator
             }
 
             //Sealing Head Temp Field
-            if (string.IsNullOrEmpty(sealingTempCombo.Text))
+            if (string.IsNullOrEmpty(sealingTempCombo.Text.Trim()))
             {
                 asterisk35.Visible = true;
                 errorCount++;
@@ -1015,7 +1458,7 @@ namespace BatchRecordGenerator
             }
 
             //Sealing Head Dwell Field
-            if (string.IsNullOrEmpty(sealingDwellCombo.Text))
+            if (string.IsNullOrEmpty(sealingDwellCombo.Text.Trim()))
             {
                 asterisk36.Visible = true;
                 errorCount++;
@@ -1026,7 +1469,7 @@ namespace BatchRecordGenerator
             }
 
             //Air Pressure Field
-            if (string.IsNullOrEmpty(airPressureCombo.Text))
+            if (string.IsNullOrEmpty(airPressureCombo.Text.Trim()))
             {
                 asterisk37.Visible = true;
                 errorCount++;
@@ -1037,7 +1480,7 @@ namespace BatchRecordGenerator
             }
 
             //Fill To Height Field
-            if (string.IsNullOrEmpty(fillToCombo.Text))
+            if (string.IsNullOrEmpty(fillToCombo.Text.Trim()))
             {
                 asterisk38.Visible = true;
                 errorCount++;
@@ -1048,7 +1491,7 @@ namespace BatchRecordGenerator
             }
 
             //Tube Barcode Symbology Field
-            if (string.IsNullOrEmpty(tubeSymCombo.Text))
+            if (string.IsNullOrEmpty(tubeSymCombo.Text.Trim()))
             {
                 asterisk39.Visible = true;
                 errorCount++;
@@ -1059,7 +1502,7 @@ namespace BatchRecordGenerator
             }
 
             //Tube Barcode Decodability Field
-            if (string.IsNullOrEmpty(tubeDecodeCombo.Text))
+            if (string.IsNullOrEmpty(tubeDecodeCombo.Text.Trim()))
             {
                 asterisk40.Visible = true;
                 errorCount++;
@@ -1070,7 +1513,7 @@ namespace BatchRecordGenerator
             }
 
             //Stabilizing Solution Field
-            if (string.IsNullOrEmpty(stabSolCombo.Text))
+            if (string.IsNullOrEmpty(stabSolCombo.Text.Trim()))
             {
                 asterisk41.Visible = true;
                 errorCount++;
@@ -1081,7 +1524,7 @@ namespace BatchRecordGenerator
             }
 
             //Print Head verificaition Field
-            if (string.IsNullOrEmpty(phvCombo.Text))
+            if (string.IsNullOrEmpty(phvCombo.Text.Trim()))
             {
                 asterisk42.Visible = true;
                 errorCount++;
@@ -1092,7 +1535,7 @@ namespace BatchRecordGenerator
             }
 
             //Barcode Identification Field
-            if (string.IsNullOrEmpty(barcodeIDCombo.Text))
+            if (string.IsNullOrEmpty(barcodeIDCombo.Text.Trim()))
             {
                 asterisk43.Visible = true;
                 errorCount++;
@@ -1103,7 +1546,7 @@ namespace BatchRecordGenerator
             }
 
             //Manufacturer Identification Field
-            if (string.IsNullOrEmpty(manuIDCombo.Text))
+            if (string.IsNullOrEmpty(manuIDCombo.Text.Trim()))
             {
                 asterisk44.Visible = true;
                 errorCount++;
@@ -1114,7 +1557,7 @@ namespace BatchRecordGenerator
             }
 
             //Fill To Line Text Field
-            if (string.IsNullOrEmpty(fillToTextCombo.Text))
+            if (string.IsNullOrEmpty(fillToTextCombo.Text.Trim()))
             {
                 asterisk45.Visible = true;
                 errorCount++;
@@ -1125,7 +1568,7 @@ namespace BatchRecordGenerator
             }
 
             //Fill To Upper Field
-            if (string.IsNullOrEmpty(fillToUpperCombo.Text))
+            if (string.IsNullOrEmpty(fillToUpperCombo.Text.Trim()))
             {
                 asterisk46.Visible = true;
                 errorCount++;
@@ -1136,7 +1579,7 @@ namespace BatchRecordGenerator
             }
 
             //UDI Barcode Requirement Field
-            if (string.IsNullOrEmpty(udiReqCombo.Text))
+            if (string.IsNullOrEmpty(udiReqCombo.Text.Trim()))
             {
                 asterisk47.Visible = true;
                 errorCount++;
@@ -1147,7 +1590,7 @@ namespace BatchRecordGenerator
             }
 
             //UDI Barcode Verification Field
-            if (string.IsNullOrEmpty(udiVerCombo.Text))
+            if (string.IsNullOrEmpty(udiVerCombo.Text.Trim()))
             {
                 asterisk48.Visible = true;
                 errorCount++;
@@ -1158,7 +1601,7 @@ namespace BatchRecordGenerator
             }
 
             //UDI Human Readable GTIN Field
-            if (string.IsNullOrEmpty(gtinCombo.Text))
+            if (string.IsNullOrEmpty(gtinCombo.Text.Trim()))
             {
                 asterisk49.Visible = true;
                 errorCount++;
@@ -1169,7 +1612,7 @@ namespace BatchRecordGenerator
             }
 
             //Label Identification Number Field
-            if (string.IsNullOrEmpty(labelIDCombo.Text))
+            if (string.IsNullOrEmpty(labelIDCombo.Text.Trim()))
             {
                 asterisk50.Visible = true;
                 errorCount++;
@@ -1180,7 +1623,7 @@ namespace BatchRecordGenerator
             }
 
             //Fill To Lower Field
-            if (string.IsNullOrEmpty(fillToLowerCombo.Text))
+            if (string.IsNullOrEmpty(fillToLowerCombo.Text.Trim()))
             {
                 asterisk51.Visible = true;
                 errorCount++;
@@ -1191,7 +1634,7 @@ namespace BatchRecordGenerator
             }
 
             //Lot Number Field
-            if (string.IsNullOrEmpty(lotNumCombo.Text))
+            if (string.IsNullOrEmpty(lotNumCombo.Text.Trim()))
             {
                 asterisk52.Visible = true;
                 errorCount++;
@@ -1202,7 +1645,7 @@ namespace BatchRecordGenerator
             }
 
             //Collect Saliva By Date Field
-            if (string.IsNullOrEmpty(collectSalDatePicker.Text))
+            if (string.IsNullOrEmpty(collectSalDatePicker.Text.Trim()))
             {
                 asterisk53.Visible = true;
                 errorCount++;
@@ -1213,7 +1656,7 @@ namespace BatchRecordGenerator
             }
 
             //Human Readable Barcode Field
-            if (string.IsNullOrEmpty(hrbCombo.Text))
+            if (string.IsNullOrEmpty(hrbCombo.Text.Trim()))
             {
                 asterisk54.Visible = true;
                 errorCount++;
@@ -1224,7 +1667,7 @@ namespace BatchRecordGenerator
             }
 
             //Label Stock Design Field
-            if (string.IsNullOrEmpty(labelStockCombo.Text))
+            if (string.IsNullOrEmpty(labelStockCombo.Text.Trim()))
             {
                 asterisk55.Visible = true;
                 errorCount++;
@@ -1236,7 +1679,7 @@ namespace BatchRecordGenerator
 
 
             //Random Field
-            if (string.IsNullOrEmpty(randomFieldCombo.Text))
+            if (string.IsNullOrEmpty(randomFieldCombo.Text.Trim()))
             {
                 asterisk56.Visible = true;
                 errorCount++;
@@ -1248,7 +1691,7 @@ namespace BatchRecordGenerator
 
 
             //Darkness Setting Field
-            if (string.IsNullOrEmpty(darknessCombo.Text))
+            if (string.IsNullOrEmpty(darknessCombo.Text.Trim()))
             {
                 asterisk57.Visible = true;
                 errorCount++;
@@ -1260,7 +1703,7 @@ namespace BatchRecordGenerator
 
 
             //Vision Camera Field
-            if (string.IsNullOrEmpty(visionCombo.Text))
+            if (string.IsNullOrEmpty(visionCombo.Text.Trim()))
             {
                 asterisk58.Visible = true;
                 errorCount++;
@@ -1302,11 +1745,6 @@ namespace BatchRecordGenerator
             {
                 asterisk61.Visible = false;
             }
-        }
-
-        private void CreatePanel_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
         }
     }
 }
