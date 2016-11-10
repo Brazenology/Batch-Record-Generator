@@ -717,12 +717,12 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 6;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.01533F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.98467F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.58921F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.41079F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
             this.tableLayoutPanel3.Controls.Add(this.label68, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label69, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label70, 4, 0);
@@ -741,7 +741,7 @@
             this.label68.Location = new System.Drawing.Point(4, 1);
             this.label68.Name = "label68";
             this.label68.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.label68.Size = new System.Drawing.Size(73, 33);
+            this.label68.Size = new System.Drawing.Size(84, 29);
             this.label68.TabIndex = 0;
             this.label68.Text = "DOM\r\n(YYYY-MM-DD)";
             this.label68.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -750,7 +750,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(245, 1);
+            this.label69.Location = new System.Drawing.Point(243, 1);
             this.label69.Name = "label69";
             this.label69.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label69.Size = new System.Drawing.Size(44, 29);
@@ -762,7 +762,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(514, 1);
+            this.label70.Location = new System.Drawing.Point(512, 1);
             this.label70.Name = "label70";
             this.label70.Padding = new System.Windows.Forms.Padding(6, 10, 0, 0);
             this.label70.Size = new System.Drawing.Size(44, 26);
@@ -775,8 +775,8 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.36007F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.63993F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.81818F));
             this.tableLayoutPanel4.Controls.Add(this.pPartDescLabel, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label66, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 324);
@@ -789,11 +789,11 @@
             // pPartDescLabel
             // 
             this.pPartDescLabel.AutoSize = true;
-            this.pPartDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pPartDescLabel.Location = new System.Drawing.Point(107, 1);
+            this.pPartDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pPartDescLabel.Location = new System.Drawing.Point(106, 1);
             this.pPartDescLabel.Name = "pPartDescLabel";
             this.pPartDescLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.pPartDescLabel.Size = new System.Drawing.Size(71, 20);
+            this.pPartDescLabel.Size = new System.Drawing.Size(62, 17);
             this.pPartDescLabel.TabIndex = 33;
             this.pPartDescLabel.Text = "undefined";
             this.pPartDescLabel.Visible = false;
@@ -830,8 +830,8 @@
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(4, 1);
             this.label62.Name = "label62";
-            this.label62.Padding = new System.Windows.Forms.Padding(310, 2, 0, 0);
-            this.label62.Size = new System.Drawing.Size(489, 20);
+            this.label62.Padding = new System.Windows.Forms.Padding(300, 2, 0, 0);
+            this.label62.Size = new System.Drawing.Size(479, 20);
             this.label62.TabIndex = 0;
             this.label62.Text = "DNA BATCH RECORD";
             this.label62.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -845,7 +845,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.93393F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.06606F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
             this.tableLayoutPanel1.Controls.Add(this.label136, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.pPartRefLabel, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pDateLabel, 3, 1);
@@ -873,7 +873,7 @@
             // 
             this.label136.AutoSize = true;
             this.label136.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label136.Location = new System.Drawing.Point(382, 46);
+            this.label136.Location = new System.Drawing.Point(380, 46);
             this.label136.Name = "label136";
             this.label136.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.label136.Size = new System.Drawing.Size(38, 20);
@@ -883,10 +883,11 @@
             // pPartRefLabel
             // 
             this.pPartRefLabel.AutoSize = true;
-            this.pPartRefLabel.Location = new System.Drawing.Point(107, 46);
+            this.pPartRefLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pPartRefLabel.Location = new System.Drawing.Point(106, 46);
             this.pPartRefLabel.Name = "pPartRefLabel";
             this.pPartRefLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.pPartRefLabel.Size = new System.Drawing.Size(71, 20);
+            this.pPartRefLabel.Size = new System.Drawing.Size(62, 17);
             this.pPartRefLabel.TabIndex = 31;
             this.pPartRefLabel.Text = "undefined";
             this.pPartRefLabel.Visible = false;
@@ -894,10 +895,11 @@
             // pDateLabel
             // 
             this.pDateLabel.AutoSize = true;
-            this.pDateLabel.Location = new System.Drawing.Point(382, 23);
+            this.pDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pDateLabel.Location = new System.Drawing.Point(380, 23);
             this.pDateLabel.Name = "pDateLabel";
             this.pDateLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.pDateLabel.Size = new System.Drawing.Size(71, 20);
+            this.pDateLabel.Size = new System.Drawing.Size(62, 17);
             this.pDateLabel.TabIndex = 30;
             this.pDateLabel.Text = "undefined";
             this.pDateLabel.Visible = false;
@@ -905,10 +907,11 @@
             // pCustNameLabel
             // 
             this.pCustNameLabel.AutoSize = true;
-            this.pCustNameLabel.Location = new System.Drawing.Point(107, 23);
+            this.pCustNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pCustNameLabel.Location = new System.Drawing.Point(106, 23);
             this.pCustNameLabel.Name = "pCustNameLabel";
             this.pCustNameLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.pCustNameLabel.Size = new System.Drawing.Size(71, 20);
+            this.pCustNameLabel.Size = new System.Drawing.Size(62, 17);
             this.pCustNameLabel.TabIndex = 29;
             this.pCustNameLabel.Text = "undefined";
             this.pCustNameLabel.Visible = false;
@@ -916,10 +919,11 @@
             // pRevNumLabel
             // 
             this.pRevNumLabel.AutoSize = true;
-            this.pRevNumLabel.Location = new System.Drawing.Point(382, 1);
+            this.pRevNumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pRevNumLabel.Location = new System.Drawing.Point(380, 1);
             this.pRevNumLabel.Name = "pRevNumLabel";
             this.pRevNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.pRevNumLabel.Size = new System.Drawing.Size(71, 20);
+            this.pRevNumLabel.Size = new System.Drawing.Size(62, 17);
             this.pRevNumLabel.TabIndex = 28;
             this.pRevNumLabel.Text = "undefined";
             this.pRevNumLabel.Visible = false;
@@ -928,7 +932,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(306, 46);
+            this.label67.Location = new System.Drawing.Point(304, 46);
             this.label67.Name = "label67";
             this.label67.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label67.Size = new System.Drawing.Size(40, 16);
@@ -939,7 +943,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(306, 23);
+            this.label10.Location = new System.Drawing.Point(304, 23);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label10.Size = new System.Drawing.Size(33, 16);
@@ -950,7 +954,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(306, 1);
+            this.label9.Location = new System.Drawing.Point(304, 1);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.label9.Size = new System.Drawing.Size(54, 16);
@@ -993,10 +997,11 @@
             // pDocNumLabel
             // 
             this.pDocNumLabel.AutoSize = true;
-            this.pDocNumLabel.Location = new System.Drawing.Point(107, 1);
+            this.pDocNumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pDocNumLabel.Location = new System.Drawing.Point(106, 1);
             this.pDocNumLabel.Name = "pDocNumLabel";
             this.pDocNumLabel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.pDocNumLabel.Size = new System.Drawing.Size(71, 20);
+            this.pDocNumLabel.Size = new System.Drawing.Size(62, 17);
             this.pDocNumLabel.TabIndex = 27;
             this.pDocNumLabel.Text = "undefined";
             this.pDocNumLabel.Visible = false;
@@ -2638,7 +2643,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(431, 16);
+            this.label15.Location = new System.Drawing.Point(454, 16);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(94, 18);
             this.label15.TabIndex = 3;

@@ -16,7 +16,7 @@ namespace BatchRecordGenerator
 
         //Global Variables
         int errorCount = 0;
-        string connString = "Data Source=PAPALOA;Initial Catalog=DNADatabase;Integrated Security=True";
+        string connString = "Data Source=PAPALOA;Initial Catalog=BatchRecordApp;Integrated Security=True";
 
         public CreatePanel()
         {
@@ -358,6 +358,13 @@ namespace BatchRecordGenerator
 
         private void labelPreviewButton_Click(object sender, EventArgs e)
         {
+
+            pDocNumLabel.UseMnemonic = false;
+            pCustNameLabel.UseMnemonic = false;
+            pPartRefLabel.UseMnemonic = false;
+            pPartDescLabel.UseMnemonic = false;
+
+
             //Sets the labels in the preview pane to be equal to their matching input fields
             if (!string.IsNullOrEmpty(docNumText.Text))
             {
