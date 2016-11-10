@@ -1192,6 +1192,7 @@
             // 
             // partRefCombo
             // 
+            this.partRefCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.partRefCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partRefCombo.FormattingEnabled = true;
             this.partRefCombo.Location = new System.Drawing.Point(171, 105);
@@ -2871,10 +2872,10 @@
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.Location = new System.Drawing.Point(24, 58);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(733, 15);
+            this.label46.Size = new System.Drawing.Size(736, 15);
             this.label46.TabIndex = 18;
             this.label46.Text = "Please fill in all fields below. This information will be found on the Startup/Se" +
-    "tup  and In-Process Inpection sections of the batch record.\r\n";
+    "tup and In-Process Inspection sections of the batch record.\r\n";
             this.label46.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox9

@@ -16,7 +16,8 @@ namespace BatchRecordGenerator
 
         //Global Variables
         int errorCount = 0;
-        string connString = "Data Source=PAPALOA;Initial Catalog=BatchRecordApp;Integrated Security=True";
+        bool duplicates = false;
+        string connString = "Data Source=PAPALOA;Initial Catalog=BatchRecordApp;Integrated Security=True";//path to database
 
         public CreatePanel()
         {
@@ -25,6 +26,9 @@ namespace BatchRecordGenerator
 
         private void CreatePanel_Load(object sender, EventArgs e)
         {
+            //Populates all dropdown menus
+            populateDropDowns();
+
             //Set all error indicators (asterisks) to the colour red
             asterisk1.ForeColor = System.Drawing.Color.Red;
             asterisk2.ForeColor = System.Drawing.Color.Red;
@@ -150,22 +154,83 @@ namespace BatchRecordGenerator
             asterisk59.Visible = false;
             asterisk60.Visible = false;
             asterisk61.Visible = false;
+        }
 
-            /***********Populate combo box fields from database****************/
-            SqlConnection conn = new SqlConnection(connString); //SQL Connection
+        /********************Populates all combo boxes in the create panel*********************/
+        private void populateDropDowns() {
 
+            //SQL Connection
+            SqlConnection conn = new SqlConnection(connString); //References the connString global variable
+
+            //Query strings
+            string partRefs = "SELECT partRefName FROM tblPartRef";
             string BOM = "SELECT partName FROM tblParts";
+            string VIC = "SELECT vicID, vicDetails FROM tblVisInspectionCriteria WHERE vicID LIKE 'FL%' ORDER BY vicID ASC";
+
+            //SQL Commands
+            SqlCommand populatePartRefs = new SqlCommand(partRefs, conn);
             SqlCommand populateBOM = new SqlCommand(BOM, conn);
+            SqlCommand populateVIC = new SqlCommand(VIC, conn);
+
+            //Data Tables
+            DataTable partRefdt = new DataTable();
             DataTable BOMdt = new DataTable();
+            DataTable VICdt = new DataTable();
+
+            //SQL Adapters
+            SqlDataAdapter partRefda = new SqlDataAdapter(populatePartRefs);
             SqlDataAdapter BOMda = new SqlDataAdapter(populateBOM);
-            
+            SqlDataAdapter VICda = new SqlDataAdapter(populateVIC);
+
+
             try
             {
                 conn.Open();
                 populateBOM.ExecuteNonQuery();
-                BOMda.Fill(BOMdt);
+                populatePartRefs.ExecuteNonQuery();
+                populateVIC.ExecuteNonQuery();
 
-                foreach(DataRow dr in BOMdt.Rows)
+                BOMda.Fill(BOMdt);
+                partRefda.Fill(partRefdt);
+                VICda.Fill(VICdt);
+
+                
+                foreach (DataRow dr in VICdt.Rows)//Grabs all part reference names and inserts them in the part reference combo box
+                {
+                    visInspecCombo1.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo2.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo3.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo4.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo5.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo6.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo7.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo8.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo9.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo10.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo11.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo12.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo13.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo14.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo15.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo16.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo17.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo18.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo19.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo20.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo21.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo22.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo23.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo24.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                    visInspecCombo25.Items.Add(dr["vicID"].ToString() + ": " + dr["vicDetails"].ToString());
+                }
+                
+
+                foreach (DataRow dr in partRefdt.Rows)//Grabs all part reference names and inserts them in the part reference combo box
+                {
+                    partRefCombo.Items.Add(dr["partRefName"].ToString());
+                }
+
+                foreach (DataRow dr in BOMdt.Rows) //Grabs all the parts found and inserts them into each Part Name combo box
                 {
                     part1ComboBox.Items.Add(dr["partName"].ToString());
                     part2ComboBox.Items.Add(dr["partName"].ToString());
@@ -193,15 +258,12 @@ namespace BatchRecordGenerator
                     part24ComboBox.Items.Add(dr["partName"].ToString());
                     part25ComboBox.Items.Add(dr["partName"].ToString());
                 }
-
                 conn.Close();
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("Oops! Can't seem to make a connection to the database right now. Please try again later.", "Connection Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        /*********************************END*******************************/
         }
 
         /********************Quick Links*************************/
@@ -249,7 +311,7 @@ namespace BatchRecordGenerator
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            // Draw a red border around the inside of the Panel.
+            // Draw a Grey border around the inside of the Panel.
             Rectangle rect = panel3.ClientRectangle;
             rect.Width--;
             rect.Height--;
@@ -934,11 +996,15 @@ namespace BatchRecordGenerator
         {
 
             errorCheck();
-            //partDuplicateCheck();
 
-            if (errorCount > 0)
+            if (duplicates == true)
             {
-                MessageBox.Show("It appears you left " + errorCount + " required field(s) blank. Please check the information you provided and fill in all fields with a red asterisk(*).", "Missing Fields",
+                MessageBox.Show("It appears you have duplicate parts in the Bill of Materials tab. Please review the 'BOM' tab and ensure you do not have duplicate entries.", "Duplicates Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            else if (errorCount > 0)
+            {
+                MessageBox.Show("It appears you left " + errorCount + " required field(s) blank. Please check the information you provided and fill in all fields marked with a red asterisk(*).", "Missing Fields",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -950,9 +1016,54 @@ namespace BatchRecordGenerator
 
         private void errorCheck()
         {
+            errorCount = 0; //Counts how many errors were found
+            duplicates = false;
+            List<string> partNames = new List<string>();
+            partNames.Clear();
 
-           errorCount = 0; //Counts how many errors were found
+            /******************************Add Parts to partNames Array if they are not blank**************************/
+            if (!string.IsNullOrEmpty(part1ComboBox.Text))
+            {
+                partNames.Add(part1ComboBox.Text);
+            }
 
+            if (!string.IsNullOrEmpty(part2ComboBox.Text))
+            {
+                partNames.Add(part2ComboBox.Text);
+            }
+
+            if (!string.IsNullOrEmpty(part3ComboBox.Text))
+            {
+                partNames.Add(part3ComboBox.Text);
+            }
+
+            if (!string.IsNullOrEmpty(part4ComboBox.Text))
+            {
+                partNames.Add(part4ComboBox.Text);
+            }
+
+            if (!string.IsNullOrEmpty(part5ComboBox.Text))
+            {
+                partNames.Add(part5ComboBox.Text);
+            }
+
+            int partCount = partNames.Count();
+
+            for (int i = 0; i < partCount; i++)
+            {
+                for (int z = 0; z < partCount; z++)
+                {
+                    if (partNames[i].Equals(partNames[z]))
+                    {
+                        if (i != z)
+                        {
+                            duplicates = true;
+                        }
+                    }
+                }
+            }
+
+            /************************************************END****************************************************/
             //Document Number Field
             if (string.IsNullOrEmpty(docNumText.Text))
             {
